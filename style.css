@@ -1,0 +1,682 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+	--company-main: #0065fc;
+	--main-light: #deebff;
+	--background: #f2f2f2;
+	--h3-font-size: 20px;
+	--max-width: 1300px;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	scroll-behavior: smooth;
+}
+html {
+	display: flex;
+	justify-content: center;
+}
+.centerFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+body {
+	max-width: 1400px;
+	width: 97%;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+	width: 13px;
+	height: 13px;
+}
+::-webkit-scrollbar-thumb {
+	background: #7bb0ff;
+	border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #0065fc;
+}
+::-webkit-scrollbar-track {
+	background: #f0f0f0;
+	border-radius: 0px;
+	box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+}
+
+/* HEADER */
+
+#mobile-nav {
+	display: none;
+}
+header nav {
+	display: flex;
+	justify-content: space-between;
+}
+header nav #logo {
+	margin-bottom: 10px;
+}
+.header-links .nav-link a {
+	text-decoration: none;
+	color: black;
+	height: 100px;
+	width: 140px;
+	border-top: solid 2px transparent;
+	transition: 0.3s;
+}
+.header-links .nav-link .border-apparition:active {
+	color: var(--company-main);
+	border-top: solid 2px var(--company-main);
+}
+.header-links #login-link a {
+	color: var(--company-main);
+	font-weight: 700;
+}
+
+/* H1 & SEARCH CONTAINER */
+
+.slogan h1 {
+	font-weight: 700;
+}
+.slogan p {
+	font-size: 17px;
+	margin: 8px 0;
+}
+#search-container {
+	display: flex;
+	margin: 15px 0px 35px 0px;
+}
+#search-container .location-icon {
+	background-color: var(--background);
+	font-size: var(--h3-font-size);
+	padding: 12px 16px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+#search-input {
+	width: 260px;
+	padding-left: 20px;
+	font-size: var(--h3-font-size);
+	color: black;
+	font-weight: 700;
+	border: none;
+	border: solid 1px var(--background);
+}
+#search-input::placeholder {
+	font-size: var(--h3-font-size);
+	color: black;
+	font-weight: 700;
+}
+#search-container .search-button {
+	width: 150px;
+	background-color: var(--company-main);
+	color: white;
+	font-size: var(--h3-font-size);
+	font-weight: 600;
+	border: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	cursor: pointer;
+}
+#search-button-icon {
+	display: none;
+}
+
+/* FILTERS */
+
+h3 {
+	font-size: var(--h3-font-size);
+	font-weight: 700;
+}
+#filters-container {
+	display: flex;
+	align-items: center;
+	margin: 40px 0px;
+}
+#filters-container ul {
+	display: flex;
+}
+#filters-container ul li {
+	position: relative;
+	list-style: none;
+	margin-left: 35px;
+	display: flex;
+	align-items: center;
+	border: solid 3px var(--background);
+	border-radius: 99px;
+	transition: 0.2s;
+}
+#filters-container ul li:hover {
+	cursor: pointer;
+	transform: scale(1.05);
+	background-color: var(--background);
+	border-color: var(--main-light);
+}
+#filters-container ul li:active {
+	transform: scale(0.98);
+}
+#filters-container ul li i {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: -3px;
+	background-color: var(--main-light);
+	color: var(--company-main);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#filters-container ul li span {
+	margin: 10px 20px 10px 60px;
+	font-size: var(--h3-font-size);
+	font-weight: 700;
+}
+#available-accomodations {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+#available-accomodations i {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	color: var(--company-main);
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 50%;
+	border: solid 2px var(--background);
+}
+#available-accomodations p {
+	margin-left: 35px;
+}
+
+/* ACCOMODATIONS */
+
+h2 {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#accomodations-section {
+	display: flex;
+	width: 100%;
+}
+.accomodations-pad-bg-bdr {
+	padding: 40px 40px;
+	background-color: var(--background);
+	border-radius: 20px;
+}
+
+/* ACCOMODATIONS GRID */
+
+#accomodations-container {
+	width: 70%;
+	margin: 35px 35px 35px 0px;
+}
+#accomodations-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 30px 30px;
+	grid-template-areas:
+		"one two three"
+		"four five six";
+	width: 100%;
+}
+.acco-grid-area-one {
+	grid-area: one;
+}
+.acco-grid-area-two {
+	grid-area: two;
+}
+.acco-grid-area-three {
+	grid-area: three;
+}
+.acco-grid-area-four {
+	grid-area: four;
+}
+.acco-grid-area-five {
+	grid-area: five;
+}
+.acco-grid-area-six {
+	grid-area: six;
+}
+#accomodations-grid a {
+	text-decoration: none;
+	color: black;
+}
+.accomodation-presentation {
+	width: 100%;
+	padding: 5px;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 4px 15px 7px rgba(66, 66, 66, 0.1);
+	transition: 0.2s;
+}
+.accomodation-presentation:hover {
+	transform: scale(1.03);
+}
+.accomodation-display-img img {
+	object-fit: cover;
+	width: 100%;
+	height: 120px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+.accomodation-description {
+	padding: 5px 10px;
+	line-height: 24px;
+}
+.accomodation-description h4,
+span {
+	font-weight: 700;
+}
+#accomodations-grid h3 a {
+	display: block;
+	margin: 20px 0px 10px;
+	font-weight: 700;
+}
+
+/* STARS & POPULAR */
+
+.blue-star {
+	color: var(--company-main);
+}
+.grey-star {
+	color: var(--background);
+	filter: brightness(90%);
+}
+
+#popular-accomodations-container {
+	width: 30%;
+	margin: 35px 0px 35px;
+	background-color: var(--background);
+}
+#popular-accomodations-container .popular-title {
+	display: flex;
+	justify-content: space-between;
+}
+#popular-accomodations-container .popular-title i {
+	font-size: 25px;
+}
+#popular-accomodations-container a {
+	text-decoration: none;
+	color: black;
+}
+.popular-display {
+	display: flex;
+	position: relative;
+	height: 160px;
+	margin-bottom: 30px;
+}
+.popular-display-img img {
+	object-fit: cover;
+	width: 140px;
+	height: 150px;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+}
+.popular-display .accomodation-description h4 {
+	margin-bottom: 5px;
+}
+.popular-display .accomodation-description .rating {
+	position: absolute;
+	bottom: 10px;
+}
+
+/* ACTIVITIES */
+
+#activities-section {
+	width: 100%;
+	margin: 50px 0 80px;
+}
+#activities-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 40px 3%;
+	grid-template-areas:
+		"one two four five"
+		"one three four six";
+	height: 450px;
+	width: 100%;
+}
+#activities-grid a {
+	text-decoration: none;
+}
+.acti-grid-area-one {
+	grid-area: one;
+}
+.acti-grid-area-two {
+	grid-area: two;
+}
+.acti-grid-area-three {
+	grid-area: three;
+}
+.acti-grid-area-four {
+	grid-area: four;
+}
+.acti-grid-area-five {
+	grid-area: five;
+}
+.acti-grid-area-six {
+	grid-area: six;
+}
+.activities-display {
+	border-radius: 16px;
+	height: 100%;
+	box-shadow: 0px 4px 15px 7px rgba(66, 66, 66, 0.1);
+	transition: 0.2s;
+}
+.activities-display:hover {
+	transform: scale(1.03);
+}
+.activitie-img img {
+	object-fit: cover;
+	width: 100%;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+}
+.paysage-img img {
+	height: 142px;
+}
+.portrait-img img {
+	height: 390px;
+}
+.activities-display h4 {
+	color: black;
+	font-weight: 700;
+	margin: 20px 0 0 20px;
+}
+
+/* FOOTER & LINKS */
+
+footer {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	left: 0;
+	background-color: var(--background);
+}
+#footer-links {
+	width: 97%;
+	max-width: 1400px;
+	display: flex;
+	padding: 50px 0;
+}
+.footer-section {
+	width: 33%;
+}
+.footer-section a {
+	color: black;
+	text-decoration: none;
+	line-height: 30px;
+}
+.footer-section h3 a {
+	font-weight: 700;
+	line-height: 60px;
+}
+.footer-section ul {
+	list-style: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+	#accomodations-section {
+		flex-direction: column;
+	}
+	#accomodations-container {
+		width: 100%;
+	}
+	#popular-accomodations-container {
+		width: 100%;
+	}
+	#popular-column {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.popular-display {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#filters-container {
+		display: inline;
+	}
+	.filters-list {
+		flex-wrap: wrap;
+		justify-content: left;
+		margin: 0;
+	}
+	#filters-container ul li {
+		margin: 10px 10px 10px 0;
+	}
+	#popular-column {
+		display: flex;
+		flex-direction: column;
+	}
+	#activities-grid {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 40px 3%;
+		grid-template-areas:
+			"one three five"
+			"two four six";
+		height: 450px;
+		width: 100%;
+	}
+	.responsive-display img {
+		height: 142px;
+	}
+	.responsive-display h4 {
+		margin: 20px 0 20px 20px;
+	}
+}
+
+/* MAX WIDTH 800PX */
+
+@media screen and (max-width: 800px) {
+	#accomodations-grid {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		gap: 30px 30px;
+		grid-template-areas:
+			"one two"
+			"three four"
+			"five six";
+		width: 100%;
+	}
+	#footer-links {
+		display: flex;
+		width: 90%;
+		flex-direction: column;
+		padding: 30px 0;
+	}
+	.footer-section {
+		width: 100%;
+	}
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 650px) {
+	body {
+		width: 100%;
+	}
+	#desktop-nav {
+		display: none;
+	}
+
+	/* MOBILE HEADER &NAV */
+
+	#mobile-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+	.logo-and-sign-in {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 20px 0 20px;
+	}
+	#mobile-login-link a {
+		color: var(--company-main);
+		font-weight: 700;
+	}
+	.nav-link a {
+		text-decoration: none;
+		height: 50px;
+	}
+	.header-links {
+		width: 100%;
+		height: 50px;
+		padding: 0 20px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.header-links .nav-link a {
+		height: 50px;
+		width: 48.5vw;
+	}
+	.nav-link .border-bottom {
+		color: var(--company-main);
+		border-bottom: solid 3px var(--background);
+	}
+	.nav-link .border-bottom:active {
+		color: var(--company-main);
+		border-bottom: solid 3px var(--company-main);
+	}
+
+	/* MOBILE SEARCH AREA */
+
+	#search-and-filters {
+		padding: 0 20px;
+		font-size: 15px;
+	}
+	#search-and-filters p {
+		font-size: 16px;
+		margin: 10px 0 40px;
+	}
+	#search-button-text {
+		display: none;
+	}
+	#search-container {
+		position: relative;
+		width: 100%;
+	}
+	#search-input {
+		width: 85%;
+		padding-left: 20px;
+	}
+	#search-button-icon {
+		position: absolute;
+		left: 85%;
+		max-width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 12px;
+	}
+
+	/* FILTERS OK */
+
+	#available-accomodations i {
+		position: absolute;
+		margin-right: 7px;
+	}
+	#available-accomodations p {
+		position: relative;
+		margin: 20px 0 0 30px;
+	}
+
+	/* ACCOMODATIONS SECTION*/
+
+	/* POPULAR */
+
+	#accomodations-section {
+		flex-direction: column-reverse;
+		padding: 0;
+	}
+	.accomodations-pad-bg-bdr {
+		padding: 40px 20px 20px 20px;
+		background-color: unset;
+		border-radius: 0px;
+	}
+	#popular-accomodations-container {
+		margin-top: 30px;
+	}
+	.accomodation-presentation {
+		width: 100%;
+	}
+	.responsive-popular-description {
+		line-height: 18px;
+		padding: 15px;
+	}
+	.accomodation-description p {
+		font-size: 14px;
+	}
+	.accomodation-presentation {
+		margin-bottom: 10px;
+	}
+	.popular-display .accomodation-description .rating {
+		bottom: 15px;
+	}
+
+	/* MARSEILLE ACCOMODATIONS */
+
+	#accomodations-container {
+		margin: 0;
+		padding: 0 20px 0 20px;
+	}
+	#accomodations-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		gap: 10px 0px;
+		grid-template-areas:
+			"one"
+			"two"
+			"three"
+			"four"
+			"five"
+			"six";
+	}
+	#accomodations-grid h3 a {
+		display: block;
+		margin-top: 20px;
+		font-weight: 700;
+	}
+
+	/* ACTIVITIES */
+
+	#activities-section {
+		width: 100%;
+		margin: 30px 0 50px;
+		padding: 0 20px;
+	}
+	#activities-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 20px 0;
+		grid-template-areas:
+			"one"
+			"two"
+			"three"
+			"four"
+			"five"
+			"six";
+		height: unset;
+		width: 100%;
+	}
+}
