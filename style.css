@@ -5,7 +5,6 @@
 	--main-light: #deebff;
 	--background: #f2f2f2;
 	--h3-font-size: 20px;
-	--max-width: 1300px;
 }
 * {
 	margin: 0;
@@ -19,14 +18,17 @@ html {
 	display: flex;
 	justify-content: center;
 }
+body {
+	max-width: 1400px;
+	width: 97%;
+}
+
+/* FLEX CENTER ALIGN */
+
 .centerFlex {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-body {
-	max-width: 1400px;
-	width: 97%;
 }
 
 /* SCROLLBAR */
@@ -60,13 +62,20 @@ header nav {
 header nav #logo {
 	margin-bottom: 10px;
 }
+header nav #logo img {
+	width: 100px;
+	height: 50px;
+}
 .header-links .nav-link a {
 	text-decoration: none;
 	color: black;
 	height: 100px;
 	width: 140px;
-	border-top: solid 2px transparent;
 	transition: 0.3s;
+}
+#accomodations-link a {
+	border-top: solid 2px var(--company-main);
+	color: var(--company-main);
 }
 .header-links .nav-link .border-apparition:active {
 	color: var(--company-main);
@@ -151,10 +160,10 @@ h3 {
 	transition: 0.2s;
 }
 #filters-container ul li:hover {
-	cursor: pointer;
 	transform: scale(1.05);
 	background-color: var(--background);
 	border-color: var(--main-light);
+	cursor: pointer;
 }
 #filters-container ul li:active {
 	transform: scale(0.98);
@@ -163,13 +172,13 @@ h3 {
 	position: absolute;
 	width: 50px;
 	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	left: -3px;
 	background-color: var(--main-light);
 	color: var(--company-main);
 	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 #filters-container ul li span {
 	margin: 10px 20px 10px 60px;
@@ -283,7 +292,9 @@ span {
 	margin: 20px 0px 10px;
 	font-weight: 700;
 }
-
+#accomodations-grid h3 a:hover {
+	text-decoration: underline;
+}
 /* STARS & POPULAR */
 
 .blue-star {
@@ -340,10 +351,16 @@ span {
 #activities-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	gap: 40px 3%;
 	grid-template-areas:
 		"one two four five"
+		"one two four five"
+		"one two four five"
+		"one two four five"
+		"one two four six"
+		"one three four six"
+		"one three four six"
 		"one three four six";
 	height: 450px;
 	width: 100%;
@@ -385,7 +402,7 @@ span {
 	border-top-right-radius: 16px;
 }
 .paysage-img img {
-	height: 142px;
+	height: 144px;
 }
 .portrait-img img {
 	height: 390px;
@@ -396,6 +413,14 @@ span {
 	margin: 20px 0 0 20px;
 }
 
+/* POMEGUES & FRIOUL RATIO */
+
+.pomegues-img img {
+	height: 206px;
+}
+.frioul-img img {
+	height: 84px;
+}
 /* FOOTER & LINKS */
 
 footer {
@@ -419,6 +444,9 @@ footer {
 	color: black;
 	text-decoration: none;
 	line-height: 30px;
+}
+.footer-section a:hover {
+	text-decoration: underline;
 }
 .footer-section h3 a {
 	font-weight: 700;
@@ -472,8 +500,6 @@ footer {
 		grid-template-areas:
 			"one three five"
 			"two four six";
-		height: 450px;
-		width: 100%;
 	}
 	.responsive-display img {
 		height: 142px;
@@ -495,6 +521,24 @@ footer {
 			"three four"
 			"five six";
 		width: 100%;
+	}
+	#activities-section {
+		width: 100%;
+		margin: 30px 0 50px;
+		padding: 0 20px;
+	}
+	#activities-grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 20px 0;
+		grid-template-areas:
+			"one"
+			"two"
+			"three"
+			"four"
+			"five"
+			"six";
+		height: unset;
 	}
 	#footer-links {
 		display: flex;
@@ -530,6 +574,10 @@ footer {
 		justify-content: space-between;
 		padding: 10px 20px 0 20px;
 	}
+	header nav #mobile-logo img {
+		width: 100px;
+		height: 50px;
+	}
 	#mobile-login-link a {
 		color: var(--company-main);
 		font-weight: 700;
@@ -552,6 +600,10 @@ footer {
 	.nav-link .border-bottom {
 		color: var(--company-main);
 		border-bottom: solid 3px var(--background);
+	}
+	#mobile-accomodations-link a {
+		border-bottom: solid 3px var(--company-main);
+		color: var(--company-main);
 	}
 	.nav-link .border-bottom:active {
 		color: var(--company-main);
@@ -659,24 +711,4 @@ footer {
 	}
 
 	/* ACTIVITIES */
-
-	#activities-section {
-		width: 100%;
-		margin: 30px 0 50px;
-		padding: 0 20px;
-	}
-	#activities-grid {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-		gap: 20px 0;
-		grid-template-areas:
-			"one"
-			"two"
-			"three"
-			"four"
-			"five"
-			"six";
-		height: unset;
-		width: 100%;
-	}
 }
