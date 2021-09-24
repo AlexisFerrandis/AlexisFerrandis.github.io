@@ -1,0 +1,90 @@
+.menu-body {
+	background-color: rgba(153, 226, 208, 0.2);
+	header {
+		background-color: white;
+	}
+}
+.restaurant-illustration {
+	width: 100%;
+	height: 16em;
+	margin-bottom: -2.5em;
+	@include desktop-breakpoint {
+		margin-bottom: 4em;
+	}
+	img {
+		width: 100%;
+		height: 25em;
+		object-fit: cover;
+	}
+}
+
+#menu-grid {
+	position: relative;
+	@include grey-hue;
+	padding: 2em 1em;
+	border-top-left-radius: 40px;
+	border-top-right-radius: 40px;
+	@include desktop-breakpoint {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+}
+.restaurant-name {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1.8em;
+	h1 {
+		font-family: Shrikhand, "sans-serif";
+		font-size: 1.8em;
+	}
+	.heart-presentation {
+		margin-right: 0.5em;
+	}
+}
+.menu-moment {
+	margin-bottom: 2em;
+	h3 {
+		position: relative;
+		text-transform: uppercase;
+		color: $greyer;
+		margin-bottom: 1.2em;
+		font-weight: 400;
+		font-size: 1em;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -0.5em;
+			left: 0;
+			width: 2.5em;
+			height: 3px;
+			background-color: $color-tertiary;
+		}
+	}
+	@include desktop-breakpoint {
+		width: 32%;
+	}
+}
+
+.order-btn {
+	@extend .flex-center;
+	margin: 3em 0 1.5em;
+	cursor: pointer;
+	.button {
+		@extend .flex-center;
+		width: 12em;
+		color: white;
+		font-weight: 400;
+	}
+	@include desktop-breakpoint {
+		margin: 1em 0 1.5em;
+	}
+}
+
+.desktop-dishes-presentation {
+	@include desktop-breakpoint {
+		display: flex;
+		justify-content: space-between;
+	}
+}

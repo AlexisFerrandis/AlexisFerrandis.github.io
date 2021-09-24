@@ -1,0 +1,29 @@
+footer {
+	width: 100%;
+	padding: 1.5em 0 2em 1.5em;
+	background-color: $greyer;
+	a {
+		text-decoration: none;
+		color: white;
+		line-height: 1.6em;
+		font-weight: 400;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	h5 {
+		font-family: Shrikhand, "sans-serif";
+		font-size: 1.1em;
+		color: white;
+		cursor: pointer;
+	}
+	.footer-links {
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+		font-weight: 200;
+		i {
+			width: 2em;
+		}
+	}
+}

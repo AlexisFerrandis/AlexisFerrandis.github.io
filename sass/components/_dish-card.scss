@@ -1,0 +1,86 @@
+$num-dishes: 10;
+$anim-dur: 2000ms;
+$anim-delay: $anim-dur / $num-dishes;
+
+.dish-card {
+	@include card-display(10px, row);
+	justify-content: space-between;
+	overflow: hidden;
+	@extend .links-rendering;
+	animation: dishes-animation $anim-dur forwards;
+	opacity: 0;
+	transform: translateY(2em);
+	@for $i from 1 through $num-dishes {
+		&--#{$i} {
+			animation-delay: $anim-delay * $i;
+		}
+	}
+	&__info {
+		display: flex;
+		width: 100%;
+		&--text {
+			width: 100%;
+			padding: 0.8em 0em 0.7em 0.5em;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			@extend .text-overflow;
+			h4 {
+				font-weight: 600;
+				font-size: 1.1em;
+				margin-bottom: 0.2em;
+				@extend .text-overflow;
+			}
+			p {
+				font-weight: 400;
+				font-size: 0.9em;
+				color: $greyer;
+				@extend .text-overflow;
+			}
+		}
+		&--price {
+			position: relative;
+			margin: 2.3em 1em 0 1.5em;
+			span {
+				font-size: 0.9em;
+				color: $greyer;
+				font-weight: 800;
+			}
+		}
+		&--add-dish {
+			@extend .flex-center;
+			position: relative;
+			width: 0em;
+			background-color: $color-tertiary;
+			transform: translateX(120%);
+			transition: 500ms;
+			color: white;
+			border-bottom-right-radius: 10px;
+			border-top-right-radius: 10px;
+			font-size: 1.4em;
+		}
+		i {
+			transform: rotate(-350deg);
+			transition: 500ms;
+		}
+	}
+	&:hover > .dish-card__info > .dish-card__info--add-dish {
+		transform: translateX(0%);
+		width: 4em;
+		i {
+			transform: rotate(0deg);
+		}
+	}
+	cursor: pointer;
+}
+
+@keyframes dishes-animation {
+	0% {
+		opacity: 0;
+		transform: translateY(2em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

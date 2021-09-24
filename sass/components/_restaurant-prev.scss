@@ -1,0 +1,47 @@
+.restaurant-prev {
+	@include card-display;
+	position: relative;
+	height: 15em;
+	@extend .links-rendering;
+	cursor: pointer;
+	transition: $anim-short-time;
+	&__img {
+		img {
+			width: 100%;
+			height: 11em;
+			object-fit: cover;
+			border-top-left-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	}
+	&__new {
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		padding: 0.5em 1em;
+		background-color: $color-tertiary;
+		color: #008766;
+		border-radius: 3px;
+		font-size: 0.8em;
+		p {
+			font-weight: 700;
+		}
+	}
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		padding: 0.7em;
+		h4 {
+			@extend .h4-style;
+		}
+		p {
+			font-weight: 300;
+		}
+	}
+	&:hover {
+		transform: scale(1.02);
+	}
+	&:active {
+		transform: scale(1);
+	}
+}

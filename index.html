@@ -1,358 +1,183 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link type="text/css" rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./public/css/style.css" />
 		<!-- FontAwesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-		<title>Reservia</title>
+		<title>ohmyfood</title>
 	</head>
 
 	<body>
-		<!-- Header & Navbar -->
+		<div class="loader">
+			<div class="loader__food-container">
+				<div class="loader__food-container--item" id="loader-fish">
+					<i class="fas fa-fish"></i>
+				</div>
+				<div class="loader__food-container--item" id="loader-burger">
+					<i class="fas fa-hamburger"></i>
+				</div>
+				<div class="loader__food-container--item" id="loader-pizza">
+					<i class="fas fa-pizza-slice"></i>
+				</div>
+			</div>
+			<div class="loader__text">En cuisine !</div>
+		</div>
 
 		<header>
-			<!-- Desktop header -->
-			<nav id="desktop-nav">
-				<a href="#" class="centerFlex" id="logo"><img src="./assets/Projet-2-Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" /></a>
-				<div class="header-links centerFlex">
-					<div class="nav-link" id="accomodations-link">
-						<a class="border-activate centerFlex" href="#accomodations-section">Hébergements</a>
-					</div>
-					<div class="nav-link" id="activities-link">
-						<a class="border-apparition centerFlex" href="#activities-section">Activités</a>
-					</div>
-					<div class="nav-link" id="login-link">
-						<a class="centerFlex" href="#">S'inscrire</a>
-					</div>
-				</div>
-			</nav>
-
-			<!-- Mobile header -->
-
-			<nav id="mobile-nav">
-				<div class="logo-and-sign-in">
-					<a href="#" class="centerFlex" id="mobile-logo"><img src="./assets/Projet-2-Reservia/images/logo/Reservia.svg" alt="Logo de Reservia" /></a>
-					<div class="nav-link" id="mobile-login-link">
-						<a class="centerFlex" href="#">S'inscrire</a>
-					</div>
-				</div>
-				<div class="header-links centerFlex">
-					<div class="nav-link" id="mobile-accomodations-link">
-						<a class="border-bottom centerFlex" href="#accomodations-section">Hébergements</a>
-					</div>
-					<div class="nav-link" id="mobile-activities-link">
-						<a class="border-bottom centerFlex" href="#activities-section">Activités</a>
-					</div>
-				</div>
-			</nav>
+			<div id="logo">
+				<a href="index.html"><img src="./public/images/logo/ohmyfood@2x.svg" alt="Logo de homyfood." /></a>
+			</div>
+			<div id="localisation">
+				<i class="fas fa-map-marker-alt"></i>
+				<input type="search" placeholder="Paris, Belleville" />
+			</div>
 		</header>
 
-		<!-- Page content -->
-
 		<main>
-			<!-- Section 1 | Search and filter -->
+			<div class="desktop-discover-functionning">
+				<section id="discover-section">
+					<h2>Réservez le menu qui vous convient</h2>
+					<p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+					<a href="#restaurants-section" class="button">
+						<div class="button__primary">Explorer nos restaurants</div>
+					</a>
+				</section>
 
-			<section id="search-and-filters">
-				<div class="slogan">
-					<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-					<p>En plein centre ville ou en pleine nature</p>
-				</div>
-
-				<div id="search-container">
-					<div class="location-icon">
-						<i class="fas fa-map-marker-alt"></i>
-					</div>
-					<input type="search" name="search" id="search-input" placeholder="Marseille, France" />
-					<button type="submit" class="search-button" id="search-button-text">Rechercher</button>
-					<button type="submit" class="search-button" id="search-button-icon"><i class="fas fa-search"></i></button>
-				</div>
-
-				<div id="filters-container">
-					<h3>Filtres</h3>
-					<ul class="filters-list centerFlex">
-						<li class="filter-button"><i class="fas fa-money-bill-wave"></i><span>Économique</span></li>
-						<li class="filter-button"><i class="fas fa-child"></i><span>Familial</span></li>
-						<li class="filter-button"><i class="fas fa-heart"></i><span>Romantique</span></li>
-						<li class="filter-button"><i class="fas fa-dog"></i><span>Animaux autorisés</span></li>
-					</ul>
-				</div>
-
-				<div id="available-accomodations">
-					<i class="fas fa-info"></i>
-					<p>Plus de 500 logements sont disponibles dans cette ville</p>
-				</div>
-			</section>
-
-			<!-- Section 2 | Accomodations -->
-
-			<section id="accomodations-section">
-				<div class="accomodations-pad-bg-bdr" id="accomodations-container">
-					<h2>Hébergements à Marseille</h2>
-					<div id="accomodations-grid">
-						<a href="#" class="acco-grid-area-one">
-							<div class="accomodation-presentation">
-								<div class="accomodation-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre à l'Auberge Cannebière" />
-								</div>
-								<div class="accomodation-description">
-									<h4>Auberge la Cannebière</h4>
-									<p>Nuit à partir de <span>25€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star grey-star"></i>
-									</div>
-								</div>
-							</div>
+				<section id="functionning-section">
+					<h2>Fonctionnement</h2>
+					<div class="operating-steps">
+						<a href="#" class="step-card">
+							<div class="step-card__icon"><i class="fas fa-mobile-alt"></i></div>
+							<div class="step-card__explanation">Choisissez un restaurant</div>
+							<div class="step-card__number">1</div>
 						</a>
-						<a href="#" class="acco-grid-area-two">
-							<div class="accomodation-presentation">
-								<div class="accomodation-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre à l'Hôtel du port" />
-								</div>
-								<div class="accomodation-description">
-									<h4>Hôtel du port</h4>
-									<p>Nuit à partir de <span>52€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-									</div>
-								</div>
-							</div>
+						<a href="#" class="step-card">
+							<div class="step-card__icon"><i class="fas fa-list-ul"></i></div>
+							<div class="step-card__explanation">Composez votre menu</div>
+							<div class="step-card__number">2</div>
 						</a>
-						<a href="#" class="acco-grid-area-three">
-							<div class="accomodation-presentation">
-								<div class="accomodation-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre à l'Hôtel Les mouettes" />
-								</div>
-								<div class="accomodation-description">
-									<h4>Hôtel Les mouettes</h4>
-									<p>Nuit à partir de <span>76€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star grey-star"></i>
-									</div>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="acco-grid-area-four">
-							<div class="accomodation-presentation">
-								<div class="accomodation-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Chambre à l'Hôtel de la mer" />
-								</div>
-								<div class="accomodation-description">
-									<h4>Hôtel de la mer</h4>
-									<p>Nuit à partir de <span>46€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star grey-star"></i>
-										<i class="fas fa-star grey-star"></i>
-									</div>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="acco-grid-area-five">
-							<div class="accomodation-presentation">
-								<div class="accomodation-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre à l'Auberge Le Panier" />
-								</div>
-								<div class="accomodation-description">
-									<h4>Auberge le Panier</h4>
-									<p>Nuit à partir de <span>23€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star grey-star"></i>
-									</div>
-								</div>
-							</div>
-						</a>
-						<a href="#" class="acco-grid-area-six">
-							<div class="accomodation-presentation">
-								<div class="accomodation-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre à l'Hôtel chez Amina" />
-								</div>
-								<div class="accomodation-description">
-									<h4>Hôtel chez Amina</h4>
-									<p>Nuit à partir de <span>96€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-									</div>
-								</div>
-							</div>
-						</a>
-						<h3><a href="#">Afficher plus</a></h3>
-					</div>
-				</div>
-
-				<!-- Popular accomodations -->
-
-				<div class="accomodations-pad-bg-bdr" id="popular-accomodations-container">
-					<div class="popular-title">
-						<h2>Les plus populaires</h2>
-						<i class="fas fa-chart-line"></i>
-					</div>
-					<div id="popular-column">
-						<a href="#">
-							<div class="popular-display accomodation-presentation">
-								<div class="popular-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre à l'Hôtel Le soleil du matin" />
-								</div>
-								<div class="accomodation-description responsive-popular-description">
-									<h4>Hôtel Le soleil du matin</h4>
-									<p>Nuit à partir de <span>128€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-									</div>
-								</div>
-							</div>
-						</a>
-						<a href="#">
-							<div class="popular-display accomodation-presentation">
-								<div class="popular-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre Au cœur de l'eau Chambres d'hôtes" />
-								</div>
-								<div class="accomodation-description responsive-popular-description">
-									<h4>Au cœur de l'eau Chambres d'hôtes</h4>
-									<p>Nuit à partir de <span>71€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star grey-star"></i>
-									</div>
-								</div>
-							</div>
-						</a>
-						<a href="#">
-							<div class="popular-display accomodation-presentation">
-								<div class="popular-display-img">
-									<img src="./assets/Projet-2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre à l'Hôtel Tout bleu et Blanc" />
-								</div>
-								<div class="accomodation-description responsive-popular-description">
-									<h4>Hôtel Tout bleu et Blanc</h4>
-									<p>Nuit à partir de <span>68€</span></p>
-									<div class="rating">
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star blue-star"></i>
-										<i class="fas fa-star grey-star"></i>
-									</div>
-								</div>
-							</div>
+						<a href="#" class="step-card">
+							<div class="step-card__icon"><i class="fas fa-store"></i></div>
+							<div class="step-card__explanation">Dégustez au restaurant</div>
+							<div class="step-card__number">3</div>
 						</a>
 					</div>
+				</section>
+				<div class="desktop-funny-animation">
+					<div class="food-anim food-anim--1"><i class="fas fa-hamburger"></i></div>
+					<div class="food-anim food-anim--6"><i class="fas fa-pizza-slice"></i></div>
+					<div class="food-anim food-anim--9"><i class="fas fa-ice-cream"></i></div>
+					<div class="food-anim food-anim--2"><i class="fas fa-hotdog"></i></div>
+					<div class="food-anim food-anim--10"><i class="fas fa-fish"></i></div>
+					<div class="food-anim food-anim--4"><i class="fas fa-drumstick-bite"></i></div>
+					<div class="food-anim food-anim--7"><i class="fas fa-bread-slice"></i></div>
+					<div class="food-anim food-anim--8"><i class="fas fa-cheese"></i></div>
+					<div class="food-anim food-anim--3"><i class="fas fa-pepper-hot"></i></div>
+					<div class="food-anim food-anim--5"><i class="fas fa-carrot"></i></div>
 				</div>
-			</section>
+			</div>
 
-			<!-- Section 3 | Activities -->
-
-			<section id="activities-section">
-				<h2>Activités à Marseille</h2>
-				<div id="activities-grid">
-					<a href="#" class="acti-grid-area-one responsive-display">
-						<div class="activities-display">
-							<div class="activitie-img portrait-img">
-								<img src="assets/Projet-2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo des bateaux dans le Vieux Port" />
+			<section id="restaurants-section">
+				<h2>Restaurants</h2>
+				<div class="restaurants-list">
+					<a href="./restaurants/palette-du-gout.html" class="restaurant-prev">
+						<div class="restaurant-prev__img">
+							<img src="./public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Hors-d'œuvre au restaurant La palette du goût." />
+						</div>
+						<div class="restaurant-prev__info">
+							<div class="restaurant-prev__info--txt">
+								<h4>La palette du goût</h4>
+								<p>Ménilmontant</p>
 							</div>
-							<h4>Vieux Port</h4>
+							<div class="heart-presentation">
+								<div class="border-heart">
+									<i class="far fa-heart"></i>
+								</div>
+								<div class="full-heart">
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="restaurant-prev__new">
+							<p>Nouveau</p>
 						</div>
 					</a>
-					<a href="#" class="acti-grid-area-two responsive-display">
-						<div class="activities-display">
-							<div class="activitie-img paysage-img pomegues-img">
-								<img src="assets/Projet-2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo du Fort de Pomègues" />
+					<a href="./restaurants/note-enchantee.html" class="restaurant-prev">
+						<div class="restaurant-prev__img">
+							<img src="./public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Assiette de poulet et Spritz au restaurant La note enchantée." />
+						</div>
+						<div class="restaurant-prev__info">
+							<div class="restaurant-prev__info--txt">
+								<h4>La note enchantée</h4>
+								<p>Charonne</p>
 							</div>
-							<h4>Fort de Pomègues</h4>
+							<div class="heart-presentation">
+								<div class="border-heart">
+									<i class="far fa-heart"></i>
+								</div>
+								<div class="full-heart">
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="restaurant-prev__new">
+							<p>Nouveau</p>
 						</div>
 					</a>
-					<a href="#" class="acti-grid-area-three responsive-display">
-						<div class="activities-display">
-							<div class="activitie-img paysage-img frioul-img">
-								<img src="assets/Projet-2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo prise de loin des Îles du Frioul" />
+					<a href="./restaurants/a-la-fracaise.html" class="restaurant-prev">
+						<div class="restaurant-prev__img">
+							<img src="./public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Une bruschetta mozzarella au restaurant À la française." />
+						</div>
+						<div class="restaurant-prev__info">
+							<div class="restaurant-prev__info--txt">
+								<h4>À la française</h4>
+								<p>Cité Rouge</p>
 							</div>
-							<h4>Îles du Frioul</h4>
+							<div class="heart-presentation">
+								<div class="border-heart">
+									<i class="far fa-heart"></i>
+								</div>
+								<div class="full-heart">
+									<i class="fas fa-heart"></i>
+								</div>
+							</div>
 						</div>
 					</a>
-					<a href="#" class="acti-grid-area-four responsive-display">
-						<div class="activities-display">
-							<div class="activitie-img portrait-img">
-								<img src="assets/Projet-2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Vue plongeante sur le Parc National des Calanques" />
-							</div>
-							<h4>Parc National des Calanques</h4>
+					<a href="./restaurants/delice-des-sens.html" class="restaurant-prev">
+						<div class="restaurant-prev__img">
+							<img src="./public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Filet de rouget au restaurant Le délice des sens." />
 						</div>
-					</a>
-					<a href="#" class="acti-grid-area-five responsive-display">
-						<div class="activities-display">
-							<div class="activitie-img paysage-img">
-								<img src="assets/Projet-2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de Notre-Dame-de-la-Garde surplombant la ville" />
+						<div class="restaurant-prev__info">
+							<div class="restaurant-prev__info--txt">
+								<h4>Le délice des sens</h4>
+								<p>Folie-Méricourt</p>
 							</div>
-							<h4>Notre-Dame-de-la-Garde</h4>
-						</div>
-					</a>
-					<a href="#" class="acti-grid-area-six responsive-display">
-						<div class="activities-display">
-							<div class="activitie-img paysage-img">
-								<img src="assets/Projet-2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo à l'entrée du Parc Longchamp" />
+							<div class="heart-presentation">
+								<div class="border-heart">
+									<i class="far fa-heart"></i>
+								</div>
+								<div class="full-heart">
+									<i class="fas fa-heart"></i>
+								</div>
 							</div>
-							<h4>Parc Longchamp</h4>
 						</div>
 					</a>
 				</div>
 			</section>
 		</main>
 
-		<!-- Footer and link -->
-
 		<footer>
-			<div id="footer-links">
-				<div class="footer-section footer-about">
-					<h3><a href="#">A propos</a></h3>
-					<ul>
-						<li><a href="#">Fonctionnement du site</a></li>
-						<li><a href="#">Conditions générales de vente</a></li>
-						<li><a href="#">Données et confidentialité</a></li>
-					</ul>
-				</div>
-				<div class="footer-section footer-accomodations-infos">
-					<h3><a href="#">Nos hébergements</a></h3>
-					<ul>
-						<li><a href="#">Charte qualité</a></li>
-						<li><a href="#">Soumettre votre hôtel</a></li>
-					</ul>
-				</div>
-				<div class="footer-section footer-assistance">
-					<h3><a href="#">Assistance</a></h3>
-					<ul>
-						<li><a href="#">Centre d'aide</a></li>
-						<li><a href="#">Nous contacter</a></li>
-					</ul>
-				</div>
+			<a class="footer-logo">
+				<h5>ohmyfood</h5>
+			</a>
+			<div class="footer-links">
+				<a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+				<a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+				<a href="#">Mentions légales</a>
+				<a href="mailto:homyfood@example.com">Contact</a>
 			</div>
 		</footer>
 	</body>

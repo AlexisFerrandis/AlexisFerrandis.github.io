@@ -1,0 +1,45 @@
+header {
+	width: 100%;
+	position: relative;
+	#logo {
+		@extend .flex-center;
+		padding: 1.35em 0 0.7em;
+		img {
+			width: 10em;
+		}
+	}
+	#localisation {
+		@extend .flex-center;
+		@include grey-hue(8.2);
+		padding: 1em 0;
+		box-shadow: inset 0 0.2em 0.2em rgba(0, 0, 0, 0.1);
+		i,
+		input {
+			color: $greyer;
+			font-size: 1em;
+		}
+		input {
+			border: none;
+			@include grey-hue(8.2);
+			width: 150px;
+			margin-left: 1em;
+			&::placeholder {
+				color: $greyer;
+			}
+		}
+	}
+	#button-to-home {
+		position: absolute;
+		@extend .flex-center;
+		height: 100%;
+		width: 3em;
+		font-size: 1.3em;
+		transition: $anim-short-time;
+		&:hover {
+			transform: translateX(-0.2em);
+		}
+		a {
+			color: $greyer;
+		}
+	}
+}

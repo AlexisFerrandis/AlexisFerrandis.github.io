@@ -1,0 +1,24 @@
+@mixin grey-hue($hue: 3.5) {
+	background-color: darken($color: #fff, $amount: $hue);
+}
+
+@mixin card-display($bd-rad: 20px, $flex-dir: column) {
+	display: flex;
+	flex-direction: $flex-dir;
+	background-color: white;
+	border-radius: $bd-rad;
+	margin-bottom: 1em;
+	@extend .box-shadow;
+}
+
+@mixin tablet-breakpoint {
+	@media (min-width: $mobile) and (max-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin desktop-breakpoint {
+	@media (min-width: $tablet) {
+		@content;
+	}
+}

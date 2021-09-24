@@ -1,0 +1,43 @@
+.operating-steps {
+	a {
+		@extend .links-rendering;
+	}
+	.step-card {
+		display: flex;
+		position: relative;
+		@include grey-hue;
+		padding: 1.3em;
+		margin: 0 0 1.5em 0.8em;
+		border-radius: 15px;
+		@extend .box-shadow;
+		transition: $anim-short-time ease-in-out;
+		&:hover {
+			background-color: rgba(147, 86, 220, 0.1);
+		}
+		&:hover > .step-card__icon {
+			color: $color-primary;
+			transform: scale(1.05);
+		}
+		&__number {
+			@extend .flex-center;
+			position: absolute;
+			left: -1em;
+			width: 1.7em;
+			height: 1.7em;
+			background-color: $color-primary;
+			color: white;
+			border-radius: 50%;
+			font-size: 0.8em;
+		}
+		&__icon {
+			color: $grey;
+			font-size: 1.3em;
+			margin: 0 1.2em 0 0.5em;
+			transition: $anim-short-time ease-in-out;
+		}
+		&__explanation {
+			@extend .flex-center;
+			font-weight: 600;
+		}
+	}
+}

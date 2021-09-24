@@ -1,0 +1,17 @@
+.button {
+	padding: 1em 1.3em;
+	border-radius: 30px;
+	background: linear-gradient(355deg, #9356dc, #ff79da);
+	text-decoration: none;
+	@extend .box-shadow;
+	transition: $anim-short-time;
+	&__primary {
+		font-weight: 400;
+		color: white;
+	}
+	&:hover {
+		filter: brightness(1.1);
+		-webkit-box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);
+		box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.25);
+	}
+}
