@@ -147,7 +147,7 @@ function characterNameColor(name) {
 		case "Mr Edeliste":
 			return "green";
 			break;
-		case "Andréa-Fiona":
+		case "Andrusko":
 			return "brown";
 			break;
 		case "Jo":

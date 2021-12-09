@@ -27,38 +27,38 @@ document.getElementById(">").addEventListener("click", () => {
 								document.getElementById(">").addEventListener("click", () => {
 									dialogActualisation("???", `Disons qu’il a un peu peur des inconnus mais il n’est pas méchant.`, ">");
 									document.getElementById(">").addEventListener("click", () => {
-										dialogActualisation("Andréa-Fiona", `Je suis Andréa-Fiona, j'ai récupéré cette ferme après l'incendie d'il y'a 10 ans.`, ">");
+										dialogActualisation("Andrusko", `Je suis Andrusko, j'ai récupéré cette ferme après l'incendie d'il y'a 10 ans.`, ">");
 										displayTheThird("andrea.gif");
 										document.getElementById(">").addEventListener("click", () => {
 											dialogActualisation("Chevrette", `Bonjour, vous étiez là lors du commencement?`, ">");
 											document.getElementById(">").addEventListener("click", () => {
-												dialogActualisation("Andréa-Fiona", `Le ténébrement vous voulez dire?`, ">");
+												dialogActualisation("Andrusko", `Le ténébrement vous voulez dire?`, ">");
 												document.getElementById(">").addEventListener("click", () => {
 													dialogActualisation("Chevrette", `Plait-il?`, ">");
 													document.getElementById(">").addEventListener("click", () => {
-														dialogActualisation("Andréa-Fiona", `Nous appelons le jour ou tout à changé le Ténébrement.`, ">");
+														dialogActualisation("Andrusko", `Nous appelons le jour ou tout à changé le Ténébrement.`, ">");
 														document.getElementById(">").addEventListener("click", () => {
-															dialogActualisation("Andréa-Fiona", `Mais j'étais bien présente...`, ">");
+															dialogActualisation("Andrusko", `Mais j'étais bien présente...`, ">");
 															document.getElementById(">").addEventListener("click", () => {
-																dialogActualisation("Andréa-Fiona", `J'ai pu apercevoir une lumière étrange émaner du collège et se diriger vers le ciel !`, ">");
+																dialogActualisation("Andrusko", `J'ai pu apercevoir une lumière étrange émaner du collège et se diriger vers le ciel !`, ">");
 																document.getElementById(">").addEventListener("click", () => {
-																	dialogActualisation("Andréa-Fiona", `Mais ce n'était pas la seule, il y'en avait deux autres qui rejoingnaient la première dans les nuages.`, ">");
+																	dialogActualisation("Andrusko", `Mais ce n'était pas la seule, il y'en avait deux autres qui rejoingnaient la première dans les nuages.`, ">");
 																	document.getElementById(">").addEventListener("click", () => {
-																		dialogActualisation("Andréa-Fiona", `L'atmosphère à changée d'un coup et la ferme à commencée à prendre feu.`, ">");
+																		dialogActualisation("Andrusko", `L'atmosphère à changée d'un coup et la ferme à commencée à prendre feu.`, ">");
 																		document.getElementById(">").addEventListener("click", () => {
-																			dialogActualisation("Andréa-Fiona", `J'ai réussi à sauver Torocho des flammes au dernier moment.`, ">");
+																			dialogActualisation("Andrusko", `J'ai réussi à sauver Torocho des flammes au dernier moment.`, ">");
 																			document.getElementById(">").addEventListener("click", () => {
 																				dialogActualisation("Chevrette", `Le point de départ n'était donc pas uniquement le collège?`, ">");
 																				document.getElementById(">").addEventListener("click", () => {
-																					dialogActualisation("Andréa-Fiona", `Je ne pense pas, j'ai l'impression que la réunion de ces trois faisceaux est à l'origine de la situation.`, "Donc trois Chetans?", "Vous avez une explication?");
+																					dialogActualisation("Andrusko", `Je ne pense pas, j'ai l'impression que la réunion de ces trois faisceaux est à l'origine de la situation.`, "Donc trois Chetans?", "Vous avez une explication?");
 																					let options = document.querySelectorAll(".options");
 																					for (let i = 0; i < options.length; i++) {
 																						options[i].addEventListener("click", () => {
-																							dialogActualisation("Andréa-Fiona", `Difficile à dire.`, ">");
+																							dialogActualisation("Andrusko", `Difficile à dire.`, ">");
 																							document.getElementById(">").addEventListener("click", () => {
-																								dialogActualisation("Andréa-Fiona", `J'étais loin, j'ai vu ces trois lumières se retrouver dans une explosion tonitruante.`, ">");
+																								dialogActualisation("Andrusko", `J'étais loin, j'ai vu ces trois lumières se retrouver dans une explosion tonitruante.`, ">");
 																								document.getElementById(">").addEventListener("click", () => {
-																									dialogActualisation("Andréa-Fiona", `Mais je sais qu'une d'elle venait du centre ville.`, "Ca sent le danger Chevrette, non?", "Comment pouvons nous revenir à la normal?");
+																									dialogActualisation("Andrusko", `Mais je sais qu'une d'elle venait du centre ville.`, "Ca sent le danger Chevrette, non?", "Comment pouvons nous revenir à la normal?");
 																									let options = document.querySelectorAll(".options");
 																									for (let i = 0; i < options.length; i++) {
 																										options[i].addEventListener("click", () => {
@@ -78,13 +78,13 @@ document.getElementById(">").addEventListener("click", () => {
 																															document.getElementById(">").addEventListener("click", () => {
 																																dialogActualisation("Chevrette", `Il se trouve dans la péninsule de Gif.`, ">");
 																																document.getElementById(">").addEventListener("click", () => {
-																																	dialogActualisation("Andréa-Fiona", `Ce ne serait pas...`, ">");
+																																	dialogActualisation("Andrusko", `Ce ne serait pas...`, ">");
 																																	document.getElementById(">").addEventListener("click", () => {
 																																		dialogActualisation("Chevrette", `Si, Jo le forgereur des montagnes.`, ">");
 																																		document.getElementById(">").addEventListener("click", () => {
-																																			dialogActualisation("Andréa-Fiona", `La route est longue jusqu'à sa demeure.`, ">");
+																																			dialogActualisation("Andrusko", `La route est longue jusqu'à sa demeure.`, ">");
 																																			document.getElementById(">").addEventListener("click", () => {
-																																				dialogActualisation("Andréa-Fiona", `Acceptez cette potion revigorante pour votre périple.`, "Merci");
+																																				dialogActualisation("Andrusko", `Acceptez cette potion revigorante pour votre périple.`, "Merci");
 																																				refreshUserLife(1);
 																																				document.getElementById(">").addEventListener("click", () => {
 																																					dialogActualisation("Chevrette", `Tu es prêt ${userName}?`, ">");
@@ -118,13 +118,13 @@ document.getElementById(">").addEventListener("click", () => {
 																																document.getElementById(">").addEventListener("click", () => {
 																																	dialogActualisation("Chevrette", `Il se trouve dans la péninsule de Gif.`, ">");
 																																	document.getElementById(">").addEventListener("click", () => {
-																																		dialogActualisation("Andréa-Fiona", `Ce ne serait pas...`, ">");
+																																		dialogActualisation("Andrusko", `Ce ne serait pas...`, ">");
 																																		document.getElementById(">").addEventListener("click", () => {
 																																			dialogActualisation("Chevrette", `Si, Jo le forgereur des montagnes.`, ">");
 																																			document.getElementById(">").addEventListener("click", () => {
-																																				dialogActualisation("Andréa-Fiona", `La route est longue jusqu'à sa demeure.`, ">");
+																																				dialogActualisation("Andrusko", `La route est longue jusqu'à sa demeure.`, ">");
 																																				document.getElementById(">").addEventListener("click", () => {
-																																					dialogActualisation("Andréa-Fiona", `Je ne peux que vous souhaiter bonne chance.`, "Merci");
+																																					dialogActualisation("Andrusko", `Je ne peux que vous souhaiter bonne chance.`, "Merci");
 																																					document.getElementById(">").addEventListener("click", () => {
 																																						dialogActualisation("Chevrette", `Tu es prêt ${userName}?`, ">");
 																																						document.getElementById(">").addEventListener("click", () => {
