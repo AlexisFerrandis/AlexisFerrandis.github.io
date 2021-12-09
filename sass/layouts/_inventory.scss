@@ -1,0 +1,6 @@
+#actualSword {
+	width: 70px;
+	@include tablet-breakpoint {
+		width: 60px;
+	}
+}

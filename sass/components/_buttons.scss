@@ -1,0 +1,7 @@
+.options {
+	background-color: $color-primary;
+	transition: $short-anim;
+	&:hover {
+		background-color: darken($color-primary, 20%);
+	}
+}

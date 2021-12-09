@@ -1,0 +1,89 @@
+#portalsContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 22em;
+	width: 100%;
+	height: 10em;
+	@include tablet-breakpoint {
+		margin-top: 21em;
+	}
+	.entitiPortal img {
+		width: 200px;
+		object-fit: cover;
+		@include tablet-breakpoint {
+			width: 100px;
+		}
+	}
+}
+#entitiesContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 28em;
+	width: 100%;
+	height: 10em;
+	@include tablet-breakpoint {
+		top: 23em;
+	}
+	.entitiesImg img {
+		height: 220px;
+		@include tablet-breakpoint {
+			height: 143px;
+		}
+	}
+}
+#lightContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 22em;
+	width: 100%;
+	max-width: 100%;
+	height: 10em;
+	@include tablet-breakpoint {
+		top: 15em;
+	}
+	.lightImg {
+		transform: rotate(-90deg);
+	}
+}
+#sainRembrionContainer {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 22em;
+	width: 100%;
+	@include tablet-breakpoint {
+		top: 15em;
+	}
+	img {
+		transform: scale(2);
+		@include tablet-breakpoint {
+			transform: scale(1);
+		}
+	}
+}
+
+#storyOption {
+	position: absolute;
+	bottom: 6em;
+	left: 50%;
+	transform: translateX(-50%);
+	@include tablet-breakpoint {
+		bottom: 2em;
+	}
+	.options {
+		color: white;
+		width: 100px;
+	}
+}
+
+#characterDialog {
+	@include tablet-breakpoint {
+		font-size: 0.8em;
+		@include tablet-breakpoint {
+			min-height: 6em;
+		}
+	}
+}

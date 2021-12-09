@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="../../../public/assets/img/favicon.png" />
+		<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../sass/main.css" />
+
+		<title>SRGame - 2-13 - Tétine moisit</title>
+	</head>
+	<body>
+		<div id="swordPerimter">
+			<img src="../../../public/assets/img/grotte.gif" alt="Une grotte" class="background-img" />
+
+			<header class="header">
+				<div id="lifeContainer"></div>
+				<div id="inventaireContainer"></div>
+			</header>
+
+			<div id="dialogContainer" class="nes-container is-dark with-title">
+				<p id="characterName" class="title"></p>
+				<p id="characterDialog"></p>
+			</div>
+
+			<img id="teolameFight" src="../../../public/assets/img/teolame.gif" />
+
+			<div id="opponentContainer"></div>
+			<div id="savorContainer"></div>
+			<div id="opponentLifeBar">
+				<progress id="opponentLifeBarValue" class="nes-progress" value="1000" max="1000"></progress>
+			</div>
+		</div>
+		<script src="../../../public/js/dialog.js"></script>
+		<script src="../../../public/js/user-information.js"></script>
+		<script src="../../../public/js/slash-fight.js"></script>
+		<script src="./script2-13.js"></script>
+	</body>
+</html>

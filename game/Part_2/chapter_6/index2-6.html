@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/png" href="../../../public/assets/img/favicon.png" />
+		<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../sass/main.css" />
+
+		<title>SRGame - 2-6 - Un Lama ?</title>
+	</head>
+	<body>
+		<img src="../../../public/assets/img/cave.gif" alt="Une grotte" class="background-img" />
+		<header class="header">
+			<div id="lifeContainer"></div>
+			<div id="inventaireContainer"></div>
+		</header>
+		<main class="main">
+			<div id="charactersContainer">
+				<div id="characterOne"></div>
+				<div id="characterTwo"></div>
+				<div id="characterThree"></div>
+			</div>
+			<div id="dialogContainer" class="nes-container is-dark with-title">
+				<p id="characterName" class="title"></p>
+				<p id="characterDialog"></p>
+			</div>
+			<div id="userOptions">
+				<div class="option"></div>
+			</div>
+			<div id="impact-container">
+				<div id="choiceImpact" class="userImpactChoice inactif"></div>
+			</div>
+		</main>
+
+		<div id="petWalkContainer"></div>
+
+		<script src="../../../public/js/dialog.js"></script>
+		<script src="../../../public/js/user-information.js"></script>
+		<script src="./script2-6.js"></script>
+	</body>
+</html>

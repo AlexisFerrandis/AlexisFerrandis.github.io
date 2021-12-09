@@ -1,0 +1,38 @@
+#charactersContainer {
+	position: relative;
+	#characterOne {
+		position: absolute;
+		left: 0;
+		bottom: -8em;
+		opacity: 0;
+		transition: $mid-anim;
+		@include tablet-breakpoint {
+			bottom: -4.5em;
+		}
+		& img {
+			object-fit: cover;
+			width: 15em;
+			@include tablet-breakpoint {
+				width: 8em;
+			}
+		}
+	}
+	#characterTwo,
+	#characterThree {
+		position: absolute;
+		right: 0;
+		bottom: -2em;
+		opacity: 0;
+		transition: $mid-anim;
+		@include tablet-breakpoint {
+			bottom: -1em;
+		}
+		& img {
+			object-fit: cover;
+			width: 16em;
+			@include tablet-breakpoint {
+				width: 8em;
+			}
+		}
+	}
+}

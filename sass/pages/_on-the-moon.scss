@@ -1,0 +1,27 @@
+.moon-chevrette {
+	animation: moon-chevrette 120s infinite;
+}
+
+@keyframes moon-chevrette {
+	0% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(25vh, 25vw) rotate(72deg);
+	}
+	20% {
+		transform: translate(25vh, -22vw) rotate(144deg);
+	}
+	30% {
+		transform: translate(45vh, 30vw) rotate(216deg);
+	}
+	50% {
+		transform: translate(-10vh, 5vw) rotate(288deg);
+	}
+	70% {
+		transform: translate(42vh, -5vw) rotate(360deg);
+	}
+	100% {
+		transform: translate(0, 0);
+	}
+}

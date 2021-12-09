@@ -1,0 +1,24 @@
+{
+	"name": "srgame",
+	"version": "1.0.0",
+	"description": "Story game in my kid town",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch ./sass/main.scss:./sass/main.css",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AlexisFerrandis/SRGame.git"
+	},
+	"keywords": [
+		"Story",
+		"Game"
+	],
+	"author": "Aliocha",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/AlexisFerrandis/SRGame/issues"
+	},
+	"homepage": "https://github.com/AlexisFerrandis/SRGame#readme"
+}

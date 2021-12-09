@@ -1,0 +1,9 @@
+#lifeContainer {
+	padding: 0.5em;
+	.heart {
+		@include tablet-breakpoint {
+			margin: 0 12px 12px 0;
+			transform: scale(2.5);
+		}
+	}
+}
