@@ -1,24 +1,15 @@
 {
-	"name": "srgame",
+	"name": "le-repaire-de-bacchus",
 	"version": "1.0.0",
-	"description": "Story game in my kid town",
+	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"sass": "sass --watch ./sass/main.scss:./sass/main.css",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"sass": "sass --watch ./sass/main.scss:./sass/main.css"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/AlexisFerrandis/SRGame.git"
-	},
-	"keywords": [
-		"Story",
-		"Game"
-	],
-	"author": "Aliocha",
+	"author": "",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/AlexisFerrandis/SRGame/issues"
-	},
-	"homepage": "https://github.com/AlexisFerrandis/SRGame#readme"
+	"dependencies": {
+		"sass": "^1.43.5"
+	}
 }

@@ -1,0 +1,34 @@
+#headerResponsiveNav {
+	position: fixed;
+	display: flex;
+	z-index: 9;
+	flex-direction: column;
+	top: 70px;
+	width: 100%;
+	text-align: center;
+	background-color: $color-primary;
+	border-top: solid 1px $white;
+	a {
+		@extend .header-links-display;
+		margin: 1em 0;
+		&::after {
+			@extend .header-links-after-display;
+			width: 20%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&:hover {
+			&::after {
+				opacity: 1;
+				transform: translateX(-50%);
+			}
+		}
+		&--actif {
+			font-weight: 600;
+			&::after {
+				opacity: 1;
+				transform: translateX(0px);
+			}
+		}
+	}
+}

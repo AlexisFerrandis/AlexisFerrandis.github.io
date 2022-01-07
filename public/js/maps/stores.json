@@ -1,0 +1,422 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.362350920417118, 48.86312537715496]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-20h00<br/>Mercredi: 10h30-13h30/16h00-20h00<br/>Jeudi: 10h30-13h30/16h00-20h00<br/>Vendredi: 10h30-14h15/15h00-20h00<br/>Samedi: 10h00-14h30/15h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Bretagne",
+				"address": "40 rue de Bretagne<br/>75003 Paris",
+				"phone": "01.72.63.68.45",
+				"email": "bretagne@lerepairedebacchus.com",
+				"maps-itinerary": "40 rue de Bretagne 75003 Paris",
+				"storeid": "bretagne"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.347221903808456, 48.86588747575318]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-20h00<br/>Mercredi: 10h30-13h30/16h00-20h00<br/>Jeudi: 10h30-13h30/16h00-20h00<br/>Vendredi: 10h30-14h15/15h00-20h00<br/>Samedi: 10h00-14h30/15h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Montorgueil",
+				"address": "88 rue Montorgueil</br>75002 Paris",
+				"phone": "01.72.63.68.45",
+				"email": "montorgueil@lerepairedebacchus.com",
+				"maps-itinerary": "88 rue Montorgueil 75002 Paris",
+				"storeid": "montorgueil"
+			}
+		},
+
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3555872677761145, 48.8606]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-20h00<br/>Mercredi: 10h30-13h30/16h00-20h00<br/>Jeudi: 10h30-13h30/16h00-20h00<br/>Vendredi: 10h30-14h15/15h00-20h00<br/>Samedi: 10h00-14h30/15h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Rambuteau",
+				"address": "14 rue Rambuteau</br>75003 Paris",
+				"phone": "01.72.63.68.45",
+				"email": "rambuteau@lerepairedebacchus.com",
+				"maps-itinerary": "14 rue Rambuteau 75003 Paris",
+				"storeid": "rambuteau"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.292757858008545, 48.877463495135274]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-20h00<br/>Mercredi: 10h30-13h30/16h00-20h00<br/>Jeudi: 10h30-13h30/16h00-20h00<br/>Vendredi: 10h30-14h15/15h00-20h00<br/>Samedi: 10h00-14h30/15h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Acacias",
+				"address": "39 rue des Acacias</br>75017 Paris",
+				"phone": "01.72.63.68.45",
+				"email": "acacias@lerepairedebacchus.com",
+				"maps-itinerary": "39 rue des Acacias 75017 Paris",
+				"storeid": "acacias"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3496157123164463, 48.840754702043164]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 15h30-20h30<br/>Mardi: 10h-20h30<br/>Mercredi: 10h-20h30<br/>Jeudi: 10h-20h30<br/>Vendredi: 10h-20h30<br/>Samedi: 10h-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Mouffetard",
+				"address": "112 rue Mouffetard</br>75005 Paris",
+				"phone": "01.72.63.68.59",
+				"email": "mouffetard@lerepairedebacchus.com",
+				"maps-itinerary": "112 rue Mouffetard 75005 Paris",
+				"storeid": "mouffetard"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.386936997978562, 48.84755940118612]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-20h00<br/>Mercredi: 10h30-13h30/16h00-20h00<br/>Jeudi: 10h30-13h30/16h00-20h00<br/>Vendredi: 10h30-14h15/15h00-20h00<br/>Samedi: 10h00-14h30/15h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Diderot",
+				"address": "79 boulevard Diderot</br>75012 Paris",
+				"phone": "01.72.63.68.45",
+				"email": "diderot@lerepairedebacchus.com",
+				"maps-itinerary": "79 boulevard Diderot 75012 Paris",
+				"storeid": "diderot"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.34840514086096, 48.84970863187105]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h30-20h00<br/>Mardi: 10h00-20h00<br/>Mercredi: 10h00-20h00<br/>Jeudi: 10h00-20h00<br/>Vendredi: 10h00-20h00<br/>Samedi: 10h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Maubert",
+				"address": "47 ter, boulevard Saint-Germain</br>75005 Paris",
+				"phone": "01.79.60.00.14",
+				"email": "maubert@lerepairedebacchus.com",
+				"maps-itinerary": "47 ter, boulevard Saint-Germain 75005 Paris",
+				"storeid": "maubert"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3062678330953545, 48.85744333464283]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 15h00-20h30<br/>Mardi: 10h30-20h30<br/>Mercredi: 10h30-20h30<br/>Jeudi: 10h30-13h30/14h-20h30<br/>Vendredi: 10h30-13h30/14h-20h30<br/>Samedi: 10h-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Cler",
+				"address": "29 rue Cler</br>75007 Paris",
+				"phone": "01.72.63.68.49",
+				"email": "cler@lerepairedebacchus.com",
+				"maps-itinerary": "29 rue Cler 75007 Paris",
+				"storeid": "cler"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3249441967617637, 48.854923126407904]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 11h00-13h30/16h00-20h00<br/>Mercredi: 11h00-13h30/16h00-20h00<br/>Jeudi: 11h00-13h30/16h00-20h00<br/>Vendredi: 11h00-13h45/15h00-20h00<br/>Samedi: 11h00-14h00/14h30-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Grenelle",
+				"address": "74 rue de Grenelle</br>75007 Paris",
+				"phone": "01.72.63.68.70",
+				"email": "grenelle@lerepairedebacchus.com",
+				"maps-itinerary": "74 rue de Grenelle 75007 Paris",
+				"storeid": "grenelle"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3009394368181764, 48.858011901690524]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h-20h<br/>Mardi: 10h30-14h/14h30-20h30<br/>Mercredi: 10h30-14h/14h30-20h30<br/>Jeudi: 10h30-14h/14h30-20h30<br/>Vendredi: 10h30-20h30<br/>Samedi: 10h30-14h/14h30-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Saint-Dominique",
+				"address": "122 rue Saint-Dominique</br>75007 Paris",
+				"phone": "01.72.63.68.65",
+				"email": "saint-dominique@lerepairedebacchus.com",
+				"maps-itinerary": "122 rue Saint-Dominique 75007 Paris",
+				"storeid": "saint-dominique"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3285138315784857, 48.88151076672943]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 17h15-20h00<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h30-13h30/15h15-20h30<br/>Samedi: 10h30-13h30/15h15-20h30<br/>Dimanche: Fermé",
+				"name": "Le Repaire de Bacchus<br/>Clichy",
+				"address": "60 rue de Clichy</br>75009 Paris",
+				"phone": "01.72.63.60.68",
+				"email": "clichy@lerepairedebacchus.com",
+				"maps-itinerary": "60 rue de Clichy 75009 Paris",
+				"storeid": "clichy"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.339366963181589, 48.87766853073301]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h-20h30<br/>Mardi: 10h30-20h30<br/>Mercredi: 10h30-20h30<br/>Jeudi: 10h30-20h30<br/>Vendredi: 10h30-20h30<br/>Samedi: 10h30-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Martyrs",
+				"address": "11 rue des Martyrs</br>75009 Paris",
+				"phone": "01.72.63.68.57",
+				"email": "martyrs@lerepairedebacchus.com",
+				"maps-itinerary": "11 rue des Martyrs 75009 Paris",
+				"storeid": "martyrs"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3278212222007904, 48.873937673617796]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 10h-20h<br/>Mardi: 10h-20h<br/>Mercredi: 10h-20h<br/>Jeudi: 10h-23h<br/>Vendredi: 10h-23h<br/>Samedi: 10h-23h<br/>Dimanche: 11h-20h",
+				"name": "Le Repaire de Bacchus<br/>Printemps",
+				"address": "64 Boulevard Haussmann</br>75009 Paris",
+				"phone": "01.42.82.63.30",
+				"email": "printemps@lerepairedebacchus.com",
+				"maps-itinerary": "64 Boulevard Haussmann 75009 Paris",
+				"storeid": "printemps"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3733303461165174, 48.8647375842942]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h30-20h00<br/>Mardi: 10h30-13h00/16h30-20h30<br/>Mercredi: 10h30-13h00/16h30-20h30<br/>Jeudi: 10h30-13h00/16h30-20h30<br/>Vendredi: 10h30-13h00/16h30-20h30<br/>Samedi: 10h30-13h30/14h15-20h30<br/>Dimanche: Fermé",
+				"name": "Le Repaire de Bacchus<br/>Oberkampf",
+				"address": "56 rue Oberkampf</br>75011 Paris",
+				"phone": "01.42.82.63.30",
+				"email": "oberkampf@lerepairedebacchus.com",
+				"maps-itinerary": "56 rue Oberkampf 75011 Paris",
+				"storeid": "oberkampf"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.4051778375286075, 48.84504297478765]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h00-20h00<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h00-13h00/16h00-20h00<br/>Samedi: 10h00-20h15<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Rendez-vous",
+				"address": "4 rue du Rendez-vous</br>75012 Paris",
+				"phone": "01.72.63.66.33",
+				"email": "rendez-vous@lerepairedebacchus.com",
+				"maps-itinerary": "4 rue du Rendez-vous 75012 Paris",
+				"storeid": "rendez-vous"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.346868271945021, 48.82559159746593]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h00/15h45-20h00<br/>Mercredi: 10h30-13h00/15h45-20h00<br/>Jeudi: 10h30-13h00/15h45-20h00<br/>Vendredi: 10h30-13h00/15h45-20h00<br/>Samedi: 10h30-14h00/15h00-20h15<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Tolbiac",
+				"address": "215 bis rue de Tolbiac</br>75013 Paris",
+				"phone": "01.79.60.00.09",
+				"email": "tolbiac@lerepairedebacchus.com",
+				"maps-itinerary": "215 bis rue de Tolbiac 75013 Paris",
+				"storeid": "tolbiac"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.315334249242737, 48.832702285525784]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h30-20h30<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h30-13h00/16h00-20h00<br/>Samedi: 10h00-13h30/14h45-20h00<br/>Dimanche: Fermé",
+				"name": "Le Repaire de Bacchus<br/>Losserand",
+				"address": "104 rue Raymond Losserand</br>75014 Paris",
+				"phone": "01.72.63.68.82",
+				"email": "losserand@lerepairedebacchus.com",
+				"maps-itinerary": "104 rue Raymond Losserand 75014 Paris",
+				"storeid": "losserand"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.3296694474086044, 48.834017040227096]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h-21h<br/>Mardi: 10h-22h<br/>Mercredi: 10h-22h<br/>Jeudi: 10h-22h<br/>Vendredi: 10h-22h<br/>Samedi: 10h-22h<br/>Dimanche: 10h-20h",
+				"name": "Le Repaire de Bacchus<br/>Daguerre",
+				"address": "18 rue Daguerre</br>75014 Paris",
+				"phone": "01.72.63.67.11",
+				"email": "daguerre@lerepairedebacchus.com",
+				"maps-itinerary": "18 rue Daguerre 75014 Paris",
+				"storeid": "daguerre"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.299711320516457, 48.83608443591362]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-19h30<br/>Mercredi: 10h30-13h30/16h00-19h30<br/>Jeudi: 10h30-13h30/16h00-19h30<br/>Vendredi: 10h30-13h30/16h00-19h30<br/>Samedi: 10h00-14h00/14h45-20h00<br/>Dimanche: 09h30-13h00",
+				"name": "Le Repaire de Bacchus<br/>Convention",
+				"address": "228 rue de la Convention</br>75015 Paris",
+				"phone": "01.72.63.68.61",
+				"email": "convention@lerepairedebacchus.com",
+				"maps-itinerary": "228 rue de la Convention 75015 Paris",
+				"storeid": "convention"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.302901883448999, 48.83222122343712]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h30-20h30<br/>Mardi: 10h30-20h30<br/>Mercredi: 10h30-20h30<br/>Jeudi: 10h30-20h30<br/>Vendredi: 10h30-20h30<br/>Samedi: 10h00-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Morillons",
+				"address": "75 rue des Morillons</br>75015 Paris",
+				"phone": "01.72.63.68.76",
+				"email": "morillons@lerepairedebacchus.com",
+				"maps-itinerary": "75 rue des Morillons 75015 Paris",
+				"storeid": "morillons"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.2839423950318998, 48.844931866872344]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 17h00-20h00<br/>Mardi: 10h00-13h00/16h15-20h00<br/>Mercredi: 10h00-13h00/16h15-20h00<br/>Jeudi: 10h00-13h00/16h15-20h00<br/>Vendredi: 10h00-13h00/16h15-20h00<br/>Samedi: 10h00-14h00/15h15-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Saint-Charles",
+				"address": "110 rue Saint-Charles</br>75015 Paris",
+				"phone": "01.72.63.68.30",
+				"email": "saint-charles@lerepairedebacchus.com",
+				"maps-itinerary": "110 rue Saint-Charles 75015 Paris",
+				"storeid": "saint-charles"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.29192592497251, 48.850374942471035]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h-20h<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h30-13h00/15h30-20h00<br/>Samedi: 10h00-13h30/14h15-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Lourmel",
+				"address": "4 rue de Lourmel</br>75015 Paris",
+				"phone": "01.72.68.01.44",
+				"email": "lourmel@lerepairedebacchus.com",
+				"maps-itinerary": "4 rue de Lourmel 75015 Paris",
+				"storeid": "lourmel"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.262133285088348, 48.84803526830391]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 15h30-20h00<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h30-13h00/16h00-20h00<br/>Samedi: 09h45-14h00 / 15h00-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Auteuil",
+				"address": "58 rue d'Auteuil</br>75016 Paris",
+				"phone": "01.72.63.68.31",
+				"email": "auteuil@lerepairedebacchus.com",
+				"maps-itinerary": "58 rue d'Auteuil 75016 Paris",
+				"storeid": "auteuil"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.2619702321248796, 48.839045591939424]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h15-20h<br/>Mercredi: 10h30-13h30/16h15-20h<br/>Jeudi: 10h30-13h30/16h15-20h<br/>Vendredi: 10h30-13h30/16h15-20h<br/>Samedi: 10h30-13h30/15h15-20h30<br/>Dimanche: 09h30-13h00",
+				"name": "Le Repaire de Bacchus<br/>Marois",
+				"address": "11 rue Le Marois</br>75016 Paris",
+				"phone": "01.72.63.68.40",
+				"email": "lemarois@lerepairedebacchus.com",
+				"maps-itinerary": "11 rue Le Marois 75016 Paris",
+				"storeid": "lemarois"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.269626888295917, 48.85513744182265]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 15h45-20h00<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h30-13h00/16h00-20h00<br/>Samedi: 10h30-20h00<br/>Dimanche: 10h-13h",
+				"name": "Le Repaire de Bacchus<br/>Mozart",
+				"address": "52 avenue Mozart</br>75016 Paris",
+				"phone": "01.72.63.63.37",
+				"email": "mozart@lerepairedebacchus.com",
+				"maps-itinerary": "52 avenue Mozart 75016 Paris",
+				"storeid": "mozart"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.295514604171794, 48.87897956850099]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 14h00-20h00<br/>Mardi: 10h-14h30/15h-20h00<br/>Mercredi: 10h-14h30/15h-20h00<br/>Jeudi: 10h-20h00<br/>Vendredi: 10h-20h00<br/>Samedi: 10h-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Bayen",
+				"address": "6 rue Bayen</br>75017 Paris",
+				"phone": "01.72.63.65.90",
+				"email": "bayen@lerepairedebacchus.com",
+				"maps-itinerary": "6 rue Bayen 75017 Paris",
+				"storeid": "bayen"
+			}
+		}
+	]
+}

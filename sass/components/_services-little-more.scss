@@ -1,0 +1,35 @@
+.services-container-little-more {
+	display: flex;
+	position: relative;
+	&__advantages {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		align-items: center;
+		h5 {
+			text-transform: uppercase;
+			font-size: 1.1em;
+			margin: 1em 0 1.5em;
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 25%;
+		height: 100%;
+		width: 1px;
+		background-color: $color-primary-medium;
+	}
+	&__fidelity {
+		width: 50%;
+		height: 100%;
+		padding: 1.5em;
+		background-color: $color-primary-medium;
+		color: $white;
+		-webkit-box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
+		box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
+		#fidelityPiggies {
+			width: 100%;
+		}
+	}
+}

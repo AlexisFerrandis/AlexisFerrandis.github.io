@@ -1,63 +1,33 @@
 @import "./base/typographie";
 
+@import "./utils/settings";
 @import "./utils/variables";
 @import "./utils/extensions";
 @import "./utils/mixins";
 
+@import "./components/scrollbar";
 @import "./components/buttons";
-@import "./components/pause-btn";
-@import "./components/input";
-@import "./components/choice-impact-disclaimer";
-@import "./components/hearts";
-@import "./components/new-item-display";
-@import "./components//white-screen";
-@import "./components/sword-slash";
+@import "./components/pages-primary-title";
+@import "./components/separators";
 
-@import "./layouts/parameters";
-@import "./layouts/chapter-selection";
-@import "./layouts/characters-display";
-@import "./layouts/choice-impact";
-@import "./layouts/inventory";
-@import "./layouts/items-option";
-@import "./layouts/pet-walking-animation";
-@import "./layouts/game-over";
+@import "./components/actualities-partner-slider";
 
-@import "./pages/home";
-@import "./pages/classic-stage";
-@import "./pages/story";
-@import "./pages/slash-battle";
-@import "./pages/pokemon-battle";
-@import "./pages/on-the-moon";
+@import "./components/services-delivery";
+@import "./components/services-little-more";
+@import "./components/services-partners";
+@import "./components/services-eco-responsability";
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Press Start 2P", cursive;
-	font-weight: 500;
-	scroll-behavior: smooth;
-	color: white;
-}
+@import "./components/human-resources-offers";
 
-body {
-	max-width: 1920px;
-	margin: 0 auto;
-	overflow: hidden;
-}
+@import "./layouts/legal-disclaimer";
+@import "./layouts/header";
+@import "./layouts/responsive-header";
+@import "./layouts/footer";
+@import "./layouts/home-carousel-full-page";
+@import "./layouts/about-us";
+@import "./layouts/google-maps";
 
-::-webkit-scrollbar {
-	width: 13px;
-	height: 13px;
-}
-::-webkit-scrollbar-thumb {
-	background: red;
-	border-radius: 0px;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: rgb(255, 143, 143);
-}
-::-webkit-scrollbar-track {
-	background: transparent;
-	border-radius: 0px;
-	box-shadow: inset 0px 0px 0px 0px #f0f0f0;
-}
+@import "./pages/localisation";
+@import "./pages/actualities.scss";
+@import "./pages/services.scss";
+@import "./pages/human-resources";

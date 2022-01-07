@@ -1,0 +1,29 @@
+#map {
+	height: 100%;
+	min-height: 600px;
+	width: 100%;
+}
+.maps-store-preview {
+	padding-right: 1.5em;
+	&__name {
+		color: $color-primary;
+		font-size: 1.3em;
+	}
+	&__address {
+		margin-bottom: 1em;
+	}
+	&__contact {
+		margin-bottom: 1em;
+		a {
+			color: $color-primary;
+			text-decoration: none;
+		}
+	}
+	&__hours {
+		margin-bottom: 1em;
+	}
+	&__itinerary {
+		color: $color-primary;
+		text-decoration: none;
+	}
+}

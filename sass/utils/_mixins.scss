@@ -1,4 +1,9 @@
 @mixin tablet-breakpoint {
+	@media (max-width: 1250px) {
+		@content;
+	}
+}
+@mixin mobile-breakpoint {
 	@media (max-width: 600px) {
 		@content;
 	}
