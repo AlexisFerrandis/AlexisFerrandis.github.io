@@ -482,11 +482,11 @@ main {
 
 .human-resources-offer {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   width: 23%;
   min-width: 280px;
-  background-color: #214b41;
   color: #ffffff;
   padding: 2em 1.5em;
   margin-bottom: 2em;
@@ -505,6 +505,18 @@ main {
 .human-resources-offer p {
   text-align: justify;
   margin-bottom: 2em;
+}
+.human-resources-offer__junior {
+  background-color: #1cbc9a;
+}
+.human-resources-offer__senior {
+  background-color: #1ba39e;
+}
+.human-resources-offer__vacataire {
+  background-color: #0c8389;
+}
+.human-resources-offer__spontanus {
+  background-color: #5fb0a1;
 }
 
 .legal-disclaimer {
@@ -527,7 +539,7 @@ main {
 }
 .legal-disclaimer__container img {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   margin-bottom: 2em;
 }
 .legal-disclaimer__container select {

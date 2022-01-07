@@ -1,10 +1,10 @@
 .human-resources-offer {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-items: center;
 	width: 23%;
 	min-width: 280px;
-	background-color: $color-primary;
 	color: $white;
 	padding: 2em 1.5em;
 	margin-bottom: 2em;
@@ -22,5 +22,17 @@
 	p {
 		text-align: justify;
 		margin-bottom: 2em;
+	}
+	&__junior {
+		background-color: $hr-junior;
+	}
+	&__senior {
+		background-color: $hr-senior;
+	}
+	&__vacataire {
+		background-color: $hr-vacataire;
+	}
+	&__spontanus {
+		background-color: $hr-spontanus;
 	}
 }
