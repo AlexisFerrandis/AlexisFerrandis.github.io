@@ -11,6 +11,10 @@
 	background-color: $color-primary;
 	color: $white;
 	@extend .button-active;
+	a {
+		color: $white;
+		text-decoration: none;
+	}
 }
 .small-button__square--green {
 	border: none;

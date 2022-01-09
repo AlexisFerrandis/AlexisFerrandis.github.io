@@ -27,11 +27,14 @@
 		}
 		&-texte {
 			padding: 1.5em;
+			img {
+				height: 34px;
+			}
 		}
 	}
 	&--img {
 		width: 49.5%;
-		-webkit-box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
-		box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
+		-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+		box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
 	}
 }

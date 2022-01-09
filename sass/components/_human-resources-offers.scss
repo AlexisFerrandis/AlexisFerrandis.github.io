@@ -5,6 +5,7 @@
 	align-items: center;
 	width: 23%;
 	min-width: 280px;
+	height: 410px;
 	color: $white;
 	padding: 2em 1.5em;
 	margin-bottom: 2em;
@@ -22,6 +23,10 @@
 	p {
 		text-align: justify;
 		margin-bottom: 2em;
+	}
+	a {
+		position: absolute;
+		bottom: 2em;
 	}
 	&__junior {
 		background-color: $hr-junior;

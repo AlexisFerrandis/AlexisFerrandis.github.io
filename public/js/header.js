@@ -42,13 +42,13 @@ for (let i = 0; i < currentPage.length; i++) {
 
 responsiveHeaderDom.innerHTML = `
 <nav class="header-nav-responsive__container responsive-header-primary" id="headerResponsiveNav">
-	<a class="header-nav-responsive__container--link" href="#homeCarouselFullPage">accueil</a>
-	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="#homeAboutUs">qui sommes-nous?</a>
-	<a id="headerNavLocalisation" class="header-nav-responsive__container--link" href="./pages/localisation.html">nos caves</a>
-	<a id="headerNavActualities" class="header-nav-responsive__container--link" href="./pages/actualities.html">nos actualités</a>
-	<a id="headerNavServices" class="header-nav-responsive__container--link" href="./pages/services.html">nos services</a>
-	<a id="headerNavHumanResources" class="header-nav-responsive__container--link" href="./pages/human-resources.html">on recrute</a>
-	<!-- <a id="headerNavBlog" class="header-nav-responsive__container--link" href="./pages/blog.html">blog</a> -->
+	<a class="header-nav-responsive__container--link" href="../index.html">accueil</a>
+	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="../index.html#homeAboutUs">qui sommes-nous?</a>
+	<a id="headerNavLocalisation" class="header-nav-responsive__container--link" href="../pages/localisation.html">nos caves</a>
+	<a id="headerNavActualities" class="header-nav-responsive__container--link" href="../pages/actualities.html">nos actualités</a>
+	<a id="headerNavServices" class="header-nav-responsive__container--link" href="../pages/services.html">nos services</a>
+	<a id="headerNavHumanResources" class="header-nav-responsive__container--link" href="../pages/human-resources.html">on recrute</a>
+	<!-- <a id="headerNavBlog" class="header-nav-responsive__container--link" href="../pages/blog.html">blog</a> -->
 </nav>
 `;
 

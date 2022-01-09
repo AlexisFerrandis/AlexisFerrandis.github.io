@@ -101,7 +101,7 @@ main {
 
 .actualities-p, .actualities-horizontal-container p, .actualities-vertical-container__article p {
   text-align: justify;
-  font-size: 1.1em;
+  font-size: 16px;
   line-height: 1.2em;
 }
 
@@ -128,6 +128,10 @@ main {
 .button__square--green {
   background-color: #214b41;
   color: #ffffff;
+}
+.button__square--green a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .small-button__square--green {
@@ -214,7 +218,6 @@ main {
 
 #actualitiesPartnerSlider {
   width: 50%;
-  min-width: 460px;
   position: relative;
   overflow: hidden;
 }
@@ -222,7 +225,6 @@ main {
   position: absolute;
   display: flex;
   width: 400%;
-  min-height: 300px;
   animation: fade 14000ms infinite;
 }
 #actualitiesPartnerSlider .translateX-slider .partner-slider-img {
@@ -340,8 +342,11 @@ main {
   padding: 1.5em;
   background-color: #4f897d;
   color: #ffffff;
-  -webkit-box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
-  box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
+}
+.services-container-little-more__fidelity p {
+  height: 60px;
 }
 .services-container-little-more__fidelity #fidelityPiggies {
   width: 100%;
@@ -386,6 +391,7 @@ main {
   width: 20%;
   min-width: 200px;
   border-left: 1px solid #4f897d;
+  border-right: 1px solid #4f897d;
 }
 @media (max-width: 1250px) {
   .partners-container__secondary {
@@ -457,10 +463,13 @@ main {
 .services-container__eco-responsability--article-texte {
   padding: 1.5em;
 }
+.services-container__eco-responsability--article-texte img {
+  height: 34px;
+}
 .services-container__eco-responsability--img {
   width: 49.5%;
-  -webkit-box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
-  box-shadow: 6px 8px 16px 0px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
 }
 
 .human-resources-offer {
@@ -470,6 +479,7 @@ main {
   align-items: center;
   width: 23%;
   min-width: 280px;
+  height: 410px;
   color: #ffffff;
   padding: 2em 1.5em;
   margin-bottom: 2em;
@@ -488,6 +498,10 @@ main {
 .human-resources-offer p {
   text-align: justify;
   margin-bottom: 2em;
+}
+.human-resources-offer a {
+  position: absolute;
+  bottom: 2em;
 }
 .human-resources-offer__junior {
   background-color: #1cb092;
@@ -860,7 +874,7 @@ main {
 }
 #homeAboutUs .home-about-us__article-container--article {
   width: 100%;
-  padding: 5em 4em 0;
+  padding: 7em 4em;
 }
 #homeAboutUs .home-about-us__article-container--article h1 {
   font-weight: 600;
@@ -884,7 +898,7 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 1em 0;
+  margin: 3em 0 2em;
 }
 #homeAboutUs .home-about-us__article-container--article .pictos-container__element {
   width: 16.5%;
@@ -941,7 +955,7 @@ main {
 #localisationContainer {
   display: flex;
   width: 100%;
-  margin-bottom: 4em;
+  margin-bottom: 18vh;
 }
 #localisationContainer .localisation-list {
   width: 35%;
@@ -1013,18 +1027,18 @@ main {
 .actualities-vertical-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4em;
+  margin: 0 auto 4em;
+  width: 80%;
 }
 .actualities-vertical-container img {
-  width: 70%;
-  min-width: 550px;
+  width: 100%;
   object-fit: cover;
   margin: 0 auto 1em;
 }
 .actualities-horizontal-container {
   display: flex;
-  margin-bottom: 4em;
-  height: 350px;
+  margin: 0 auto 4em;
+  width: 70%;
 }
 .actualities-horizontal-container img {
   width: 50%;

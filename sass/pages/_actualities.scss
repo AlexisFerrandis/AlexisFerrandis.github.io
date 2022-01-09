@@ -1,10 +1,10 @@
 .actualities-vertical-container {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 4em;
+	margin: 0 auto 4em;
+	width: 80%;
 	img {
-		width: 70%;
-		min-width: 550px;
+		width: 100%;
 		object-fit: cover;
 		margin: 0 auto 1em;
 	}
@@ -26,9 +26,8 @@
 
 .actualities-horizontal-container {
 	display: flex;
-	margin-bottom: 4em;
-	height: 350px;
-
+	margin: 0 auto 4em;
+	width: 70%;
 	img {
 		width: 50%;
 		object-fit: cover;

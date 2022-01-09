@@ -1,13 +1,11 @@
 #actualitiesPartnerSlider {
 	width: 50%;
-	min-width: 460px;
 	position: relative;
 	overflow: hidden;
 	.translateX-slider {
 		position: absolute;
 		display: flex;
 		width: 400%;
-		min-height: 300px;
 		animation: fade 14000ms infinite;
 		.partner-slider-img {
 			transition: 1000ms;

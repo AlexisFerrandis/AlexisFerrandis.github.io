@@ -49,27 +49,28 @@ function initMap() {
 		infoWindow.open(map);
 	});
 
-	// Store onclick reveal equivalent on maps
-	const storesDOMList = document.querySelectorAll(".localisation-list__stores--store");
+	setTimeout(() => {
+		// Store onclick reveal equivalent on maps
+		const storesDOMList = document.querySelectorAll(".localisation-list__stores--store");
 
-	for (let i = 0; i < storesDOMList.length; i++) {
-		storesDOMList[i].addEventListener("click", () => {
-			fetch("../public/js/maps/stores.json")
-				.then((response) => response.json())
-				.then((json) => json.features)
-				.then((storesArray) => {
-					storesArray.forEach((store) => {
-						if (store.properties.storeid === storesDOMList[i].id) {
-							const name = store.properties.name;
-							const address = store.properties.address;
-							const phone = store.properties.phone;
-							const email = store.properties.email;
-							const hours = store.properties.hours;
-							const mapsItinerary = store.properties.itinerary;
-							const lat = store.geometry.coordinates[1];
-							const lng = store.geometry.coordinates[0];
-							const position = { lng, lat };
-							const content = `
+		for (let i = 0; i < storesDOMList.length; i++) {
+			storesDOMList[i].addEventListener("click", () => {
+				fetch("../public/js/maps/stores.json")
+					.then((response) => response.json())
+					.then((json) => json.features)
+					.then((storesArray) => {
+						storesArray.forEach((store) => {
+							if (store.properties.storeid === storesDOMList[i].id) {
+								const name = store.properties.name;
+								const address = store.properties.address;
+								const phone = store.properties.phone;
+								const email = store.properties.email;
+								const hours = store.properties.hours;
+								const mapsItinerary = store.properties.itinerary;
+								const lat = store.geometry.coordinates[1];
+								const lng = store.geometry.coordinates[0];
+								const position = { lng, lat };
+								const content = `
 							<div class="maps-store-preview">
 								<h2 class="maps-store-preview__name">${name}</h2>
 								<p class="maps-store-preview__address">${address}</p>
@@ -82,13 +83,14 @@ function initMap() {
 							</div>
 							`;
 
-							infoWindow.setContent(content);
-							infoWindow.setPosition(position);
-							infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
-							infoWindow.open(map);
-						}
+								infoWindow.setContent(content);
+								infoWindow.setPosition(position);
+								infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
+								infoWindow.open(map);
+							}
+						});
 					});
-				});
-		});
-	}
+			});
+		}
+	}, 1000);
 }
