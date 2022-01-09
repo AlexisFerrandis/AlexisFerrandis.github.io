@@ -30,18 +30,3 @@
 	text-decoration: none;
 	@extend .button-active;
 }
-#headerHamburger {
-	position: absolute;
-	display: none;
-	right: 1em;
-	top: 1.5em;
-	width: 30px;
-	height: 30px;
-	border: none;
-	background-color: transparent;
-	cursor: pointer;
-	img {
-		filter: invert(100%) sepia(1%) saturate(2%) hue-rotate(62deg) brightness(106%) contrast(101%);
-	}
-	@extend .button-active;
-}

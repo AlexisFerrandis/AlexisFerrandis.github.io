@@ -5,14 +5,7 @@
 	@extend .flex-center;
 	z-index: 9;
 	#logoHeaderNav {
-		position: absolute;
-		left: 2em;
-		top: 50%;
-		transform: translateY(-50%);
-		transition: $long-animation;
-		width: 200px;
-		object-fit: cover;
-		opacity: 0;
+		display: none;
 	}
 	.header-nav__container {
 		display: flex;
@@ -62,8 +55,8 @@
 	@extend .flex-center;
 	z-index: 9;
 	min-height: 70px;
-	-webkit-box-shadow: 1px 5px 15px 3px rgba(0, 0, 0, 0.59);
-	box-shadow: 1px 5px 15px 3px rgba(0, 0, 0, 0.59);
+	-webkit-box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.59);
+	box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.59);
 	#logoHeaderNav {
 		position: absolute;
 		left: 2em;
@@ -84,8 +77,10 @@
 		transition: $long-animation;
 		&--link {
 			@extend .header-links-display;
+			color: $white;
 			&::after {
 				@extend .header-links-after-display;
+				background-color: $white;
 			}
 			&:hover {
 				&::after {
@@ -105,4 +100,21 @@
 			display: none;
 		}
 	}
+}
+
+#headerHamburger {
+	position: absolute;
+	display: none;
+	right: 1em;
+	top: 1.5em;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	@extend .button-active;
+	@include tablet-breakpoint {
+		display: flex;
+	}
+	z-index: 9;
 }

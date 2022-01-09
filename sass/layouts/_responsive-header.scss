@@ -1,34 +1,83 @@
-#headerResponsiveNav {
-	position: fixed;
-	display: flex;
-	z-index: 9;
-	flex-direction: column;
-	top: 70px;
-	width: 100%;
-	text-align: center;
-	background-color: $color-primary;
-	border-top: solid 1px $white;
-	a {
-		@extend .header-links-display;
-		margin: 1em 0;
-		&::after {
-			@extend .header-links-after-display;
-			width: 20%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-		&:hover {
+#responsiveHeaderDom {
+	display: none;
+	z-index: 8;
+	.responsive-header-primary {
+		position: fixed;
+		display: flex;
+		z-index: 2;
+		flex-direction: column;
+		top: 0;
+		padding-top: 100px;
+		width: 100%;
+		text-align: center;
+		background-color: $color-primary;
+		a {
+			@extend .header-links-display;
+			color: $white;
+			margin: 1em 0;
 			&::after {
-				opacity: 1;
+				@extend .header-links-after-display;
+
+				background-color: $white;
+				width: 20%;
+				left: 50%;
 				transform: translateX(-50%);
 			}
-		}
-		&--actif {
-			font-weight: 600;
-			&::after {
-				opacity: 1;
-				transform: translateX(0px);
+			&:hover {
+				&::after {
+					opacity: 1;
+					transform: translateX(-50%);
+				}
 			}
+			&--actif {
+				font-weight: 600;
+				&::after {
+					opacity: 1;
+					transform: translateX(0px);
+				}
+			}
+		}
+		@media (min-width: 1250px) {
+			display: none;
+		}
+	}
+	.responsive-header-transparent {
+		position: fixed;
+		display: flex;
+		z-index: 2;
+		flex-direction: column;
+		top: 0;
+		padding-top: 100px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba($color: #ffffff, $alpha: 0.8);
+		a {
+			@extend .header-links-display;
+			color: $color-primary;
+			margin: 1em 0;
+			&::after {
+				@extend .header-links-after-display;
+				background-color: $color-primary;
+				width: 20%;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			&:hover {
+				&::after {
+					opacity: 1;
+					transform: translateX(-50%);
+				}
+			}
+			&--actif {
+				font-weight: 600;
+				&::after {
+					opacity: 1;
+					transform: translateX(0px);
+				}
+			}
+		}
+		@media (min-width: 1250px) {
+			display: none;
 		}
 	}
 }
