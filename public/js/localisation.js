@@ -39,7 +39,7 @@ async function getTheStores() {
 	const searchInput = document.getElementById("storeInput");
 
 	searchInput.addEventListener("input", () => {
-		let userInput = searchInput.value;
+		let userInput = searchInput.value.toLocaleLowerCase();
 		let storeAdress = document.querySelectorAll(".store-adresse");
 
 		for (let i = 0; i < storeAdress.length; i++) {
