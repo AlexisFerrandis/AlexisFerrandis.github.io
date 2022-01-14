@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "Questrial", sans-serif;
-  src: url("../../public/assets/fonts/Questrial/Questrial-Regular.ttf") format("ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -82,13 +79,13 @@ main {
 }
 
 .actualitiesh2, .actualities-horizontal-container h2, .actualities-vertical-container__article h2 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   text-transform: uppercase;
   margin-bottom: 0.2em;
 }
 
 .actualitiesh3, .actualities-horizontal-container h3, .actualities-vertical-container__article h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   text-transform: uppercase;
   opacity: 0.8;
 }
@@ -913,7 +910,7 @@ main {
 }
 #homeAboutUs .home-about-us__article-container--article h1 {
   font-weight: 600;
-  font-size: 1.3em;
+  font-size: 1.5em;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -967,7 +964,6 @@ main {
 }
 .maps-store-preview__name {
   color: #214b41;
-  font-size: 1.3em;
 }
 .maps-store-preview__address {
   margin-bottom: 1em;
