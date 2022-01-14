@@ -10,6 +10,8 @@
 	@extend .button-square-medium;
 	background-color: $color-primary;
 	color: $white;
+	-webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.41);
+	box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.41);
 	@extend .button-active;
 	a {
 		color: $white;
@@ -33,4 +35,6 @@
 	color: $black;
 	text-decoration: none;
 	@extend .button-active;
+	-webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
+	box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
 }

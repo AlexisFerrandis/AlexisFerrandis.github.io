@@ -4,9 +4,8 @@
 	margin-bottom: 18vh;
 	.localisation-list {
 		width: 35%;
-		min-width: 400px;
-		height: 80vh;
-		max-height: 600px;
+		min-width: 380px;
+		height: 600px;
 		background-color: $color-primary;
 		padding: 2em;
 		&__search {
@@ -30,8 +29,7 @@
 	}
 	.localisation-map {
 		width: 65%;
-		height: 100%;
-		min-height: 600px;
+		height: 600px;
 		background-color: $color-primary-light;
 	}
 }

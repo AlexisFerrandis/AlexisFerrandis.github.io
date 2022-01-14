@@ -15,11 +15,11 @@ const footerContent = `
         <p><span>l'abus d'alcool est dangereux pour la santé. à consommer avec modération.</span></p>
         <div class="footer-links__legal-press">
             <a href="TODO">Presse</a>
-            <a href="TODO">Mentions légales</a>
+            <a href="./cgu.html">Mentions légales</a>
         </div>
     </div>
     <div class="footer-disclaimer">
-        <p>Votre adresse de messagerie est uniquement utilisée pour vous envoyer les lettres d'information de Cyril Lignac. Vous pouvez à tout moment utiliser le lien de désabonnement intégré dans la newsletter. <a href="TODO">En savoir plus sur la gestion de vos données et vos droits</a></p>
-    </div>
+		<p>Le Repaire de Bacchus - Copyright - 2022</p><!-- TODO -->
+	</div>
 `;
 footerDOM.innerHTML += footerContent;

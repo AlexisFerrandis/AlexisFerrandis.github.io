@@ -16,16 +16,20 @@
 			align-items: center;
 			left: 50%;
 			width: 90%;
-			max-width: 900px;
+			max-width: 600px;
 			bottom: 0;
 			transform: translateX(-50%);
 			&--logo {
-				max-width: 500px;
-				width: 95%;
-				margin-bottom: 5vh;
+				width: 90%;
+				max-width: 450px;
+				max-height: 60vh;
+				object-fit: contain;
+			}
+			button {
+				margin-top: 1.5em;
 			}
 			&--arrow {
-				margin: 1.5em 0;
+				margin: 2vh 0;
 				width: 60px;
 				animation: arrow-up-and-down infinite 7s;
 				cursor: pointer;

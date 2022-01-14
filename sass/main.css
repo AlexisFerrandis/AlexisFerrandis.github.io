@@ -1,13 +1,14 @@
 @font-face {
-  font-family: "Gotham-Black";
-  src: url("../../public/assets/fonts/Gotham-Black/Gotham-Black.otf") format("otf");
+  font-family: "Questrial", sans-serif;
+  src: url("../../public/assets/fonts/Questrial/Questrial-Regular.ttf") format("ttf");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "gotham-black", sans-serif;
+  font-family: "Questrial", sans-serif;
   scroll-behavior: smooth;
+  appearance: auto;
 }
 
 html,
@@ -102,7 +103,7 @@ main {
 .actualities-p, .actualities-horizontal-container p, .actualities-vertical-container__article p {
   text-align: justify;
   font-size: 16px;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 .light-primary-background {
@@ -128,6 +129,8 @@ main {
 .button__square--green {
   background-color: #214b41;
   color: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.41);
 }
 .button__square--green a {
   color: #ffffff;
@@ -149,6 +152,8 @@ main {
   background-color: #f0f9f6;
   color: #000000;
   text-decoration: none;
+  -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.41);
 }
 
 #pagesH1 {
@@ -218,6 +223,7 @@ main {
 
 #actualitiesPartnerSlider {
   width: 50%;
+  min-width: 584px;
   position: relative;
   overflow: hidden;
 }
@@ -232,11 +238,33 @@ main {
 }
 #actualitiesPartnerSlider .translateX-slider .partner-slider-img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
 @keyframes fade {
+  0% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  28% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  53% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
+  100% {
+    transform: translateX(-75%);
+  }
+}
+@-webkit-keyframes fade {
   0% {
     transform: translateX(0%);
   }
@@ -350,6 +378,7 @@ main {
 }
 .services-container-little-more__fidelity #fidelityPiggies {
   width: 100%;
+  object-fit: cover;
 }
 
 .partners-container {
@@ -483,6 +512,8 @@ main {
   color: #ffffff;
   padding: 2em 1.5em;
   margin-bottom: 2em;
+  -webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+  box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
 }
 .human-resources-offer h4 {
   text-transform: uppercase;
@@ -728,7 +759,7 @@ main {
   padding-top: 100px;
   width: 100%;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.95);
 }
 #responsiveHeaderDom .responsive-header-transparent a {
   color: #214b41;
@@ -814,6 +845,7 @@ main {
 }
 #footer .footer-disclaimer {
   font-size: 0.7em;
+  text-align: center;
 }
 
 #homeCarouselFullPage {
@@ -834,17 +866,21 @@ main {
   align-items: center;
   left: 50%;
   width: 90%;
-  max-width: 900px;
+  max-width: 600px;
   bottom: 0;
   transform: translateX(-50%);
 }
 #homeCarouselFullPage .home-carousel__container--logo {
-  max-width: 500px;
-  width: 95%;
-  margin-bottom: 5vh;
+  width: 90%;
+  max-width: 450px;
+  max-height: 60vh;
+  object-fit: contain;
+}
+#homeCarouselFullPage .home-carousel__container button {
+  margin-top: 1.5em;
 }
 #homeCarouselFullPage .home-carousel__container--arrow {
-  margin: 1.5em 0;
+  margin: 2vh 0;
   width: 60px;
   animation: arrow-up-and-down infinite 7s;
   cursor: pointer;
@@ -863,29 +899,26 @@ main {
 }
 #homeAboutUs {
   width: 100vw;
-  height: 100%;
+  min-height: 100vh;
 }
 #homeAboutUs .home-about-us__article-container {
   display: flex;
 }
 #homeAboutUs .home-about-us__article-container--img-xl {
-  width: 40%;
+  width: 35%;
   object-fit: cover;
 }
 #homeAboutUs .home-about-us__article-container--article {
-  width: 100%;
-  padding: 7em 4em;
+  padding: 5em 4em 0;
 }
 #homeAboutUs .home-about-us__article-container--article h1 {
   font-weight: 600;
   font-size: 1.3em;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin-bottom: 0.1em;
 }
 #homeAboutUs .home-about-us__article-container--article h3 {
   font-weight: 500;
-  font-size: 1.1em;
   text-transform: uppercase;
 }
 #homeAboutUs .home-about-us__article-container--article--paragraph {
@@ -895,25 +928,27 @@ main {
 }
 #homeAboutUs .home-about-us__article-container--article .pictos-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
-  margin: 3em 0 2em;
+  margin: 2em 0 2em;
 }
 #homeAboutUs .home-about-us__article-container--article .pictos-container__element {
-  width: 16.5%;
+  width: 16%;
   min-width: 100px;
   text-align: center;
+  justify-content: center;
+  margin: 0 0.1em;
 }
 #homeAboutUs .home-about-us__article-container--article .pictos-container__element img {
   object-fit: cover;
   margin: 1em 0;
 }
 #homeAboutUs .home-about-us__article-container--article .pictos-container__element p {
-  width: 90%;
+  width: 100%;
 }
 #homeAboutUs .home-about-us__images-container {
-  height: 25vh;
+  height: 30vh;
   display: flex;
 }
 #homeAboutUs .home-about-us__images-container img {
@@ -959,9 +994,8 @@ main {
 }
 #localisationContainer .localisation-list {
   width: 35%;
-  min-width: 400px;
-  height: 80vh;
-  max-height: 600px;
+  min-width: 380px;
+  height: 600px;
   background-color: #214b41;
   padding: 2em;
 }
@@ -985,8 +1019,7 @@ main {
 }
 #localisationContainer .localisation-map {
   width: 65%;
-  height: 100%;
-  min-height: 600px;
+  height: 600px;
   background-color: #f0f9f6;
 }
 
@@ -1024,21 +1057,34 @@ main {
   filter: invert(100%) sepia(4%) saturate(5%) hue-rotate(248deg) brightness(104%) contrast(100%);
 }
 
+.actualities-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+
 .actualities-vertical-container {
+  width: 48%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto 4em;
-  width: 80%;
 }
 .actualities-vertical-container img {
   width: 100%;
   object-fit: cover;
   margin: 0 auto 1em;
 }
+.actualities-vertical-container__article h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.actualities-vertical-container__article h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
 .actualities-horizontal-container {
   display: flex;
   margin: 0 auto 4em;
-  width: 80%;
+  height: 350px;
 }
 .actualities-horizontal-container img {
   width: 50%;
@@ -1151,6 +1197,18 @@ main {
 .human-resources-offers__h2-separator {
   opacity: 0.7;
   margin-bottom: 2em;
+}
+
+#cguPrimaryTitle {
+  padding-top: 4em;
+}
+
+.cgu-main {
+  max-width: 1000px;
+  text-align: justify;
+}
+.cgu-main h4 {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
