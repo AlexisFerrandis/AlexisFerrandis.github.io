@@ -140,7 +140,7 @@ main {
   background-color: #214b41;
   color: #ffffff;
   font-weight: 500;
-  margin-right: 1.2em;
+  margin: 0 1.2em 0 -5px;
 }
 
 .human-ressources-offers__links-mail-to {
@@ -175,6 +175,11 @@ main {
     width: 30%;
   }
 }
+@media (max-width: 850px) {
+  #pagesH1::after {
+    width: 10%;
+  }
+}
 #pagesH1::before {
   content: "";
   position: absolute;
@@ -187,6 +192,11 @@ main {
 @media (max-width: 1250px) {
   #pagesH1::before {
     width: 30%;
+  }
+}
+@media (max-width: 850px) {
+  #pagesH1::before {
+    width: 10%;
   }
 }
 
@@ -790,6 +800,11 @@ main {
   background-color: #ffffff;
   border-top: solid 1px #214b41;
 }
+@media (max-width: 850px) {
+  #footer {
+    padding: 1.5em 1.5em 0.5em;
+  }
+}
 #footer .footer-links {
   display: flex;
   justify-content: space-between;
@@ -801,12 +816,15 @@ main {
 #footer .footer-links__social {
   display: flex;
   align-items: center;
-  text-align: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 850px) {
+  #footer .footer-links__social {
+    margin-bottom: 10px;
+  }
 }
 #footer .footer-links__social p {
   opacity: 0.8;
-  margin-right: 1em;
-  min-width: 200px;
 }
 #footer .footer-links__social input {
   border: none;
@@ -827,22 +845,29 @@ main {
   font-weight: bold;
   text-transform: uppercase;
 }
+@media (max-width: 850px) {
+  #footer .footer-links p span {
+    margin-bottom: 10px;
+  }
+}
 #footer .footer-links__legal-press {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 200px;
+}
+@media (max-width: 850px) {
+  #footer .footer-links__legal-press {
+    margin-bottom: 10px;
+  }
 }
 #footer .footer-links__legal-press a {
   text-decoration: none;
   color: #000000;
   opacity: 0.8;
-  margin-left: 2em;
 }
 #footer .footer-links__legal-press a:hover {
   text-decoration: underline grey;
-}
-#footer .footer-disclaimer {
-  font-size: 0.7em;
-  text-align: center;
 }
 
 #homeCarouselFullPage {
@@ -869,12 +894,11 @@ main {
 }
 #homeCarouselFullPage .home-carousel__container--logo {
   width: 90%;
-  max-width: 450px;
   max-height: 60vh;
   object-fit: contain;
 }
 #homeCarouselFullPage .home-carousel__container button {
-  margin-top: 1.5em;
+  margin-top: 3em;
 }
 #homeCarouselFullPage .home-carousel__container--arrow {
   margin: 2vh 0;
@@ -896,17 +920,32 @@ main {
 }
 #homeAboutUs {
   width: 100vw;
-  min-height: 100vh;
 }
 #homeAboutUs .home-about-us__article-container {
   display: flex;
+}
+@media (max-width: 850px) {
+  #homeAboutUs .home-about-us__article-container {
+    flex-direction: column-reverse;
+  }
 }
 #homeAboutUs .home-about-us__article-container--img-xl {
   width: 35%;
   object-fit: cover;
 }
+@media (max-width: 850px) {
+  #homeAboutUs .home-about-us__article-container--img-xl {
+    width: 100%;
+    height: 30vh;
+  }
+}
 #homeAboutUs .home-about-us__article-container--article {
   padding: 5em 4em 0;
+}
+@media (max-width: 850px) {
+  #homeAboutUs .home-about-us__article-container--article {
+    padding: 5em 2em 0;
+  }
 }
 #homeAboutUs .home-about-us__article-container--article h1 {
   font-weight: 600;
@@ -945,8 +984,14 @@ main {
   width: 100%;
 }
 #homeAboutUs .home-about-us__images-container {
-  height: 30vh;
   display: flex;
+  max-height: 300px;
+  min-height: 200px;
+}
+@media (max-width: 850px) {
+  #homeAboutUs .home-about-us__images-container {
+    display: none;
+  }
 }
 #homeAboutUs .home-about-us__images-container img {
   width: 20%;
@@ -988,18 +1033,36 @@ main {
   width: 100%;
   margin-bottom: 18vh;
 }
+@media (max-width: 850px) {
+  #localisationContainer {
+    flex-direction: column-reverse;
+  }
+}
 #localisationContainer .localisation-list {
   width: 35%;
-  min-width: 380px;
+  min-width: 410px;
   height: 600px;
   background-color: #214b41;
   padding: 2em;
+}
+@media (max-width: 1250px) {
+  #localisationContainer .localisation-list {
+    padding: 2em 1em;
+    min-width: 355px;
+  }
+}
+@media (max-width: 850px) {
+  #localisationContainer .localisation-list {
+    width: 100%;
+    min-width: inherit;
+  }
 }
 #localisationContainer .localisation-list__search {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5em;
   width: 100%;
+  max-width: 400px;
 }
 #localisationContainer .localisation-list__search input {
   width: 87%;
@@ -1017,6 +1080,12 @@ main {
   width: 65%;
   height: 600px;
   background-color: #f0f9f6;
+}
+@media (max-width: 850px) {
+  #localisationContainer .localisation-map {
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
 
 .localisation-list__stores--store {

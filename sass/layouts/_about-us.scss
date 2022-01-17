@@ -1,14 +1,23 @@
 #homeAboutUs {
 	width: 100vw;
-	min-height: 100vh;
 	.home-about-us__article-container {
 		display: flex;
+		@include mobile-breakpoint {
+			flex-direction: column-reverse;
+		}
 		&--img-xl {
 			width: 35%;
 			object-fit: cover;
+			@include mobile-breakpoint {
+				width: 100%;
+				height: 30vh;
+			}
 		}
 		&--article {
 			padding: 5em 4em 0;
+			@include mobile-breakpoint {
+				padding: 5em 2em 0;
+			}
 			h1 {
 				font-weight: 600;
 				font-size: 1.5em;
@@ -48,8 +57,12 @@
 		}
 	}
 	.home-about-us__images-container {
-		height: 30vh;
 		display: flex;
+		max-height: 300px;
+		min-height: 200px;
+		@include mobile-breakpoint {
+			display: none;
+		}
 		img {
 			width: 20%;
 			object-fit: cover;

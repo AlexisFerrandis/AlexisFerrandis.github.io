@@ -55,3 +55,11 @@ async function getTheStores() {
 		}
 	});
 })();
+
+// footer display if innerHeight not height enough
+const footer = document.getElementById("footer");
+
+if (window.innerHeight > 1000) {
+	footer.style.position = "absolute";
+	footer.style.bottom = "0";
+}

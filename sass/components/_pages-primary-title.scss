@@ -16,6 +16,9 @@
 		@include tablet-breakpoint {
 			width: 30%;
 		}
+		@include mobile-breakpoint {
+			width: 10%;
+		}
 	}
 	&::before {
 		content: "";
@@ -27,6 +30,9 @@
 		left: 0;
 		@include tablet-breakpoint {
 			width: 30%;
+		}
+		@include mobile-breakpoint {
+			width: 10%;
 		}
 	}
 }

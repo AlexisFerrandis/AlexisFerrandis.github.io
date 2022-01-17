@@ -2,17 +2,29 @@
 	display: flex;
 	width: 100%;
 	margin-bottom: 18vh;
+	@include mobile-breakpoint {
+		flex-direction: column-reverse;
+	}
 	.localisation-list {
 		width: 35%;
-		min-width: 380px;
+		min-width: 410px;
 		height: 600px;
 		background-color: $color-primary;
 		padding: 2em;
+		@include tablet-breakpoint {
+			padding: 2em 1em;
+			min-width: 355px;
+		}
+		@include mobile-breakpoint {
+			width: 100%;
+			min-width: inherit;
+		}
 		&__search {
 			display: flex;
 			justify-content: space-between;
 			margin-bottom: 1.5em;
 			width: 100%;
+			max-width: 400px;
 			input {
 				width: 87%;
 				border: none;
@@ -31,6 +43,10 @@
 		width: 65%;
 		height: 600px;
 		background-color: $color-primary-light;
+		@include mobile-breakpoint {
+			width: 100%;
+			margin-bottom: 1em;
+		}
 	}
 }
 

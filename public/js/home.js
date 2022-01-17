@@ -33,11 +33,11 @@ window.addEventListener("scroll", (e) => {
 	e.preventDefault();
 
 	const headerDOM = document.getElementById("headerHomePage");
-	if (window.scrollY >= window.innerHeight - 30) {
+	if (window.scrollY >= window.innerHeight - 60) {
 		headerDOM.classList.remove("header-transparent");
 		headerDOM.classList.add("header-color-primary");
 		headerHamburger.style.filter = "invert(100%) sepia(1%) saturate(2%) hue-rotate(62deg) brightness(106%) contrast(101%)";
-	} else if (window.scrollY < window.innerHeight - 30) {
+	} else if (window.scrollY < window.innerHeight - 60) {
 		headerDOM.classList.remove("header-color-primary");
 		headerDOM.classList.add("header-transparent");
 		headerHamburger.style.filter = "invert(25%) sepia(30%) saturate(686%) hue-rotate(115deg) brightness(87%) contrast(91%)";

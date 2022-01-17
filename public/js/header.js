@@ -1,7 +1,7 @@
 const headerDOM = document.getElementById("header-color-primary");
 
 const headerContent = `
-<a href="../index.html"><img id="logoHeaderNav" src="../public/assets/img/logos/logo-img&text-white.png" /></a>
+<a href="../index.html"><img id="logoHeaderNav" src="../public/assets/img/logos/logo-img&text-white.svg" /></a>
 <nav class="header-nav__container" id="headerNav">
     <a class="header-nav__container--link" href="../index.html">accueil</a>
     <a id="headerNavAboutUs" class="header-nav__container--link" href="../index.html#homeAboutUs">qui sommes-nous?</a>

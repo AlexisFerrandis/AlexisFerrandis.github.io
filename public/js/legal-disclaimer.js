@@ -6,7 +6,7 @@ if (localStorage.getItem("legalDisclaimerAgreement") == "true") {
 	legalDisclaimer.innerHTML = `
     <div class="legal-disclaimer">
         <div class="legal-disclaimer__container">
-            <img src="./public/assets/img/logos/logo-img&text-color-primary-rounded.png" alt="TODO" />
+            <img src="./public/assets/img/logos/logo-img&text-color-primary-rounded.svg" alt="TODO" />
             <select name="country" id="countrySelect">
                 <option value="french">français</option>
                 <option value="english">english</option>
