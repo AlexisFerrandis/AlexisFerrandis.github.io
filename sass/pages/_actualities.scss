@@ -2,12 +2,20 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 4em;
+	@include mobile-breakpoint {
+		flex-direction: column;
+		margin-bottom: inherit;
+	}
 }
 
 .actualities-vertical-container {
 	width: 48%;
 	display: flex;
 	flex-direction: column;
+	@include mobile-breakpoint {
+		width: 100%;
+		margin-bottom: 2em;
+	}
 	img {
 		width: 100%;
 		object-fit: cover;
@@ -36,18 +44,37 @@
 .actualities-horizontal-container {
 	display: flex;
 	margin: 0 auto 4em;
-	height: 350px;
+	max-height: 350px;
+	@include mobile-breakpoint {
+		flex-direction: column;
+		height: 100%;
+		max-height: inherit;
+	}
 	img {
 		width: 50%;
 		object-fit: cover;
+		@include mobile-breakpoint {
+			width: 100%;
+			object-fit: cover;
+			max-height: 350px;
+			margin-bottom: 1em;
+		}
 	}
 	&__article--right {
 		width: 50%;
 		padding-left: 1em;
+		@include mobile-breakpoint {
+			width: 100%;
+			padding: inherit;
+		}
 	}
 	&__article--left {
 		width: 50%;
 		padding-right: 1em;
+		@include mobile-breakpoint {
+			width: 100%;
+			padding: inherit;
+		}
 	}
 	h2 {
 		@extend .actualitiesh2;
@@ -60,5 +87,11 @@
 	}
 	p {
 		@extend .actualities-p;
+	}
+}
+
+.degustation-container {
+	@include mobile-breakpoint {
+		flex-direction: column-reverse;
 	}
 }

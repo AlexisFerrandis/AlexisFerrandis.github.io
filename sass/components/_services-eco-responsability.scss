@@ -2,8 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	height: 322px;
 	margin-bottom: 4em;
+	@include mobile-breakpoint {
+		flex-direction: column;
+	}
 	h3 {
 		position: relative;
 		text-transform: uppercase;
@@ -11,16 +13,23 @@
 		font-weight: 400;
 	}
 	p {
-		margin-bottom: 2em;
+		margin-top: 2em;
+		@include tablet-breakpoint {
+			margin-top: 1em;
+		}
 	}
 	.eco-responsability--img {
 		object-fit: cover;
 		width: 100%;
-		height: 322px;
+		height: 100%;
 	}
 	&--article {
 		width: 49.5%;
 		position: relative;
+		@include mobile-breakpoint {
+			width: 100%;
+			margin-bottom: 2em;
+		}
 		img {
 			position: absolute;
 			z-index: -1;
@@ -36,5 +45,8 @@
 		width: 49.5%;
 		-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
 		box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
+		@include mobile-breakpoint {
+			width: 100%;
+		}
 	}
 }

@@ -1,10 +1,29 @@
+.partner-container {
+	height: 340px;
+	@include tablet-breakpoint {
+		margin-bottom: 0em;
+	}
+	@include mobile-breakpoint {
+		height: 100%;
+		margin-bottom: 2em;
+	}
+}
+
 #actualitiesPartnerSlider {
 	width: 50%;
-	min-width: 584px;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 	@include tablet-breakpoint {
-		// min-height: 300px;
+		width: 584px;
+		height: 350px;
+	}
+	@include mobile-breakpoint {
+		margin: 0 auto;
+	}
+	@media (max-width: 620px) {
+		width: 350px;
+		max-width: 95%;
+		height: 220px;
 	}
 	.translateX-slider {
 		position: absolute;

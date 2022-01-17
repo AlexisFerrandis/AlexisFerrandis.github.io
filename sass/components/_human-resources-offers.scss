@@ -8,9 +8,14 @@
 	height: 410px;
 	color: $white;
 	padding: 2em 1.5em;
-	margin-bottom: 2em;
+	margin: 0 1em 2em;
 	-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
 	box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+	@include mobile-breakpoint {
+		width: 100%;
+		max-width: 300px;
+		min-width: inherit;
+	}
 	h4 {
 		text-transform: uppercase;
 		text-align: center;

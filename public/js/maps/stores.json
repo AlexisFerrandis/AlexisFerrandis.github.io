@@ -529,6 +529,134 @@
 				"maps-itinerary": "218 bis rue des Pyrenées 75020 Paris",
 				"storeid": "pyrenees"
 			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [3.130060491660575, 48.949660532552954]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h00-13h00/15h30-19h30<br/>Mercredi: 10h00-13h00/15h30-19h30<br/>Jeudi: 10h00-13h00/15h30-19h30<br/>Vendredi: 10h00-13h00/15h30-19h30<br/>Samedi: 10h00-13h30/15h15-19h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>La ferté sous Jouarre",
+				"address": "26 rue des Pelletiers</br>77260 La Ferté sous Jouarre",
+				"phone": "01.60.22.01.72",
+				"email": "laferte@lerepairedebacchus.com",
+				"maps-itinerary": "26 rue des Pelletiers 77260 La Ferté sous Jouarre",
+				"storeid": "laferte"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.0895154276828345, 48.898040829490334]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h00/16h-19h30<br/>Mercredi: 10h30-13h00/16h-19h30<br/>Jeudi: 10h30-13h00/16h-19h30<br/>Vendredi: 10h30-13h00/16h-19h30<br/>Samedi: 9h45-13h30/14h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Saint-Germain-en-Laye",
+				"address": "60 rue de Poissy</br>78100 Saint Germain-en-Laye",
+				"phone": "01.78.64.10.36",
+				"email": "stgermain@lerepairedebacchus.com",
+				"maps-itinerary": "60 rue de Poissy 78100 Saint Germain-en-Laye",
+				"storeid": "stgermain"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.2357972492619207, 48.84548726017417]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h00/16h00-20h00<br/>Mercredi: 10h30-13h00/16h00-20h00<br/>Jeudi: 10h30-13h00/16h00-20h00<br/>Vendredi: 10h30-13h30/16h00-20h30<br/>Samedi: 10h30-13h30/14h45-20h30<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Boulogne",
+				"address": "52 avenue Jean-Baptiste Clément</br>92100 Boulogne-Billancourt",
+				"phone": "01.70.28.10.37",
+				"email": "boulogne@lerepairedebacchus.com",
+				"maps-itinerary": "52 avenue Jean-Baptiste Clément 92100 Boulogne-Billancourt",
+				"storeid": "boulogne"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.2769206716297985, 48.88215994671121]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h30-20h<br/>Mardi: 10h30-13h00/16h15-20h15<br/>Mercredi: 10h30-13h00/16h15-20h15<br/>Jeudi: 10h30-13h00/16h15-20h15<br/>Vendredi: 10h30-13h00/16h15-20h15<br/>Samedi: 10h00-13h30/14h30-20h15<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Neuilly",
+				"address": "25bis rue Madeleine Michelis</br>92200 Neuilly-sur-Seine",
+				"phone": "01.70.16.50.41",
+				"email": "neuilly@lerepairedebacchus.com",
+				"maps-itinerary": "25bis rue Madeleine Michelis 92200 Neuilly-sur-Seine",
+				"storeid": "neuilly"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.289357217355469, 48.89078810470239]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h00-20h00<br/>Mercredi: 10h30-13h30/16h00-20h00<br/>Jeudi: 10h30-13h30/16h00-20h00<br/>Vendredi: 10h30-14h15/15h00-20h00<br/>Samedi: 10h00-14h30/15h00-20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Levallois-Perret",
+				"address": "20 rue Henri Barbusse</br>92300 Levallois-Perret",
+				"phone": "01.72.63.63.80",
+				"email": "levallois@lerepairedebacchus.com",
+				"maps-itinerary": "20 rue Henri Barbusse 92300 Levallois-Perret",
+				"storeid": "levallois"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.291630793887162, 48.77849866847696]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: Fermé<br/>Mardi: 10h30–13h00/16h00–20h00<br/>Mercredi: 10h30–13h00/16h00–20h00<br/>Jeudi: 10h30–13h00/16h00–20h00<br/>Vendredi: 10h30–13h00/15h30–20h00<br/>Samedi: 10h00–14h15/15h00–20h00<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Sceaux",
+				"address": "65 rue Houdan</br>92330 Sceaux",
+				"phone": "01.70.28.10.40",
+				"email": "sceaux@lerepairedebacchus.com",
+				"maps-itinerary": "65 rue Houdan 92330 Sceaux",
+				"storeid": "sceaux"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.485296913092006, 48.80380953581226]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h00-20h<br/>Mardi: 9h00-13h30/14h30-20h00<br/>Mercredi: 9h00-13h30/14h30-20h00<br/>Jeudi: 9h00-13h30/14h30-20h00<br/>Vendredi: 9h00-13h30/14h30-20h00<br/>Samedi: 9h00-20h00<br/>Dimanche: 9h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Saint-Maur",
+				"address": "14 avenue Charles de Gaulle</br>94100 Saint-Maur-des-Fossés",
+				"phone": "01.48.83.03.67",
+				"email": "stmaur@lerepairedebacchus.com",
+				"maps-itinerary": "14 avenue Charles de Gaulle 94100 Saint-Maur-des-Fossés",
+				"storeid": "stmaur"
+			}
+		},
+		{
+			"geometry": {
+				"type": "Point",
+				"coordinates": [2.4350242231856964, 48.847312955577785]
+			},
+			"type": "Feature",
+			"properties": {
+				"hours": "Lundi: 16h30-20h<br/>Mardi: 10h00-20h<br/>Mercredi: 10h00-20h<br/>Jeudi: 10h00-20h<br/>Vendredi: 10h00-20h<br/>Samedi: 10h00-20h<br/>Dimanche: 10h00-13h00",
+				"name": "Le Repaire de Bacchus<br/>Vincennes",
+				"address": "50 rue du Midi</br>94300 Vincennes",
+				"phone": "01.72.68.00.42",
+				"email": "vincennes2@lerepairedebacchus.com",
+				"maps-itinerary": "50 rue du Midi 94300 Vincennes",
+				"storeid": "vincennes2"
+			}
 		}
 	]
 }
