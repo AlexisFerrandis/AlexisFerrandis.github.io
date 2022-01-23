@@ -1,6 +1,6 @@
 .human-resources-horizontal-container {
 	display: flex;
-	max-height: 350px;
+	max-height: 370px;
 	height: 100%;
 	margin-bottom: 1em;
 	@include mobile-breakpoint {
@@ -61,6 +61,7 @@
 	}
 	img {
 		width: 70%;
+		max-height: 350px;
 		object-fit: cover;
 		@include tablet-breakpoint {
 			width: 55%;

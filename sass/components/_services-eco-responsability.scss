@@ -10,7 +10,7 @@
 		position: relative;
 		text-transform: uppercase;
 		font-size: 1.5em;
-		font-weight: 400;
+		font-weight: 600;
 	}
 	p {
 		margin-top: 2em;
@@ -24,29 +24,22 @@
 		height: 100%;
 	}
 	&--article {
-		width: 49.5%;
+		width: 100%;
 		position: relative;
-		@include mobile-breakpoint {
-			width: 100%;
-			margin-bottom: 2em;
-		}
 		img {
 			position: absolute;
 			z-index: -1;
+			height: 34px;
+			@media (max-width: 446px) {
+				right: 0;
+			}
 		}
 		&-texte {
 			padding: 1.5em;
-			img {
-				height: 34px;
+			span {
+				font-weight: 1000;
+				text-transform: uppercase;
 			}
-		}
-	}
-	&--img {
-		width: 49.5%;
-		-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
-		box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
-		@include mobile-breakpoint {
-			width: 100%;
 		}
 	}
 }

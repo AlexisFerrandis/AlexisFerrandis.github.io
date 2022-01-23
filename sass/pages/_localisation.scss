@@ -7,7 +7,7 @@
 	}
 	.localisation-list {
 		width: 35%;
-		min-width: 410px;
+		min-width: 375px;
 		height: 600px;
 		background-color: $color-primary;
 		padding: 2em;
@@ -16,7 +16,6 @@
 		box-shadow: 20px 0px 19px -5px rgba(0, 0, 0, 0.27);
 		@include tablet-breakpoint {
 			padding: 2em 1em;
-			min-width: 355px;
 		}
 		@include mobile-breakpoint {
 			width: 100%;
@@ -42,6 +41,13 @@
 			width: 100%;
 			height: 90%;
 			overflow-y: scroll;
+			a {
+				color: $white;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 	.localisation-map {

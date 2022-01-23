@@ -20,12 +20,13 @@
 }
 .small-button__square--green {
 	border: none;
-	padding: 0.3em 0.4em;
+	padding: 0.3em 0.4em 0.3em 0.5em;
 	background-color: $color-primary;
 	color: $white;
 	font-weight: 500;
-	margin: 0 1.2em 0 -5px;
+	margin: 0 1.2em 0 -3px;
 	@extend .button-active;
+	cursor: pointer;
 }
 .human-ressources-offers__links-mail-to {
 	display: block;

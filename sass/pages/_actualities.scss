@@ -88,6 +88,18 @@
 	p {
 		@extend .actualities-p;
 	}
+	.social-network-ico {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 2em;
+		img {
+			width: 42px;
+			height: 42px;
+			filter: invert(23%) sepia(8%) saturate(2640%) hue-rotate(115deg) brightness(96%) contrast(87%);
+			-webkit-box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.31);
+			box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.31);
+		}
+	}
 }
 
 .degustation-container {

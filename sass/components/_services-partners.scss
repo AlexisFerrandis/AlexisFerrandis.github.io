@@ -6,6 +6,8 @@
 	padding: 1em 0 1em;
 	text-align: center;
 	justify-content: center;
+	min-height: 320px;
+
 	h6 {
 		text-transform: uppercase;
 		font-size: 1.1em;
@@ -13,10 +15,12 @@
 		margin-bottom: 0.6em;
 	}
 	&__principal {
+		position: relative;
 		@extend .services-partner-display;
 		width: 40%;
 		@include tablet-breakpoint {
 			width: 100%;
+			height: 280px;
 			margin-bottom: 2em;
 		}
 		@include mobile-breakpoint {
@@ -27,10 +31,14 @@
 			width: 60%;
 			@include tablet-breakpoint {
 				width: 50%;
-				max-width: 400px;
+				max-width: 350px;
 				min-width: 200px;
 			}
 			margin-bottom: 2em;
+		}
+		button {
+			position: absolute;
+			bottom: 1em;
 		}
 	}
 	&__secondary {
@@ -44,7 +52,7 @@
 		}
 		@include mobile-breakpoint {
 			width: 100%;
-			height: 300px;
+			height: 310px;
 			margin-bottom: 2em;
 		}
 		img {
@@ -83,5 +91,17 @@
 			position: absolute;
 			bottom: 1em;
 		}
+	}
+	.wine-and-co {
+		background-color: $wine-and-co;
+	}
+	.tgtg {
+		background-color: $tgtg;
+	}
+	.potager-city {
+		background-color: $potager-city;
+	}
+	.air-campus {
+		background-color: $aircampus;
 	}
 }

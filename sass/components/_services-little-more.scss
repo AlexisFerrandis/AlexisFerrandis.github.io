@@ -11,10 +11,14 @@
 		@include mobile-breakpoint {
 			width: 50%;
 		}
+		h3 {
+			color: $hr-senior;
+		}
 		h5 {
 			text-transform: uppercase;
 			font-size: 1.1em;
 			margin: 1em 0 1.5em;
+			color: $hr-senior;
 		}
 		img {
 			border-radius: 50%;
@@ -32,7 +36,7 @@
 		left: 25%;
 		height: 100%;
 		width: 1px;
-		background-color: $color-primary-medium;
+		background-color: $hr-senior;
 		@include mobile-breakpoint {
 			left: 50%;
 			height: 42%;
@@ -42,15 +46,23 @@
 		width: 50%;
 		height: 100%;
 		padding: 1.5em;
-		background-color: $color-primary-medium;
+		background-color: $hr-junior;
 		color: $white;
 		-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
 		box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
 		@include mobile-breakpoint {
 			width: 100%;
 		}
+		h3 {
+			color: white;
+		}
+		.services-h3-ico {
+			@media (max-width: 397px) {
+				top: 15px;
+			}
+		}
 		p {
-			height: 60px;
+			min-height: 60px;
 		}
 		#fidelityPiggies {
 			width: 100%;
