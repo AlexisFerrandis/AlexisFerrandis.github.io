@@ -383,7 +383,7 @@
 				"phone": "01.72.63.68.40",
 				"email": "lemarois@lerepairedebacchus.com",
 				"maps-itinerary": "11 rue Le Marois 75016 Paris",
-				"storeid": "lemarois"
+				"storeid": "marois"
 			}
 		},
 		{
@@ -479,7 +479,7 @@
 				"phone": "01.42.51.76.28",
 				"email": "demaistre@lerepairedebacchus.com",
 				"maps-itinerary": "1 rue Joseph De Maistre 75018 Paris",
-				"storeid": "demaistre"
+				"storeid": "maistre"
 			}
 		},
 		{
@@ -495,7 +495,7 @@
 				"phone": "01.79.60.00.12",
 				"email": "secretan@lerepairedebacchus.com",
 				"maps-itinerary": "21 avenue Secrétan 75019 Paris",
-				"storeid": "secretan"
+				"storeid": "secrétan"
 			}
 		},
 		{
@@ -527,7 +527,7 @@
 				"phone": "01.72.63.68.38",
 				"email": "pyrenees@lerepairedebacchus.com",
 				"maps-itinerary": "218 bis rue des Pyrenées 75020 Paris",
-				"storeid": "pyrenees"
+				"storeid": "pyrenées"
 			}
 		},
 		{
@@ -543,7 +543,7 @@
 				"phone": "01.60.22.01.72",
 				"email": "laferte@lerepairedebacchus.com",
 				"maps-itinerary": "26 rue des Pelletiers 77260 La Ferté sous Jouarre",
-				"storeid": "laferte"
+				"storeid": "ferté"
 			}
 		},
 		{
@@ -559,7 +559,7 @@
 				"phone": "01.78.64.10.36",
 				"email": "stgermain@lerepairedebacchus.com",
 				"maps-itinerary": "60 rue de Poissy 78100 Saint Germain-en-Laye",
-				"storeid": "stgermain"
+				"storeid": "saint-germain"
 			}
 		},
 		{
@@ -639,7 +639,7 @@
 				"phone": "01.48.83.03.67",
 				"email": "stmaur@lerepairedebacchus.com",
 				"maps-itinerary": "14 avenue Charles de Gaulle 94100 Saint-Maur-des-Fossés",
-				"storeid": "stmaur"
+				"storeid": "saint-maur"
 			}
 		},
 		{
@@ -655,7 +655,7 @@
 				"phone": "01.72.68.00.42",
 				"email": "vincennes2@lerepairedebacchus.com",
 				"maps-itinerary": "50 rue du Midi 94300 Vincennes",
-				"storeid": "vincennes2"
+				"storeid": "vincennes"
 			}
 		}
 	]
