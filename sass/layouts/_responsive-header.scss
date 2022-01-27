@@ -7,7 +7,7 @@
 		z-index: 2;
 		flex-direction: column;
 		top: 0;
-		padding-top: 100px;
+		padding-top: 80px;
 		width: 100%;
 		text-align: center;
 		background-color: $color-primary;
@@ -17,7 +17,6 @@
 			margin: 1em 0;
 			&::after {
 				@extend .header-links-after-display;
-
 				background-color: $white;
 				width: 20%;
 				left: 50%;
@@ -47,7 +46,7 @@
 		z-index: 2;
 		flex-direction: column;
 		top: 0;
-		padding-top: 100px;
+		padding-top: 60px;
 		width: 100%;
 		text-align: center;
 		background-color: rgba($color: #ffffff, $alpha: 0.95);

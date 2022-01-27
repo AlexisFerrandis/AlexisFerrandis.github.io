@@ -27,11 +27,6 @@
 			text-align: center;
 			margin-bottom: 0.5em;
 		}
-		h3 {
-			@extend .actualitiesh3;
-			text-align: center;
-			margin-bottom: 0.5em;
-		}
 		&--separator {
 			@extend .actualities-separator;
 		}
@@ -76,12 +71,17 @@
 			padding: inherit;
 		}
 	}
+	.scrollable-content {
+		max-height: 280px;
+		overflow-y: scroll;
+	}
 	h2 {
 		@extend .actualitiesh2;
+		@include mobile-breakpoint {
+			text-align: center;
+		}
 	}
-	h3 {
-		@extend .actualitiesh3;
-	}
+
 	&__article--separator {
 		@extend .actualities-separator;
 	}

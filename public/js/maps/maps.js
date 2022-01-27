@@ -47,6 +47,13 @@ function initMap() {
 		infoWindow.setPosition(position);
 		infoWindow.setOptions({ pixelOffset: new google.maps.Size(0, -30) });
 		infoWindow.open(map);
+
+		// Display the shop in the list
+		const searchInput = document.getElementById("storeInput");
+		const storeId = event.feature.getProperty("storeid");
+		searchInput.value = storeId;
+		let inputEvent = new Event("input");
+		searchInput.dispatchEvent(inputEvent);
 	});
 
 	setTimeout(() => {

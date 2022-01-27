@@ -13,11 +13,17 @@
 		background-color: $color-primary;
 		top: 68.5%;
 		right: 0;
-		@include tablet-breakpoint {
+		@media (max-width: 950px) {
 			width: 30%;
 		}
-		@include mobile-breakpoint {
-			width: 10%;
+		@media (max-width: 720px) {
+			width: 25%;
+		}
+		@media (max-width: 570px) {
+			width: 20%;
+		}
+		@media (max-width: 470px) {
+			width: 11%;
 		}
 	}
 	&::before {
@@ -28,11 +34,17 @@
 		background-color: $color-primary;
 		top: 68.5%;
 		left: 0;
-		@include tablet-breakpoint {
+		@media (max-width: 950px) {
 			width: 30%;
 		}
-		@include mobile-breakpoint {
-			width: 10%;
+		@media (max-width: 720px) {
+			width: 25%;
+		}
+		@media (max-width: 570px) {
+			width: 20%;
+		}
+		@media (max-width: 470px) {
+			width: 11%;
 		}
 	}
 }

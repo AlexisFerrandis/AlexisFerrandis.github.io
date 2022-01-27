@@ -7,7 +7,7 @@
 		text-transform: uppercase;
 		font-size: 1.5em;
 		font-weight: 600;
-		color: $hr-junior;
+		color: $cama-blue;
 		@include mobile-breakpoint {
 			font-size: 1.3em;
 		}
@@ -43,6 +43,9 @@
 			padding-left: 0;
 			margin-bottom: 1.5em;
 		}
+		h3 {
+			color: $cama-green;
+		}
 		p {
 			margin-bottom: 1em;
 			@include mobile-breakpoint {
@@ -63,7 +66,6 @@
 .services-h3-ico {
 	position: absolute;
 	height: 28px;
-	margin-left: 0.5em;
 	top: -0.15em;
 	@include mobile-breakpoint {
 		margin-left: 0.5em;

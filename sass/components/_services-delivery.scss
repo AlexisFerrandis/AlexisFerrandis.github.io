@@ -5,6 +5,9 @@
 		width: 100%;
 		min-height: 380px;
 		padding: 1.5em 0;
+		@include tablet-breakpoint {
+			margin-bottom: 4em;
+		}
 		@include mobile-breakpoint {
 			flex-direction: column;
 		}
@@ -30,10 +33,7 @@
 				min-height: 270px;
 			}
 			h3 {
-				color: $hr-senior;
-				.services-h3-ico {
-					filter: invert(48%) sepia(91%) saturate(366%) hue-rotate(129deg) brightness(91%) contrast(95%);
-				}
+				color: $cama-blue;
 			}
 			article {
 				display: flex;
@@ -85,7 +85,7 @@
 							text-align: center;
 							span {
 								font-weight: 600;
-								color: $hr-senior;
+								color: $cama-blue;
 							}
 						}
 					}
@@ -97,7 +97,7 @@
 					}
 				}
 				.paris-delivery {
-					border-left: 1px solid $hr-senior;
+					border-left: 1px solid $cama-blue;
 					width: 55%;
 					@media (max-width: 580px) {
 						width: 100%;

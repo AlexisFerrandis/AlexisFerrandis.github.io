@@ -12,13 +12,16 @@
 			width: 50%;
 		}
 		h3 {
-			color: $hr-senior;
+			color: $cama-green;
 		}
 		h5 {
 			text-transform: uppercase;
 			font-size: 1.1em;
 			margin: 1em 0 1.5em;
-			color: $hr-senior;
+			color: $cama-green;
+		}
+		.cama-blue {
+			color: $cama-blue;
 		}
 		img {
 			border-radius: 50%;
@@ -36,7 +39,7 @@
 		left: 25%;
 		height: 100%;
 		width: 1px;
-		background-color: $hr-senior;
+		background-color: $cama-green;
 		@include mobile-breakpoint {
 			left: 50%;
 			height: 42%;
@@ -46,7 +49,7 @@
 		width: 50%;
 		height: 100%;
 		padding: 1.5em;
-		background-color: $hr-junior;
+		background-color: $cama-green;
 		color: $white;
 		-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
 		box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
@@ -57,7 +60,7 @@
 			color: white;
 		}
 		.services-h3-ico {
-			@media (max-width: 397px) {
+			@media (max-width: 380px) {
 				top: 15px;
 			}
 		}

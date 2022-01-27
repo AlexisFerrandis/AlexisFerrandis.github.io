@@ -12,7 +12,7 @@
 	box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
 	@include mobile-breakpoint {
 		width: 100%;
-		max-width: 300px;
+		max-width: 320px;
 		min-width: inherit;
 		margin: 0 0 2em;
 	}
@@ -27,9 +27,17 @@
 		object-fit: cover;
 		margin-bottom: 2em;
 	}
+
 	p {
 		text-align: justify;
-		margin-bottom: 4em;
+		height: 350px;
+		overflow-y: scroll;
+		border: 1px solid white;
+		margin: 1.5em 0 5em;
+		padding: 18px;
+		span {
+			text-decoration: underline;
+		}
 	}
 	a {
 		position: absolute;

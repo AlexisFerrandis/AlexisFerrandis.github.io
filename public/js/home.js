@@ -14,7 +14,7 @@ window.addEventListener("scroll", () => {
 const headerResponsiveContent = `
 <nav class="header-nav-responsive__container responsive-header-transparent" id="headerResponsiveNav">
     <a class="header-nav-responsive__container--link" href="#homeCarouselFullPage">accueil</a>
-    <a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="#homeAboutUs">qui sommes-nous?</a>
+    <a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="#homeAboutUs">qui sommes-nous ?</a>
     <a id="headerNavLocalisation" class="header-nav-responsive__container--link" href="./pages/localisation.html">nos caves</a>
     <a id="headerNavActualities" class="header-nav-responsive__container--link" href="./pages/actualities.html">nos actualités</a>
     <a id="headerNavServices" class="header-nav-responsive__container--link" href="./pages/services.html">nos services</a>
@@ -47,7 +47,7 @@ window.addEventListener("scroll", (e) => {
 responsiveHeaderDom.innerHTML = `
 <nav class="header-nav-responsive__container responsive-header-transparent" id="headerResponsiveNav">
 	<a class="header-nav-responsive__container--link" href="#homeCarouselFullPage">accueil</a>
-	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="#homeAboutUs">qui sommes-nous?</a>
+	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="#homeAboutUs">qui sommes-nous ?</a>
 	<a id="headerNavLocalisation" class="header-nav-responsive__container--link" href="./pages/localisation.html">nos caves</a>
 	<a id="headerNavActualities" class="header-nav-responsive__container--link" href="./pages/actualities.html">nos actualités</a>
 	<a id="headerNavServices" class="header-nav-responsive__container--link" href="./pages/services.html">nos services</a>

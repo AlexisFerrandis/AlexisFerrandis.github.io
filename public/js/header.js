@@ -4,7 +4,7 @@ const headerContent = `
 <a href="../index.html"><img id="logoHeaderNav" src="../public/assets/img/logos/logo-img&text-white.svg" /></a>
 <nav class="header-nav__container" id="headerNav">
     <a class="header-nav__container--link" href="../index.html">accueil</a>
-    <a id="headerNavAboutUs" class="header-nav__container--link" href="../index.html#homeAboutUs">qui sommes-nous?</a>
+    <a id="headerNavAboutUs" class="header-nav__container--link" href="../index.html#homeAboutUs">qui sommes-nous ?</a>
     <a id="headerNavLocalisation" class="header-nav__container--link" href="./localisation.html">nos caves</a>
     <a id="headerNavActualities" class="header-nav__container--link" href="./actualities.html">nos actualités</a>
     <a id="headerNavServices" class="header-nav__container--link" href="./services.html">nos services</a>
@@ -43,7 +43,7 @@ for (let i = 0; i < currentPage.length; i++) {
 responsiveHeaderDom.innerHTML = `
 <nav class="header-nav-responsive__container responsive-header-primary" id="headerResponsiveNav">
 	<a class="header-nav-responsive__container--link" href="../index.html">accueil</a>
-	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="../index.html#homeAboutUs">qui sommes-nous?</a>
+	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="../index.html#homeAboutUs">qui sommes-nous ?</a>
 	<a id="headerNavLocalisation" class="header-nav-responsive__container--link" href="../pages/localisation.html">nos caves</a>
 	<a id="headerNavActualities" class="header-nav-responsive__container--link" href="../pages/actualities.html">nos actualités</a>
 	<a id="headerNavServices" class="header-nav-responsive__container--link" href="../pages/services.html">nos services</a>

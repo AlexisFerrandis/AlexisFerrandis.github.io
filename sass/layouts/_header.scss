@@ -31,13 +31,13 @@
 				left: 0;
 				background-color: $color-primary;
 				opacity: 0;
-				transform: translateX(-20px);
+				transform: translateY(7px);
 				transition: $short-animation;
 			}
 			&:hover {
 				&::after {
 					opacity: 1;
-					transform: translateX(0px);
+					transform: translateY(0px);
 				}
 			}
 		}
@@ -81,18 +81,19 @@
 			&::after {
 				@extend .header-links-after-display;
 				background-color: $white;
+				transform: translateY(7px);
 			}
 			&:hover {
 				&::after {
 					opacity: 1;
-					transform: translateX(0px);
+					transform: translateY(0px);
 				}
 			}
 			&--actif {
 				font-weight: 600;
 				&::after {
 					opacity: 1;
-					transform: translateX(0px);
+					transform: translateY(0px);
 				}
 			}
 		}

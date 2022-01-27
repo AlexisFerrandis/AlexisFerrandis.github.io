@@ -14,7 +14,6 @@ const footerContent = `
                 <input type="hidden" name="act" value="sub" />
                 <input type="hidden" name="v" value="2" />
                 <input type="hidden" name="or" value="5cb443f00e3806771a8e3d27225ae9d1" />
-                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                 <div class="_form-content">
                     <div class="_form_element _x91316423">
                         <div class="_field-wrapper">
