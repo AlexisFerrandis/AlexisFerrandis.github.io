@@ -72,8 +72,14 @@
 		}
 	}
 	.scrollable-content {
-		max-height: 280px;
+		max-height: 260px;
 		overflow-y: scroll;
+		padding: 7px;
+		margin-bottom: 1em;
+		span {
+			font-weight: 1000;
+			text-decoration: underline;
+		}
 	}
 	h2 {
 		@extend .actualitiesh2;
@@ -90,20 +96,26 @@
 	}
 	.social-network-ico {
 		display: flex;
-		justify-content: space-around;
-		margin-top: 2em;
+		flex-direction: column;
+		margin: 1.5em 0;
+		a {
+			text-decoration: none;
+			color: black;
+			margin: 0.5em 0;
+		}
 		img {
-			width: 42px;
-			height: 42px;
-			filter: invert(23%) sepia(8%) saturate(2640%) hue-rotate(115deg) brightness(96%) contrast(87%);
-			-webkit-box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.31);
-			box-shadow: 1px 8px 12px 0px rgba(0, 0, 0, 0.31);
+			width: 32px;
+			height: 32px;
 		}
 	}
 }
 
 .degustation-container {
+	margin-bottom: 7em;
 	@include mobile-breakpoint {
 		flex-direction: column-reverse;
+	}
+	img {
+		height: 100%;
 	}
 }

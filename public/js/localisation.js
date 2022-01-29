@@ -27,7 +27,7 @@ async function getTheStores() {
 			<h6>${store.properties.name}</h6>
 			<p class="store-adresse" >${store.properties.address}</p>
 			<a href="tel:${store.properties.phone}"><p class="store-phone"><img class="filter-white" src="../public/assets/fonts/fontawesome/mobile-alt-solid.svg" alt="TODO" />${store.properties.phone}</p></a>
-			<a href="tel:${store.properties.email}"><p class="store-mail"><img class="filter-white" src="../public/assets/fonts/fontawesome/envelope-solid.svg" alt="TODO" />${store.properties.email}</p></a>
+			<a href="mailto:${store.properties.email}"><p class="store-mail"><img class="filter-white" src="../public/assets/fonts/fontawesome/envelope-solid.svg" alt="TODO" />${store.properties.email}</p></a>
 		</article>
 		`;
 		renderHTML += storeInfo;
@@ -41,13 +41,16 @@ async function getTheStores() {
 	searchInput.addEventListener("input", () => {
 		let userInput = searchInput.value.toLocaleLowerCase();
 		let storeAdress = document.querySelectorAll(".store-adresse");
+		let storeMail = document.querySelectorAll(".store-mail");
 
 		for (let i = 0; i < storeAdress.length; i++) {
 			const storeArray = storeAdress[i].innerHTML.split("<br>");
 			let storeAdressName = storeArray[0].toLocaleLowerCase();
 			let storePostalCode = storeArray[1].toLocaleLowerCase();
 
-			if (userInput === "" || storeAdressName.includes(userInput) || storePostalCode.includes(userInput)) {
+			let storeMailName = storeMail[i].innerHTML;
+
+			if (userInput === "" || storeAdressName.includes(userInput) || storePostalCode.includes(userInput) || storeMailName.includes(userInput)) {
 				storeAdress[i].closest(".localisation-list__stores--store").style.display = "block";
 			} else {
 				storeAdress[i].closest(".localisation-list__stores--store").style.display = "none";
