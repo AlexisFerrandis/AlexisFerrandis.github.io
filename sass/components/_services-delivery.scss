@@ -10,6 +10,7 @@
 		}
 		@include mobile-breakpoint {
 			flex-direction: column;
+			margin-bottom: 1em;
 		}
 		.video-part {
 			width: 49%;

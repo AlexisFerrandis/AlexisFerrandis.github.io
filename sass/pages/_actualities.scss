@@ -72,7 +72,7 @@
 		}
 	}
 	.scrollable-content {
-		max-height: 260px;
+		max-height: 250px;
 		overflow-y: scroll;
 		padding: 7px;
 		margin-bottom: 1em;
@@ -99,9 +99,15 @@
 		flex-direction: column;
 		margin: 1.5em 0;
 		a {
+			display: flex;
 			text-decoration: none;
+			align-items: center;
 			color: black;
 			margin: 0.5em 0;
+			max-width: 210px;
+			p {
+				margin-left: 0.5em;
+			}
 		}
 		img {
 			width: 32px;
@@ -114,8 +120,9 @@
 	margin-bottom: 7em;
 	@include mobile-breakpoint {
 		flex-direction: column-reverse;
+		margin-bottom: 4em;
 	}
 	img {
-		height: 100%;
+		object-fit: cover;
 	}
 }
