@@ -1,5 +1,6 @@
 .partner-container {
 	height: 350px;
+	margin: 0;
 	@include tablet-breakpoint {
 		margin-bottom: 0em;
 	}
@@ -10,13 +11,11 @@
 }
 
 #actualitiesPartnerSlider {
-	width: 50%;
+	width: 570px;
+	height: 350px;
 	position: relative;
 	overflow-x: hidden;
-	@include tablet-breakpoint {
-		width: 584px;
-		height: 350px;
-	}
+
 	@include mobile-breakpoint {
 		margin: 0 auto;
 	}
@@ -28,7 +27,7 @@
 	.translateX-slider {
 		position: absolute;
 		display: flex;
-		width: 400%;
+		width: 300%;
 		animation: fade 14000ms infinite;
 		.partner-slider-img {
 			transition: 1000ms;
@@ -45,45 +44,18 @@
 		transform: translateX(0%);
 	}
 	25% {
-		transform: translateX(-25%);
+		transform: translateX(-33.33%);
 	}
-	28% {
-		transform: translateX(-25%);
-	}
-	50% {
-		transform: translateX(-50%);
-	}
-	53% {
-		transform: translateX(-50%);
+	60% {
+		transform: translateX(-33.33%);
 	}
 	75% {
-		transform: translateX(-75%);
+		transform: translateX(-66.66%);
+	}
+	90% {
+		transform: translateX(-66.66%);
 	}
 	100% {
-		transform: translateX(-75%);
-	}
-}
-
-@-webkit-keyframes fade {
-	0% {
-		transform: translateX(0%);
-	}
-	25% {
-		transform: translateX(-25%);
-	}
-	28% {
-		transform: translateX(-25%);
-	}
-	50% {
-		transform: translateX(-50%);
-	}
-	53% {
-		transform: translateX(-50%);
-	}
-	75% {
-		transform: translateX(-75%);
-	}
-	100% {
-		transform: translateX(-75%);
+		transform: translateX(-66.66%);
 	}
 }

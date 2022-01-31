@@ -378,12 +378,12 @@
 			"type": "Feature",
 			"properties": {
 				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h30/16h15-20h<br/>Mercredi: 10h30-13h30/16h15-20h<br/>Jeudi: 10h30-13h30/16h15-20h<br/>Vendredi: 10h30-13h30/16h15-20h<br/>Samedi: 10h30-13h30/15h15-20h30<br/>Dimanche: 09h30-13h00",
-				"name": "Le Repaire de Bacchus<br/>Marois",
+				"name": "Le Repaire de Bacchus<br/>Le Marois",
 				"address": "11 rue Le Marois</br>75016 Paris",
 				"phone": "01.72.63.68.40",
 				"email": "lemarois@lerepairedebacchus.com",
 				"maps-itinerary": "11 rue Le Marois 75016 Paris",
-				"storeid": "marois"
+				"storeid": "le marois"
 			}
 		},
 		{
@@ -555,11 +555,11 @@
 			"properties": {
 				"hours": "Lundi: Fermé<br/>Mardi: 10h30-13h00/16h-19h30<br/>Mercredi: 10h30-13h00/16h-19h30<br/>Jeudi: 10h30-13h00/16h-19h30<br/>Vendredi: 10h30-13h00/16h-19h30<br/>Samedi: 9h45-13h30/14h00-20h00<br/>Dimanche: 10h00-13h00",
 				"name": "Le Repaire de Bacchus<br/>Saint-Germain-en-Laye",
-				"address": "60 rue de Poissy</br>78100 Saint Germain-en-Laye",
+				"address": "60 rue de Poissy</br>78100 Saint-Germain-en-Laye",
 				"phone": "01.78.64.10.36",
 				"email": "stgermain@lerepairedebacchus.com",
-				"maps-itinerary": "60 rue de Poissy 78100 Saint Germain-en-Laye",
-				"storeid": "saint-germain"
+				"maps-itinerary": "60 rue de Poissy 78100 Saint-Germain-en-Laye",
+				"storeid": "saint-germain-en-laye"
 			}
 		},
 		{
