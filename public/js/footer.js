@@ -34,7 +34,7 @@ const footerContent = `
             <a href="https://fr.linkedin.com/company/le-repaire-de-bacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/linkedin-brands.svg" alt="TODO" /></a>
         </div>
     </div>
-    <p><span>l'abus d'alcool est dangereux pour la santé. à consommer avec modération.</span></p>
+    <p class="disclaimer">l'abus d'alcool est dangereux pour la santé. à consommer avec modération.</p>
     <div class="footer-links__legal-press">
         <p class="press">Presse</p>
         <a href="../pages/cgu.html">Mentions légales</a>

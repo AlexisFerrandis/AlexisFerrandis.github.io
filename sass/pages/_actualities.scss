@@ -6,6 +6,10 @@
 		flex-direction: column;
 		margin-bottom: inherit;
 	}
+	.date {
+		color: grey;
+		font-style: italic;
+	}
 }
 
 .actualities-vertical-container {
@@ -67,6 +71,7 @@
 			padding: inherit;
 		}
 	}
+
 	&__article--left {
 		width: 50%;
 		padding-right: 1em;
@@ -114,15 +119,16 @@
 	}
 	.social-network-ico {
 		display: flex;
-		flex-direction: column;
+		justify-content: space-around;
 		margin: 1.5em 0;
 		a {
 			display: flex;
+			width: 32px;
+			height: 32px;
 			text-decoration: none;
 			align-items: center;
 			color: black;
 			margin: 0.5em 0;
-			max-width: 210px;
 			p {
 				margin-left: 0.5em;
 			}
@@ -131,6 +137,10 @@
 			width: 32px;
 			height: 32px;
 		}
+	}
+	.sn-link {
+		text-align: center;
+		margin-bottom: 10%;
 	}
 }
 

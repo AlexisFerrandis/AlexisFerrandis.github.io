@@ -242,6 +242,10 @@ span {
     margin-bottom: inherit;
   }
 }
+.actualities-block .date {
+  color: grey;
+  font-style: italic;
+}
 
 .actualities-vertical-container {
   width: 48%;
@@ -344,16 +348,17 @@ span {
 }
 .actualities-horizontal-container .social-network-ico {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   margin: 1.5em 0;
 }
 .actualities-horizontal-container .social-network-ico a {
   display: flex;
+  width: 32px;
+  height: 32px;
   text-decoration: none;
   align-items: center;
   color: black;
   margin: 0.5em 0;
-  max-width: 210px;
 }
 .actualities-horizontal-container .social-network-ico a p {
   margin-left: 0.5em;
@@ -361,6 +366,10 @@ span {
 .actualities-horizontal-container .social-network-ico img {
   width: 32px;
   height: 32px;
+}
+.actualities-horizontal-container .sn-link {
+  text-align: center;
+  margin-bottom: 10%;
 }
 
 .degustation-container {
@@ -912,6 +921,10 @@ span {
   #footer .footer-links p span {
     margin-bottom: 10px;
   }
+}
+#footer .footer-links .disclaimer {
+  text-transform: uppercase;
+  color: #525252;
 }
 #footer .footer-links__legal-press {
   display: flex;
@@ -1647,7 +1660,7 @@ span {
 
 .partner-container {
   height: 350px;
-  margin: 0;
+  margin-bottom: 1.5em;
 }
 @media (max-width: 1250px) {
   .partner-container {
@@ -1659,6 +1672,10 @@ span {
     height: 100%;
     margin-bottom: 2em;
   }
+}
+.partner-container .date {
+  color: grey;
+  font-style: italic;
 }
 
 #actualitiesPartnerSlider {
