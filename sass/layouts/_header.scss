@@ -1,0 +1,121 @@
+.header-transparent {
+	width: 100%;
+	position: fixed;
+	transition: $long-animation;
+	@extend .flex-center;
+	z-index: 9;
+	#logoHeaderNav {
+		display: none;
+	}
+	.header-nav__container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 1220px;
+		padding: 1.6em 0;
+		transition: $long-animation;
+		&--link {
+			position: relative;
+			color: $color-primary;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 600;
+			transition: $short-animation;
+			letter-spacing: 1px;
+			&::after {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 2px;
+				bottom: -0.3em;
+				left: 0;
+				background-color: $color-primary;
+				opacity: 0;
+				transform: translateY(7px);
+				transition: $short-animation;
+			}
+			&:hover {
+				&::after {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+			}
+		}
+		@include tablet-breakpoint {
+			display: none;
+		}
+	}
+}
+
+.header-color-primary {
+	width: 100%;
+	position: fixed;
+	transition: $long-animation;
+	background-color: $color-primary;
+	@extend .flex-center;
+	z-index: 9;
+	min-height: 70px;
+	-webkit-box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.59);
+	box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.59);
+	#logoHeaderNav {
+		position: absolute;
+		left: 2em;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 200px;
+		object-fit: cover;
+		transition: $long-animation;
+	}
+	.header-nav__container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 1220px;
+		width: 80%;
+		padding: 1.6em 0;
+		transform: translateX(110px);
+		transition: $long-animation;
+		&--link {
+			@extend .header-links-display;
+			color: $white;
+			&::after {
+				@extend .header-links-after-display;
+				background-color: $white;
+				transform: translateY(7px);
+			}
+			&:hover {
+				&::after {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+			}
+			&--actif {
+				font-weight: 600;
+				&::after {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+			}
+		}
+		@include tablet-breakpoint {
+			display: none;
+		}
+	}
+}
+
+#headerHamburger {
+	position: absolute;
+	display: none;
+	right: 1em;
+	top: 1.5em;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	@extend .button-active;
+	@include tablet-breakpoint {
+		display: flex;
+	}
+	z-index: 9;
+}

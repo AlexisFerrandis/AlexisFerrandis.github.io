@@ -1,0 +1,156 @@
+.actualities-block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4em;
+	@include mobile-breakpoint {
+		flex-direction: column;
+		margin-bottom: inherit;
+	}
+}
+
+.actualities-vertical-container {
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	@include mobile-breakpoint {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+	img {
+		width: 100%;
+		object-fit: cover;
+		margin: 0 auto 1em;
+	}
+	.little-shadow {
+		-webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.21);
+		box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.21);
+	}
+	&__article {
+		h2 {
+			@extend .actualitiesh2;
+			text-align: center;
+			margin-bottom: 0.5em;
+		}
+		&--separator {
+			@extend .actualities-separator;
+		}
+		p {
+			@extend .actualities-p;
+		}
+	}
+}
+
+.actualities-horizontal-container {
+	display: flex;
+	margin: 0 auto 4em;
+	max-height: 350px;
+	@include mobile-breakpoint {
+		flex-direction: column;
+		height: 100%;
+		max-height: inherit;
+	}
+	img {
+		width: 50%;
+		object-fit: cover;
+		@include mobile-breakpoint {
+			width: 100%;
+			object-fit: cover;
+			max-height: 350px;
+			margin-bottom: 1em;
+		}
+	}
+	&__article--right {
+		width: 50%;
+		padding-left: 1em;
+		@include mobile-breakpoint {
+			width: 100%;
+			padding: inherit;
+		}
+	}
+	&__article--left {
+		width: 50%;
+		padding-right: 1em;
+		@include mobile-breakpoint {
+			width: 100%;
+			padding: inherit;
+		}
+	}
+	.scrollable-content {
+		max-height: 250px;
+		overflow-y: scroll;
+		padding: 7px;
+		margin-bottom: 1em;
+		span {
+			font-weight: 1000;
+			text-decoration: underline;
+		}
+	}
+	h2 {
+		@extend .actualitiesh2;
+		@include mobile-breakpoint {
+			text-align: center;
+		}
+	}
+
+	&__article--separator {
+		@extend .actualities-separator;
+	}
+	p {
+		@extend .actualities-p;
+		span {
+			font-weight: 1000;
+		}
+	}
+	a {
+		width: 50%;
+		@include mobile-breakpoint {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.social-network-ico {
+		display: flex;
+		flex-direction: column;
+		margin: 1.5em 0;
+		a {
+			display: flex;
+			text-decoration: none;
+			align-items: center;
+			color: black;
+			margin: 0.5em 0;
+			max-width: 210px;
+			p {
+				margin-left: 0.5em;
+			}
+		}
+		img {
+			width: 32px;
+			height: 32px;
+		}
+	}
+}
+
+.degustation-container {
+	margin-bottom: 7em;
+	@include mobile-breakpoint {
+		flex-direction: column-reverse;
+		margin-bottom: 4em;
+	}
+	img {
+		object-fit: cover;
+	}
+	.italic {
+		font-style: italic;
+	}
+}
+
+.subtil {
+	text-align: center;
+	margin-bottom: 0.5em;
+	color: grey;
+	font-style: italic;
+}

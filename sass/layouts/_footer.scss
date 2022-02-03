@@ -1,0 +1,93 @@
+#footer {
+	width: 100%;
+	padding: 1.5em;
+	background-color: $white;
+	border-top: solid 1px black;
+	@include mobile-breakpoint {
+		padding: 1.5em 1.5em 0.5em;
+	}
+	.footer-links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		flex-wrap: wrap;
+		margin-bottom: 0.5em;
+		&__social {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			@include mobile-breakpoint {
+				margin-bottom: 10px;
+			}
+			p {
+				opacity: 0.8;
+			}
+			input {
+				border: none;
+				background-color: rgb(223, 223, 223);
+				padding: 0.3em 0.5em 0.3em 0.3em;
+			}
+			&--network-icons {
+				display: flex;
+				img {
+					width: 22px;
+					height: 22px;
+					margin: 0.2em 0.5em 0 0;
+				}
+			}
+		}
+		p span {
+			display: block;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			@include mobile-breakpoint {
+				margin-bottom: 10px;
+			}
+		}
+		&__legal-press {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 200px;
+			@include mobile-breakpoint {
+				margin-bottom: 10px;
+			}
+			a {
+				text-decoration: none;
+				color: $black;
+				opacity: 0.8;
+				&:hover {
+					text-decoration: underline grey;
+				}
+			}
+			.press {
+				position: relative;
+				color: #525252;
+				cursor: pointer;
+				&::before {
+					position: absolute;
+					content: "CATHERINE SICK 01.84.20.20.74 contact@sick-rp.com";
+					top: -70px;
+					width: 200px;
+					padding: 7px;
+					background-color: white;
+					border: 1px solid black;
+					opacity: 0;
+					transform: translateY(10px);
+					transition: 300ms;
+					z-index: -1;
+					pointer-events: none;
+				}
+				&:hover {
+					text-decoration: underline grey;
+					&::before {
+						opacity: 1;
+						transform: translateY(0);
+						z-index: 1;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+.services-container-little-more {
+	display: flex;
+	position: relative;
+	flex-wrap: wrap;
+	&__advantages {
+		margin-top: 1.5em;
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		align-items: center;
+		text-align: center;
+		@include mobile-breakpoint {
+			width: 50%;
+		}
+		h5 {
+			text-transform: uppercase;
+			font-size: 1.1em;
+			margin: 1em 0 1.5em;
+			color: $cama-green;
+		}
+		.cama-blue {
+			color: $cama-blue;
+		}
+		img {
+			border-radius: 50%;
+			-webkit-box-shadow: 0 10px 19px -5px rgba(0, 0, 0, 0.27);
+			box-shadow: 0 10px 19px -5px rgba(0, 0, 0, 0.27);
+			@include mobile-breakpoint {
+				width: 70px;
+				height: 70px;
+			}
+		}
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		left: 25%;
+		height: 100%;
+		width: 1px;
+		background-color: $cama-green;
+		@include mobile-breakpoint {
+			left: 50%;
+			height: 42%;
+		}
+	}
+	&__fidelity {
+		width: 50%;
+		height: 100%;
+		padding: 1.5em;
+		background-color: $cama-green;
+		color: $white;
+		-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+		box-shadow: 6px 4px 12px 0px rgba(0, 0, 0, 0.61);
+		@include mobile-breakpoint {
+			width: 100%;
+		}
+		h3 {
+			color: white;
+		}
+		.services-h3-ico {
+			@media (max-width: 380px) {
+				top: 15px;
+			}
+		}
+		p {
+			min-height: 60px;
+		}
+		#fidelityPiggies {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}

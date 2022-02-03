@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Vente de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+		<title>Les points de vente du Repaire de Bacchus</title>
+
+		<meta property="og:url" content="https://www.lerepairedebacchus.com" />
+		<meta property="og:type" content="siteweb" />
+		<meta property="og:title" content="Le Repaire de Bacchus, caviste, achat vin et champagne en ligne" />
+		<meta property="og:description" content="Boutique de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
+		<!-- <meta property="og:image" content="https://www.lerepairedebacchus.com/img/logo.png" />  TODO-->
+
+		<link rel="stylesheet" href="../sass/main.css" />
+
+		<!-- GoogleAnalytics script TODO -->
+	</head>
+	<body>
+		<header class="header-color-primary" id="header-color-primary"></header>
+		<div id="responsiveHeaderDom"></div>
+
+		<main id="mainPages">
+			<h1 id="pagesH1">nos caves</h1>
+
+			<section id="localisationContainer">
+				<div class="localisation-list" id="localisationList">
+					<div class="localisation-list__search">
+						<input id="storeInput" type="text" placeholder="Entrez une adresse ou un code postale" />
+					</div>
+					<div class="localisation-list__stores" id="localisationStoresList"></div>
+				</div>
+				<div class="localisation-map">
+					<!-- The div to hold the map -->
+					<div id="map"></div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="footer"></footer>
+
+		<script src="../public/js/header.js"></script>
+		<script src="../public/js/footer.js"></script>
+		<script src="../public/js/maps/maps.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=&libraries=places&callback=initMap"></script>
+		<script src="../public/js/localisation.js"></script>
+	</body>
+</html>
