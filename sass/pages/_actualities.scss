@@ -26,8 +26,8 @@
 		margin: 0 auto 1em;
 	}
 	.little-shadow {
-		-webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.21);
-		box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.21);
+		-webkit-box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.14);
+		box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.14);
 	}
 	&__article {
 		h2 {
@@ -120,7 +120,8 @@
 	.social-network-ico {
 		display: flex;
 		justify-content: space-around;
-		margin: 1.5em 0;
+		margin: 1.5em auto;
+		width: 230px;
 		a {
 			display: flex;
 			width: 32px;

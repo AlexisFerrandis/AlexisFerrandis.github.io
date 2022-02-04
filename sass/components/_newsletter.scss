@@ -31,7 +31,7 @@
 #_form_2_ input[type="text"],
 #_form_2_ input[type="date"],
 #_form_2_ textarea {
-	height: 22px;
+	height: 22px !important;
 	color: #000 !important;
 	font-size: 14px;
 	-webkit-box-sizing: border-box;
@@ -167,7 +167,7 @@
 }
 #_form_2_ input[type="text"]._has_error,
 #_form_2_ textarea._has_error {
-	border: #f37c7b 1px solid;
+	outline: #f37c7b 1px solid;
 }
 #_form_2_ input[type="checkbox"]._has_error {
 	outline: #f37c7b 1px solid;

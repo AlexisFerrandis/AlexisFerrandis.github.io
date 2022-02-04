@@ -36,7 +36,7 @@ const footerContent = `
     </div>
     <p class="disclaimer">l'abus d'alcool est dangereux pour la santé. à consommer avec modération.</p>
     <div class="footer-links__legal-press">
-        <p class="press">Presse</p>
+        <a href="mailto:contact@sick-rp.com"><p class="press">Presse</p></a>
         <a href="../pages/cgu.html">Mentions légales</a>
     </div>
 </div>
