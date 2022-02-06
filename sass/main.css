@@ -952,8 +952,8 @@ span {
 }
 #footer .footer-links__legal-press .press::before {
   position: absolute;
-  content: "CATHERINE SICK 01.84.20.20.74 contact@sick-rp.com";
-  top: -70px;
+  content: "CATHERINE SICK COMMUNICATION tel:01.84.20.20.74 mail:contact@sick-rp.com 176, avenue Charles de Gaulle | 92200 Neuilly";
+  top: -120px;
   width: 200px;
   padding: 7px;
   background-color: white;
@@ -963,6 +963,7 @@ span {
   transition: 300ms;
   z-index: -1;
   pointer-events: none;
+  line-height: 1.2em;
 }
 #footer .footer-links__legal-press .press:hover {
   text-decoration: underline grey;
@@ -1946,7 +1947,7 @@ span {
 .services-container-little-more__fidelity h3 {
   color: white;
 }
-@media (max-width: 398px) {
+@media (max-width: 380px) {
   .services-container-little-more__fidelity .services-h3-ico {
     top: 15px;
   }
@@ -2135,7 +2136,7 @@ span {
   grid-area: 2/7/3/8;
 }
 .card-container .card-wrapper .card-back .legal {
-  font-size: 12px;
+  font-size: 11px;
 }
 .card-container .card-wrapper .card-back .legal span {
   text-decoration: underline;

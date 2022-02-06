@@ -70,8 +70,8 @@
 				cursor: pointer;
 				&::before {
 					position: absolute;
-					content: "CATHERINE SICK 01.84.20.20.74 contact@sick-rp.com";
-					top: -70px;
+					content: "CATHERINE SICK COMMUNICATION tel:01.84.20.20.74 mail:contact@sick-rp.com 176, avenue Charles de Gaulle | 92200 Neuilly";
+					top: -120px;
 					width: 200px;
 					padding: 7px;
 					background-color: white;
@@ -81,6 +81,7 @@
 					transition: 300ms;
 					z-index: -1;
 					pointer-events: none;
+					line-height: 1.2em;
 				}
 				&:hover {
 					text-decoration: underline grey;
