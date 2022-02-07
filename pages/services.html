@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr-fr">
 	<head>
+		<!-- meta & links -->
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Vente de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
+		<meta name="description" content="Boutiques de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
 		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+		<link rel="canonical" href="https://www.lerepairedebacchus.com" />
+		<link rel="stylesheet" href="../sass/main.css" />
 		<title>Les services proposés par le Repaire de Bacchus</title>
 
+		<!-- twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Le Repaire de Bacchus, cavistes en région parisienne" />
+		<meta name="twitter:description" content="Boutiques de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
+		<meta name="twitter:image" content="./public/assets/img/logos/logo-img&text-color-primary-rounded.svg" />
+
+		<!-- facebook -->
 		<meta property="og:url" content="https://www.lerepairedebacchus.com" />
 		<meta property="og:type" content="siteweb" />
-		<meta property="og:title" content="Le Repaire de Bacchus, caviste, achat vin et champagne en ligne" />
-		<meta property="og:description" content="Boutique de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
-		<!-- <meta property="og:image" content="https://www.lerepairedebacchus.com/img/logo.png" />  TODO-->
+		<meta property="og:title" content="Le Repaire de Bacchus, cavistes en région parisienne" />
+		<meta property="og:description" content="Boutiques de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
+		<meta property="og:image" content="./public/assets/img/logos/logo-img&text-color-primary-rounded.svg" />
 
-		<link rel="stylesheet" href="../sass/main.css" />
+		<!-- GoogleAnalytics script -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MB0XNJGN09"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
 
-		<!-- GoogleAnalytics script TODO -->
+			gtag("config", "G-MB0XNJGN09");
+		</script>
 	</head>
 	<body>
 		<header class="header-color-primary" id="header-color-primary"></header>
@@ -31,18 +49,18 @@
 					<video class="video" src="../public/assets/videos/video-livraison-site-web.mp4" autoplay="true" loop="infinite" muted="true"></video>
 				</div>
 				<div class="article-part">
-					<h3>livraisons<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-delivery.png" alt="TODO" /></h3>
+					<h3>livraisons<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-delivery.png" alt="livraison" /></h3>
 					<div class="separator-cama-blue"></div>
 					<article>
 						<div class="delivery-p france-delivery">
 							<p>Retrouvez <span>vos produits préférés</span> partout en France ! Vous partez en vacances ? Vous voulez faire plaisir à un ami qui habite loin de Paris ? Aucun souci, votre caviste vous expédie vos achats où vous voulez.</p>
 							<div class="icons">
 								<div class="delivery-preview">
-									<img src="../public/assets/img/pictos/services/delivery-france.png" alt="TODO" />
+									<img src="../public/assets/img/pictos/services/delivery-france.png" alt="En France" />
 									<p><span>France Métropolitaine</span></p>
 								</div>
 								<div class="delivery-preview">
-									<img src="../public/assets/img/pictos/services/geodis.png" alt="TODO" />
+									<img src="../public/assets/img/pictos/services/geodis.png" alt="géodis" />
 									<p>Géodis</p>
 								</div>
 							</div>
@@ -51,21 +69,21 @@
 							<p>Et si vous n’avez pas le temps de passer chez votre caviste, nos partenaires vous permettent de vous faire <span>livrer en express dans tout Paris et sa proche banlieue.</span></p>
 							<div class="icons">
 								<div class="delivery-preview">
-									<img src="../public/assets/img/pictos/services/delivery-paris.png" alt="TODO" />
+									<img src="../public/assets/img/pictos/services/delivery-paris.png" alt="Paris Île de France" />
 									<p>
 										<span>Paris<br />Île de France</span>
 									</p>
 								</div>
 								<div class="delivery-preview">
-									<img src="../public/assets/img/pictos/services/stuart.png" alt="TODO" />
+									<img src="../public/assets/img/pictos/services/stuart.png" alt="stuart" />
 									<p>Stuart</p>
 								</div>
 								<div class="delivery-preview">
-									<img src="../public/assets/img/pictos/services/deliveroo.png" alt="TODO" />
+									<img src="../public/assets/img/pictos/services/deliveroo.png" alt="deliveroo" />
 									<p>Deliveroo</p>
 								</div>
 								<div class="delivery-preview">
-									<img src="../public/assets/img/pictos/services/uber-eats.png" alt="TODO" />
+									<img src="../public/assets/img/pictos/services/uber-eats.png" alt="uber eats" />
 									<p>Uber Eats</p>
 								</div>
 							</div>
@@ -75,19 +93,19 @@
 			</section>
 
 			<section class="services-container light-primary-background">
-				<h3 class="cama-green">nos petits plus<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-little-more.png" alt="TODO" /></h3>
+				<h3 class="cama-green">nos petits plus<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-little-more.png" alt="Les petits plus" /></h3>
 				<div class="separator-cama-green"></div>
 				<div class="services-container-little-more">
 					<div class="services-container-little-more__advantages desktop-border">
-						<img src="../public/assets/img/pictos/services/fresh-wine.png" alt="TODO" />
+						<img src="../public/assets/img/pictos/services/fresh-wine.png" alt="Vins frais" />
 						<h5>vins frais</h5>
-						<img src="../public/assets/img/pictos/services/distant-payment.png" alt="TODO" />
+						<img src="../public/assets/img/pictos/services/distant-payment.png" alt="Vente à distance" />
 						<h5 class="cama-blue">vente à distance</h5>
 					</div>
 					<div class="services-container-little-more__advantages">
-						<img src="../public/assets/img/pictos/services/gift-card.png" alt="TODO" />
+						<img src="../public/assets/img/pictos/services/gift-card.png" alt="Carte cadeaux" />
 						<h5 class="cama-blue">carte cadeaux</h5>
-						<img src="../public/assets/img/pictos/services/tax-refund.png" alt="TODO" />
+						<img src="../public/assets/img/pictos/services/tax-refund.png" alt="Détaxe" />
 						<h5>détaxe</h5>
 					</div>
 
@@ -96,10 +114,10 @@
 							<div class="card">
 								<div class="card-front">
 									<div class="services-container-little-more__fidelity">
-										<h3>programme de fidélité <img class="services-h3-ico" src="../public/assets/img/pictos/services/services-fidelity-card.png" alt="TODO" /></h3>
+										<h3>programme de fidélité <img class="services-h3-ico" src="../public/assets/img/pictos/services/services-fidelity-card.png" alt="Fidélité" /></h3>
 										<div class="separator-white"></div>
 										<p>Demandez-le à votre caviste. Cumulez des points lors de vos achats. <span>Bénéficiez de remises</span> valables <span>dans tous les Repaire de Bacchus</span> et retrouvez vos historiques d’achats.</p>
-										<img id="fidelityPiggies" src="../public/assets/img/illustrations/services-fidelity-piggies.png" alt="TODO" />
+										<img id="fidelityPiggies" src="../public/assets/img/illustrations/services-fidelity-piggies.png" alt="Le programme de fidélité " />
 									</div>
 								</div>
 
@@ -131,31 +149,31 @@
 			</section>
 
 			<section class="services-container">
-				<h3 class="cama-blue">nos partenaires<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-partners.png" alt="TODO" /></h3>
+				<h3 class="cama-blue">nos partenaires<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-partners.png" alt="Les partenaires" /></h3>
 				<div class="separator-cama-blue"></div>
 				<div class="partners-container">
 					<div class="partners-container__principal">
-						<img src="../public/assets/img/logos/wine-and-co-logo.svg" alt="TODO" />
+						<img src="../public/assets/img/logos/wine-and-co-logo.svg" alt="Wineandco" />
 						<h6>vente en ligne</h6>
 						<p>Retrouvez une partie de notre sélection de vins, champagnes et spiritueux sur le site web de notre partenaire <span>Wineandco.</span></p>
 						<button type="button" class="button__square--green wine-and-co"><a href="https://www.wineandco.com/" target="_blank" rel="noopener noreferrer">Wineandco</a></button>
 					</div>
 					<div class="partners-container__secondary partners-container__secondary--background-primary">
-						<img id="toGoodToGoImg" src="../public/assets/img/logos/too-good-to-go-logo.png" alt="TODO" />
+						<img id="toGoodToGoImg" src="../public/assets/img/logos/too-good-to-go-logo.png" alt="too-good-to-go" />
 						<div class="partners-container__secondary--informations">
 							<p>Pour lutter contre le gaspillage alimentaire, venez sauver nos paniers surprises d’invendus (bières, cidres, épicerie, etc).</p>
 						</div>
 						<button type="button" class="button__square--green tgtg"><a href="https://toogoodtogo.fr/fr" target="_blank" rel="noopener noreferrer">Too Good To Go</a></button>
 					</div>
 					<div class="partners-container__secondary">
-						<img src="../public/assets/img/logos/potager-city-logo.png" alt="TODO" />
+						<img src="../public/assets/img/logos/potager-city-logo.png" alt="Potager city" />
 						<div class="partners-container__secondary--informations">
 							<p>Hyper facile, la livraison des fruits et légumes dans votre Repaire. Profitez en plus des conseils de votre caviste sur les accords mets et vins possibles avec votre panier.</p>
 						</div>
 						<button type="button" class="button__square--green potager-city"><a href="https://www.potagercity.fr/" target="_blank" rel="noopener noreferrer">Potager City</a></button>
 					</div>
 					<div class="partners-container__secondary partners-container__secondary--background-primary">
-						<img src="../public/assets/img/logos/air-campus-logo.png" alt="TODO" />
+						<img src="../public/assets/img/logos/air-campus-logo.png" alt="Aircampus" />
 						<div class="partners-container__secondary--informations">
 							<p>Etudiant ? Rejoins la communauté pour bénéficier de remises sur toutes nos boutiques !</p>
 						</div>
@@ -166,9 +184,9 @@
 
 			<section class="services-container__eco-responsability">
 				<div class="services-container__eco-responsability--article">
-					<img class="eco-responsability--img" src="../public/assets/img/textures/eco-texture.jpg" alt="TODO" />
+					<img class="eco-responsability--img" src="../public/assets/img/textures/eco-texture.jpg" alt="Enseigne eco-responsable" />
 					<article class="services-container__eco-responsability--article-texte">
-						<h3>enseigne éco-responsable<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-eco-responsability.png" alt="TODO" /></h3>
+						<h3>enseigne éco-responsable<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-eco-responsability.png" alt="eco-responsable" /></h3>
 						<div class="separator-black"></div>
 						<p>Face aux problématiques <span>environnementales</span>, et notre amour pour la filière viticole, nous mettons en place des actions écoresponsables à plusieurs niveaux :</p>
 						<p><span>- En favorisant la commercialisation de produits respectueux de l’environnement :</span> 15% de nos produits est issue de l’agriculture HVE, biologique ou biodynamique.</p>
@@ -184,10 +202,10 @@
 
 			<section class="services-container events-container">
 				<div class="illustration">
-					<img src="../public/assets/img/photos/services-events.jpg" alt="TODO" />
+					<img src="../public/assets/img/photos/services-events.jpg" alt="Célébration avec du champagne" />
 				</div>
 				<article>
-					<h3>vos événements<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-events.png" alt="TODO" /></h3>
+					<h3>vos événements<img class="services-h3-ico" src="../public/assets/img/pictos/services/services-events.png" alt="Les événement" /></h3>
 					<div class="separator-cama-green"></div>
 					<p><span>Un événement à organiser ? Pensez au Repaire de Bacchus !</span></p>
 					<p>Un mariage ? Un baptême ? Une soirée d’entreprise ou un événement pro ? Nous sommes là pour vous aider dans le choix des vins, champagnes, bières et spiritueux.</p>

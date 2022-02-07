@@ -34,8 +34,8 @@ async function getTheStores() {
 		<article class="localisation-list__stores--store" id="${store.properties.storeid}">
 			<h6>${store.properties.name}</h6>
 			<p class="store-adresse" >${store.properties.address}</p>
-			<a href="tel:${store.properties.phone}"><p class="store-phone"><img class="filter-white" src="../public/assets/fonts/fontawesome/mobile-alt-solid.svg" alt="TODO" />${store.properties.phone}</p></a>
-			<a href="mailto:${store.properties.email}"><p class="store-mail"><img class="filter-white" src="../public/assets/fonts/fontawesome/envelope-solid.svg" alt="TODO" />${store.properties.email}</p></a>
+			<a href="tel:${store.properties.phone}"><p class="store-phone"><img class="filter-white" src="../public/assets/fonts/fontawesome/mobile-alt-solid.svg" alt="tel" />${store.properties.phone}</p></a>
+			<a href="mailto:${store.properties.email}"><p class="store-mail"><img class="filter-white" src="../public/assets/fonts/fontawesome/envelope-solid.svg" alt="email" />${store.properties.email}</p></a>
 		</article>
 		`;
 		renderHTML += storeInfo;

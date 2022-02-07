@@ -81,10 +81,10 @@ const headerResponsiveNav = document.getElementById("headerResponsiveNav");
 headerHamburger.addEventListener("click", () => {
 	if (responsiveHeaderDOM.style.display == "flex") {
 		responsiveHeaderDOM.style.display = "none";
-		headerHamburger.innerHTML = '<img src="./public/assets/img/pictos/header/open.svg" alt="TODO">';
+		headerHamburger.innerHTML = '<img src="./public/assets/img/pictos/header/open.svg" alt="ouvert">';
 	} else {
 		responsiveHeaderDOM.style.display = "flex";
-		headerHamburger.innerHTML = '<img src="./public/assets/img/pictos/header/close.svg" alt="TODO">';
+		headerHamburger.innerHTML = '<img src="./public/assets/img/pictos/header/close.svg" alt="ferme">';
 	}
 });
 window.addEventListener("scroll", (e) => {

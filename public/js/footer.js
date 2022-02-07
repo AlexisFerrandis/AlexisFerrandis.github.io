@@ -29,9 +29,9 @@ const footerContent = `
             </form>
         </div>
         <div class="footer-links__social--network-icons">
-            <a href="https://www.facebook.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/facebook-square-brands.svg" alt="TODO" /></a>
-            <a href="https://www.instagram.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/instagram-square-brands.svg" alt="TODO" /></a>
-            <a href="https://fr.linkedin.com/company/le-repaire-de-bacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/linkedin-brands.svg" alt="TODO" /></a>
+            <a href="https://www.facebook.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/facebook-square-brands.svg" alt="facebook" /></a>
+            <a href="https://www.instagram.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/instagram-square-brands.svg" alt="instagram" /></a>
+            <a href="https://fr.linkedin.com/company/le-repaire-de-bacchus" target="_blank" rel="noopener noreferrer"><img src="../public/assets/fonts/fontawesome/linkedin-brands.svg" alt="linkedin" /></a>
         </div>
     </div>
     <p class="disclaimer">l'abus d'alcool est dangereux pour la santé. à consommer avec modération.</p>

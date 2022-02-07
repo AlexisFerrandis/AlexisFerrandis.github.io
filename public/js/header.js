@@ -1,7 +1,7 @@
 const headerDOM = document.getElementById("header-color-primary");
 
 const headerContent = `
-<a href="../index.html"><img id="logoHeaderNav" src="../public/assets/img/logos/logo-img&text-white.svg" /></a>
+<a href="../index.html"><img id="logoHeaderNav" src="../public/assets/img/logos/logo-img&text-white.svg" alt="logo" /></a>
 <nav class="header-nav__container" id="headerNav">
     <a class="header-nav__container--link" href="../index.html">accueil</a>
     <a id="headerNavAboutUs" class="header-nav__container--link" href="../index.html#homeAboutUs">qui sommes-nous ?</a>
@@ -11,7 +11,7 @@ const headerContent = `
     <a id="headerNavHumanResources" class="header-nav__container--link" href="./human-resources.html">on recrute</a>
     <!-- <a id="headerNavBlog" class="header-nav__container--link" href="./blog.html">blog</a> -->
 </nav>
-<button type="button" id="headerHamburger" class="header-nav-responsive-inactive"><img src="../public/assets/img/pictos/header/open.svg" alt="TODO"></button>
+<button type="button" id="headerHamburger" class="header-nav-responsive-inactive"><img src="../public/assets/img/pictos/header/open.svg" alt="Bouton du menu"></button>
 `;
 
 headerDOM.innerHTML += headerContent;
@@ -62,9 +62,9 @@ const headerResponsiveNav = document.getElementById("headerResponsiveNav");
 headerHamburger.addEventListener("click", () => {
 	if (responsiveHeaderDOM.style.display == "flex") {
 		responsiveHeaderDOM.style.display = "none";
-		headerHamburger.innerHTML = '<img src="../public/assets/img/pictos/header/open.svg" alt="TODO">';
+		headerHamburger.innerHTML = '<img src="../public/assets/img/pictos/header/open.svg" alt="ouvert">';
 	} else {
 		responsiveHeaderDOM.style.display = "flex";
-		headerHamburger.innerHTML = '<img src="../public/assets/img/pictos/header/close.svg" alt="TODO">';
+		headerHamburger.innerHTML = '<img src="../public/assets/img/pictos/header/close.svg" alt="ferme">';
 	}
 });
