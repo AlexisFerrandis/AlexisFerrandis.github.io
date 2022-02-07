@@ -372,6 +372,9 @@ span {
   text-align: center;
   margin-bottom: 10%;
 }
+.actualities-horizontal-container .text-center {
+  text-align: center;
+}
 
 .degustation-container {
   margin-bottom: 7em;
@@ -1193,7 +1196,7 @@ span {
   color: #ffffff;
   font-weight: 500;
   margin: 0 1.2em 0 -3px;
-  max-height: 22px !important;
+  height: 22px !important;
   cursor: pointer;
 }
 
@@ -1578,10 +1581,6 @@ span {
   text-align: left;
 }
 
-#_form_2_ ._button-wrapper ._error-inner._form_error {
-  position: static;
-}
-
 #_form_2_ ._error-arrow {
   position: absolute;
   width: 0;
@@ -1644,10 +1643,6 @@ span {
   top: 27px;
 }
 
-#_form_2_._inline-style ._button-wrapper {
-  position: relative;
-}
-
 #_form_2_ ._form-thank-you {
   position: relative;
   left: 0;
@@ -1657,7 +1652,13 @@ span {
 }
 
 ._form-content {
+  height: 22px;
   display: flex;
+  align-items: center;
+}
+
+._button-wrapper {
+  padding-top: 1.5px;
 }
 
 .partner-container {
@@ -1753,7 +1754,7 @@ span {
   }
 }
 .services-container__delivery .video-part {
-  width: 49%;
+  width: 46%;
 }
 @media (max-width: 850px) {
   .services-container__delivery .video-part {
@@ -1772,7 +1773,7 @@ span {
   width: 100%;
 }
 .services-container__delivery .article-part {
-  width: 49%;
+  width: 52%;
 }
 @media (max-width: 850px) {
   .services-container__delivery .article-part {
@@ -2033,6 +2034,7 @@ span {
   -webkit-backface-visibility: hidden;
 }
 .card-container .card-wrapper .card-back {
+  position: relative;
   padding: 1em;
   transform: rotateY(180deg);
   color: white;
@@ -2088,9 +2090,11 @@ span {
   }
 }
 .card-container .card-wrapper .card-back .bg-white {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.938);
   color: #1bbc9b;
-  padding-bottom: 2px;
   font-weight: 800;
 }
 .card-container .card-wrapper .card-back .div1 {
@@ -2136,7 +2140,10 @@ span {
   grid-area: 2/7/3/8;
 }
 .card-container .card-wrapper .card-back .legal {
-  font-size: 11px;
+  position: absolute;
+  font-size: 9px;
+  width: 95%;
+  bottom: 1px;
 }
 .card-container .card-wrapper .card-back .legal span {
   text-decoration: underline;

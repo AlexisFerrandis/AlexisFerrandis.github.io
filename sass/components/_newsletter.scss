@@ -214,9 +214,7 @@
 #_form_2_ ._error-inner._form_error {
 	text-align: left;
 }
-#_form_2_ ._button-wrapper ._error-inner._form_error {
-	position: static;
-}
+
 #_form_2_ ._error-arrow {
 	position: absolute;
 	width: 0;
@@ -270,9 +268,7 @@
 	position: relative;
 	top: 27px;
 }
-#_form_2_._inline-style ._button-wrapper {
-	position: relative;
-}
+
 #_form_2_ ._form-thank-you {
 	position: relative;
 	left: 0;
@@ -282,5 +278,11 @@
 }
 
 ._form-content {
+	height: 22px;
 	display: flex;
+	align-items: center;
+}
+
+._button-wrapper {
+	padding-top: 1.5px;
 }

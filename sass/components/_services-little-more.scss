@@ -147,6 +147,7 @@
 			-webkit-backface-visibility: hidden;
 		}
 		.card-back {
+			position: relative;
 			padding: 1em;
 			transform: rotateY(180deg);
 			color: white;
@@ -193,9 +194,11 @@
 				}
 			}
 			.bg-white {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				background-color: rgba(255, 255, 255, 0.938);
 				color: $cama-green;
-				padding-bottom: 2px;
 				font-weight: 800;
 			}
 			.div1 {
@@ -241,7 +244,10 @@
 				grid-area: 2 / 7 / 3 / 8;
 			}
 			.legal {
-				font-size: 11px;
+				position: absolute;
+				font-size: 9px;
+				width: 95%;
+				bottom: 1px;
 				span {
 					text-decoration: underline;
 				}
