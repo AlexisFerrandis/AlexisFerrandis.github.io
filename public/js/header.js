@@ -1,21 +1,21 @@
 const headerDOM = document.getElementById("header-color-primary");
 
 const headerContent = `
-<a href="../index.html"><img id="logoHeaderNav" src="../public/assets/img/logos/logo-img&text-white.svg" alt="logo" /></a>
-<nav class="header-nav__container" id="headerNav">
-    <a class="header-nav__container--link" href="../index.html">accueil</a>
-    <a id="headerNavAboutUs" class="header-nav__container--link" href="../index.html#homeAboutUs">qui sommes-nous ?</a>
-    <a id="headerNavLocalisation" class="header-nav__container--link" href="./localisation.html">nos caves</a>
-    <a id="headerNavActualities" class="header-nav__container--link" href="./actualities.html">nos actualités</a>
-    <a id="headerNavServices" class="header-nav__container--link" href="./services.html">nos services</a>
-    <a id="headerNavHumanResources" class="header-nav__container--link" href="./human-resources.html">on recrute</a>
-    <!-- <a id="headerNavBlog" class="header-nav__container--link" href="./blog.html">blog</a> -->
+<a href="../index.html"><img id="logoHeaderNav" src="../public/assets/pictos-logos/logos/lrdb-white.svg" alt="logo" /></a>
+<nav class="nav-container" id="headerNav">
+    <a class="link" href="../index.html">accueil</a>
+    <a id="headerNavAboutUs" class="link" href="../index.html#aboutUs">qui sommes-nous ?</a>
+    <a id="headerNavLocalisation" class="link" href="./nos-caves.html">nos caves</a>
+    <a id="headerNavActualities" class="link" href="./nos-actualites.html">nos actualités</a>
+    <a id="headerNavServices" class="link" href="./nos-services.html">nos services</a>
+    <a id="headerNavHumanResources" class="link" href="./on-recrute.html">on recrute</a>
 </nav>
-<button type="button" id="headerHamburger" class="header-nav-responsive-inactive"><img src="../public/assets/img/pictos/header/open.svg" alt="Bouton du menu"></button>
+<button type="button" id="headerHamburger" class="header-nav-responsive-inactive"><img src="../public/assets/pictos-logos/pictos/open.svg" alt="Bouton du menu"></button>
 `;
 
 headerDOM.innerHTML += headerContent;
 
+// bold current page link
 const currentPage = document.getElementsByTagName("h1");
 
 for (let i = 0; i < currentPage.length; i++) {
@@ -24,31 +24,31 @@ for (let i = 0; i < currentPage.length; i++) {
 			console.log("aboutus");
 			break;
 		case "nos caves":
-			document.getElementById("headerNavLocalisation").classList.add("header-nav__container--link--actif");
+			document.getElementById("headerNavLocalisation").classList.add("link__actif");
 			break;
 		case "nos actualités":
-			document.getElementById("headerNavActualities").classList.add("header-nav__container--link--actif");
+			document.getElementById("headerNavActualities").classList.add("link__actif");
 			break;
 		case "nos services":
-			document.getElementById("headerNavServices").classList.add("header-nav__container--link--actif");
+			document.getElementById("headerNavServices").classList.add("link__actif");
 			break;
 		case "on recrute":
-			document.getElementById("headerNavHumanResources").classList.add("header-nav__container--link--actif");
+			document.getElementById("headerNavHumanResources").classList.add("link__actif");
 			break;
 		default:
 			console.log("ERR : NOT FOUND");
 	}
 }
 
+// responsive header
 responsiveHeaderDom.innerHTML = `
-<nav class="header-nav-responsive__container responsive-header-primary" id="headerResponsiveNav">
-	<a class="header-nav-responsive__container--link" href="../index.html">accueil</a>
-	<a id="headerNavRAboutUs" class="header-nav-responsive__container--link" href="../index.html#homeAboutUs">qui sommes-nous ?</a>
-	<a id="headerNavLocalisation" class="header-nav-responsive__container--link" href="../pages/localisation.html">nos caves</a>
-	<a id="headerNavActualities" class="header-nav-responsive__container--link" href="../pages/actualities.html">nos actualités</a>
-	<a id="headerNavServices" class="header-nav-responsive__container--link" href="../pages/services.html">nos services</a>
-	<a id="headerNavHumanResources" class="header-nav-responsive__container--link" href="../pages/human-resources.html">on recrute</a>
-	<!-- <a id="headerNavBlog" class="header-nav-responsive__container--link" href="../pages/blog.html">blog</a> -->
+<nav class="responsive-header-primary" id="headerResponsiveNav">
+	<a class="link" href="../index.html">accueil</a>
+	<a id="headerNavRAboutUs" class="link" href="../index.html#aboutUs">qui sommes-nous ?</a>
+    <a id="headerNavLocalisation" class="link" href="../pages/nos-caves.html">nos caves</a>
+    <a id="headerNavActualities" class="link" href="../pages/nos-actualites.html">nos actualités</a>
+    <a id="headerNavServices" class="link" href="../pages/nos-services.html">nos services</a>
+    <a id="headerNavHumanResources" class="link" href="../pages/on-recrute.html">on recrute</a>
 </nav>
 `;
 
@@ -59,12 +59,13 @@ window.onload = headerHamburger.style.filter = "invert(100%) sepia(1%) saturate(
 
 const headerResponsiveNav = document.getElementById("headerResponsiveNav");
 
+// hamburger btn
 headerHamburger.addEventListener("click", () => {
 	if (responsiveHeaderDOM.style.display == "flex") {
 		responsiveHeaderDOM.style.display = "none";
-		headerHamburger.innerHTML = '<img src="../public/assets/img/pictos/header/open.svg" alt="ouvert">';
+		headerHamburger.innerHTML = '<img src="../public/assets/pictos-logos/pictos/open.svg" alt="ouvert">';
 	} else {
 		responsiveHeaderDOM.style.display = "flex";
-		headerHamburger.innerHTML = '<img src="../public/assets/img/pictos/header/close.svg" alt="ferme">';
+		headerHamburger.innerHTML = '<img src="../public/assets/pictos-logos/pictos/close.svg" alt="ferme">';
 	}
 });

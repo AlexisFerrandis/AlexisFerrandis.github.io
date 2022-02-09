@@ -12,7 +12,7 @@ function initMap() {
 	map.data.setStyle((feature) => {
 		return {
 			icon: {
-				url: `../public/assets/img/pictos/localisation/pinlocator.png`,
+				url: `../public/assets/pictos-logos/pictos/pinlocator.png`,
 				scaledSize: new google.maps.Size(36, 50),
 			},
 		};

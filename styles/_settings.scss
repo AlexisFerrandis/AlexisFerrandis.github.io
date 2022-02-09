@@ -1,0 +1,103 @@
+// typo
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+// reset
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Questrial", sans-serif;
+	scroll-behavior: smooth;
+	appearance: auto;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	main {
+		max-width: 1200px;
+	}
+	#mainPages {
+		margin: 0 auto;
+		padding: 0 1em;
+	}
+	span {
+		font-weight: 1000;
+	}
+}
+button {
+	cursor: pointer;
+}
+
+// variables
+$color-primary: #214b41;
+$color-primary-light: #f0f9f7;
+$color-primary-medium: #4f897d;
+$white: #ffffff;
+$grey: #525252;
+$black: #000000;
+
+$wineandco: #a91923;
+$tgtg: #79d0c6;
+$potager-city: #53b4e5;
+$aircampus: #f80b56;
+
+$cama-blue: #1ba39b;
+$cama-green: #1bbc9b;
+
+$hr-senior: #1cb092;
+$hr-vacataire: #1ba39e;
+$hr-spontanus: #0c8389;
+
+$short-animation: 200ms;
+$long-animation: 500ms;
+
+// mixinxs
+@mixin tablet-breakpoint {
+	@media (max-width: 1250px) {
+		@content;
+	}
+}
+@mixin mobile-breakpoint {
+	@media (max-width: 850px) {
+		@content;
+	}
+}
+
+// extensions
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.text-center {
+	text-align: center;
+	margin-bottom: 0.3em;
+}
+.filter-white {
+	filter: invert(100%);
+}
+.italic-grey {
+	color: $grey;
+	font-style: italic;
+}
+.scrollable-content {
+	max-height: 250px;
+	overflow-y: scroll;
+	padding: 7px;
+	margin-bottom: 1em;
+	span {
+		font-weight: 1000;
+		text-decoration: underline;
+	}
+}

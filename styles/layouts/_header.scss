@@ -1,0 +1,117 @@
+// extensions
+header .link {
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: $short-animation;
+}
+.links-after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 2px;
+	bottom: -0.3em;
+	left: 0;
+	opacity: 0;
+	transition: $short-animation;
+	transform: translateY(7px);
+}
+
+// header
+.header-color-primary {
+	width: 100%;
+	position: fixed;
+	transition: $long-animation;
+	background-color: $color-primary;
+	@extend .flex-center;
+	z-index: 9;
+	min-height: 70px;
+	-webkit-box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.59);
+	box-shadow: 1px 3px 10px 3px rgba(0, 0, 0, 0.59);
+	#logoHeaderNav {
+		position: absolute;
+		left: 2em;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 200px;
+		object-fit: cover;
+		transition: $long-animation;
+	}
+	.nav-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 1220px;
+		width: 80%;
+		padding: 1.6em 0;
+		transform: translateX(110px);
+		transition: $long-animation;
+		.link {
+			color: $white;
+			&::after {
+				@extend .links-after;
+				background-color: $white;
+			}
+			&:hover {
+				&::after {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			&__actif {
+				font-weight: 600;
+				&::after {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+		@include tablet-breakpoint {
+			display: none;
+		}
+	}
+}
+
+// transparent on home
+.header-transparent {
+	@extend .flex-center;
+	position: fixed;
+	width: 100%;
+	transition: $long-animation;
+	z-index: 9;
+	#logoHeaderNav {
+		display: none;
+	}
+	.nav-container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 1220px;
+		padding: 1.6em 0;
+		transition: $long-animation;
+		.link {
+			position: relative;
+			color: $color-primary;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 600;
+			transition: $short-animation;
+			letter-spacing: 1px;
+			&::after {
+				@extend .links-after;
+				background-color: $color-primary;
+			}
+			&:hover {
+				&::after {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+		@include tablet-breakpoint {
+			display: none;
+		}
+	}
+}

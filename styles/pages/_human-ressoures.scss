@@ -1,0 +1,140 @@
+// intro + video
+.human-resources-container {
+	display: flex;
+	height: 100%;
+	margin-bottom: 1em;
+	@include mobile-breakpoint {
+		flex-direction: column;
+		max-height: inherit;
+		margin-bottom: 2em;
+	}
+	h3 {
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 1.5em;
+	}
+	.philosophy {
+		width: 30%;
+		padding-right: 2em;
+		margin-right: 1em;
+		@include tablet-breakpoint {
+			width: 45%;
+		}
+		@include mobile-breakpoint {
+			width: 100%;
+			margin-left: inherit;
+			margin-bottom: 1em;
+		}
+	}
+	.pepi {
+		width: 50%;
+		padding: 2em;
+		margin-left: 1em;
+		background-color: $color-primary;
+		color: $white;
+		@include tablet-breakpoint {
+			width: 45%;
+		}
+		@include mobile-breakpoint {
+			width: 100%;
+			margin-left: inherit;
+			margin-bottom: 1em;
+		}
+	}
+	.video {
+		width: 50%;
+		object-fit: cover;
+		@include tablet-breakpoint {
+			width: 55%;
+			min-width: 530px;
+		}
+		@include mobile-breakpoint {
+			width: 100%;
+			min-width: inherit;
+			height: 100%;
+			min-height: 330px;
+		}
+	}
+	p {
+		text-align: justify;
+	}
+	img {
+		width: 70%;
+		max-height: 350px;
+		object-fit: cover;
+		@include tablet-breakpoint {
+			width: 55%;
+			min-width: 400px;
+		}
+		@include mobile-breakpoint {
+			width: 100%;
+			min-width: inherit;
+			min-height: 200px;
+		}
+	}
+	+ .reverse {
+		@include mobile-breakpoint {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+// offers
+.human-resources-offers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	h2 {
+		text-transform: uppercase;
+		margin-top: 1em;
+	}
+}
+
+// offer
+.human-resources-offer {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	width: 23%;
+	min-width: 330px;
+	color: $white;
+	padding: 2em 1.5em;
+	margin: 0 1em 2em;
+	-webkit-box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+	box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.61);
+	background-color: $hr-senior;
+	@include mobile-breakpoint {
+		width: 100%;
+		max-width: 320px;
+		min-width: inherit;
+		margin: 0 0 2em;
+	}
+	h4 {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 400;
+	}
+	p {
+		text-align: justify;
+		height: 350px;
+		overflow-y: scroll;
+		border: 1px solid white;
+		margin: 1.5em 0 5em;
+		padding: 18px;
+		span {
+			text-decoration: underline;
+		}
+	}
+	a {
+		position: absolute;
+		bottom: 2em;
+	}
+	+ .vacataire {
+		background-color: $hr-vacataire;
+	}
+	+ .spontanus {
+		background-color: $hr-spontanus;
+	}
+}

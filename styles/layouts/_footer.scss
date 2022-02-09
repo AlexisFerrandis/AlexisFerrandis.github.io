@@ -1,0 +1,401 @@
+footer {
+	width: 100%;
+	padding: 1.5em;
+	background-color: $white;
+	border-top: solid 1px black;
+	@include mobile-breakpoint {
+		padding: 1.5em 1.5em 0.5em;
+	}
+	.links {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		flex-wrap: wrap;
+		margin-bottom: 0.5em;
+		.social {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			@include mobile-breakpoint {
+				margin-bottom: 10px;
+			}
+			p {
+				opacity: 0.8;
+			}
+			input {
+				border: none;
+				background-color: rgb(223, 223, 223);
+				padding: 0.3em 0.5em 0.3em 0.3em;
+			}
+			.newsletter-btn {
+				border: none;
+				padding: 0.3em 0.4em 0.3em 0.5em;
+				background-color: $color-primary;
+				color: $white;
+				font-weight: 500;
+				margin: 0 1.2em 0 -3px;
+				height: 22px !important;
+				a {
+					color: $white;
+					text-decoration: none;
+				}
+			}
+			.icons {
+				display: flex;
+				img {
+					width: 22px;
+					height: 22px;
+					margin: 0.2em 0.5em 0 0;
+				}
+			}
+		}
+		p span {
+			display: block;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			@include mobile-breakpoint {
+				margin-bottom: 10px;
+			}
+		}
+		.disclaimer {
+			text-transform: uppercase;
+			color: $grey;
+		}
+		.legal-press {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 200px;
+			@include mobile-breakpoint {
+				margin-bottom: 10px;
+			}
+			a {
+				text-decoration: none;
+				color: $grey;
+				&:hover {
+					text-decoration: underline $grey;
+				}
+			}
+			.press {
+				position: relative;
+				color: $grey;
+				cursor: pointer;
+				&::before {
+					position: absolute;
+					content: "CATHERINE SICK COMMUNICATION tel:01.84.20.20.74 mail:contact@sick-rp.com 176, avenue Charles de Gaulle | 92200 Neuilly";
+					top: -140px;
+					width: 200px;
+					padding: 7px;
+					background-color: white;
+					border: 1px solid black;
+					opacity: 0;
+					transform: translateY(10px);
+					transition: 300ms;
+					z-index: -1;
+					pointer-events: none;
+					line-height: 1.2em;
+				}
+				&:hover {
+					text-decoration: underline grey;
+					&::before {
+						opacity: 1;
+						transform: translateY(0);
+						z-index: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Belacom newsletter
+
+#_form_2_ {
+	position: relative;
+	font-size: 16px;
+	line-height: 1.6;
+	font-family: arial, helvetica, sans-serif;
+	margin: 0;
+}
+#_form_2_ * {
+	outline: 0;
+}
+._form_hide {
+	display: none;
+	visibility: hidden;
+}
+._form_show {
+	display: block;
+	visibility: visible;
+}
+#_form_2_._form-top {
+	top: 0;
+}
+#_form_2_._form-bottom {
+	bottom: 0;
+}
+#_form_2_._form-left {
+	left: 0;
+}
+#_form_2_._form-right {
+	right: 0;
+}
+#_form_2_ input[type="text"],
+#_form_2_ input[type="date"],
+#_form_2_ textarea {
+	height: 22px !important;
+	color: #000 !important;
+	font-size: 14px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#_form_2_ textarea {
+	resize: none;
+}
+#_form_2_ ._submit {
+	-webkit-appearance: none;
+	cursor: pointer;
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	background: #333 !important;
+	border: 0 !important;
+	-moz-border-radius: 4px !important;
+	-webkit-border-radius: 4px !important;
+	border-radius: 4px !important;
+	color: #fff !important;
+}
+#_form_2_ ._close-icon {
+	cursor: pointer;
+	background-image: url("https://d226aj4ao1t61q.cloudfront.net/esfkyjh1u_forms-close-dark.png");
+	background-repeat: no-repeat;
+	background-size: 14.2px 14.2px;
+	position: absolute;
+	display: block;
+	top: 11px;
+	right: 9px;
+	overflow: hidden;
+	width: 16.2px;
+	height: 16.2px;
+}
+#_form_2_ ._close-icon:before {
+	position: relative;
+}
+#_form_2_ ._form-image-left {
+	width: 150px;
+	float: left;
+}
+#_form_2_ ._form-branding {
+	color: #fff;
+	font-size: 10px;
+	clear: both;
+	text-align: left;
+	font-weight: 100;
+}
+#_form_2_ ._form-branding ._logo {
+	display: block;
+	width: 130px;
+	height: 14px;
+	background-image: url("https://d226aj4ao1t61q.cloudfront.net/hh9ujqgv5_aclogo_li.png");
+	background-size: 130px auto;
+	background-repeat: no-repeat;
+}
+#_form_2_ .form-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+#_form_2_ ._form-label,
+#_form_2_ ._form_element ._form-label {
+	font-weight: bold;
+	display: block;
+}
+#_form_2_._dark ._form-branding {
+	color: #333;
+}
+#_form_2_._dark ._form-branding ._logo {
+	background-image: url("https://d226aj4ao1t61q.cloudfront.net/jftq2c8s_aclogo_dk.png");
+}
+#_form_2_ ._form_element {
+	position: relative;
+	font-size: 0;
+	max-width: 100%;
+}
+#_form_2_ ._form_element * {
+	font-size: 14px;
+}
+#_form_2_ ._form_element._clear {
+	clear: both;
+	width: 100%;
+	float: none;
+}
+#_form_2_ ._form_element._clear:after {
+	clear: left;
+}
+#_form_2_ ._form_element input[type="text"],
+#_form_2_ ._form_element input[type="date"],
+#_form_2_ ._form_element select,
+#_form_2_ ._form_element textarea:not(.g-recaptcha-response) {
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: inherit;
+}
+#_form_2_ ._field-wrapper {
+	margin-top: 2px;
+	position: relative;
+}
+#_form_2_ ._inline-style {
+	float: left;
+}
+#_form_2_ ._inline-style input[type="text"] {
+	width: 150px;
+}
+
+#_form_2_ ._form_element img._form-image {
+	max-width: 100%;
+}
+#_form_2_ ._form_element ._form-fieldset {
+	border: 0;
+	padding: 0.01em 0 0 0;
+	min-width: 0;
+}
+#_form_2_ ._clear-element {
+	clear: left;
+}
+#_form_2_ ._full_width {
+	width: 100%;
+}
+#_form_2_ ._form_full_field {
+	display: block;
+	width: 100%;
+}
+#_form_2_ input[type="text"]._has_error,
+#_form_2_ textarea._has_error {
+	outline: #f37c7b 1px solid;
+}
+#_form_2_ input[type="checkbox"]._has_error {
+	outline: #f37c7b 1px solid;
+}
+#_form_2_ ._error {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+	z-index: 10000001;
+}
+#_form_2_ ._error._above {
+	bottom: 39px;
+	right: 0;
+}
+#_form_2_ ._error._below {
+	top: 100%;
+	right: 0;
+}
+#_form_2_ ._error._above ._error-arrow {
+	bottom: 0;
+	right: 15px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #f37c7b;
+}
+#_form_2_ ._error._below ._error-arrow {
+	top: 0;
+	right: 15px;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #f37c7b;
+}
+#_form_2_ ._error-inner {
+	background-color: #f37c7b;
+	font-size: 14px;
+	font-family: arial, sans-serif;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#_form_2_ ._error-inner._form_error {
+	text-align: left;
+}
+
+#_form_2_ ._error-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+.pika-single {
+	z-index: 10000001 !important;
+}
+#_form_2_ input[type="text"].datetime_date {
+	width: 69%;
+	display: inline;
+}
+#_form_2_ select.datetime_time {
+	width: 29%;
+	display: inline;
+	height: 32px;
+}
+
+#_form_2_ {
+	position: relative;
+	text-align: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	*zoom: 1;
+	background: #fff !important;
+	border: 0px solid #b0b0b0 !important;
+	-moz-border-radius: 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+	color: #000 !important;
+}
+#_form_2_ ._form-title {
+	font-size: 22px;
+	line-height: 22px;
+	font-weight: 600;
+}
+#_form_2_:before,
+#_form_2_:after {
+	content: " ";
+	display: table;
+}
+#_form_2_:after {
+	clear: both;
+}
+#_form_2_._inline-style {
+	width: auto;
+	display: inline-block;
+}
+#_form_2_._inline-style button._inline-style {
+	position: relative;
+	top: 27px;
+}
+
+#_form_2_ ._form-thank-you {
+	position: relative;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+._form-content {
+	height: 22px;
+	display: flex;
+	align-items: center;
+}
+
+._button-wrapper {
+	padding-top: 1.5px;
+}

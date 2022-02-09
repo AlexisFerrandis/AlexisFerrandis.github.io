@@ -9,21 +9,21 @@
 		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
 		<link rel="canonical" href="https://www.lerepairedebacchus.com" />
-		<link rel="stylesheet" href="./sass/main.css" />
+		<link rel="stylesheet" href="./styles/styles.css" />
 		<title>Le Repaire de Bacchus, cavistes en région parisienne</title>
 
 		<!-- twitter -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Le Repaire de Bacchus, cavistes en région parisienne" />
 		<meta name="twitter:description" content="Boutiques de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
-		<meta name="twitter:image" content="./public/assets/img/logos/logo-img&text-color-primary-rounded.svg" />
+		<meta name="twitter:image" content="./public/assets/pictos-logos/logos/lrdb-primary.svg" />
 
 		<!-- facebook -->
 		<meta property="og:url" content="https://www.lerepairedebacchus.com" />
 		<meta property="og:type" content="siteweb" />
 		<meta property="og:title" content="Le Repaire de Bacchus, cavistes en région parisienne" />
 		<meta property="og:description" content="Boutiques de vins et Champagnes en région parisienne, vins français et étrangers, achat de grands crus, plus de 1000 références en stock" />
-		<meta property="og:image" content="./public/assets/img/logos/logo-img&text-color-primary-rounded.svg" />
+		<meta property="og:image" content="./public/assets/pictos-logos/logos/lrdb-primary.svg" />
 
 		<!-- GoogleAnalytics script -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-MB0XNJGN09"></script>
@@ -37,81 +37,82 @@
 			gtag("config", "G-MB0XNJGN09");
 		</script>
 	</head>
+
 	<body>
 		<section id="legalDisclaimer"></section>
+
+		<!-- header -->
 		<header id="headerHomePage" class="header-transparent">
-			<a href="#"><img id="logoHeaderNav" src="./public/assets/img/logos/logo-img&text-white.svg" alt="logo" /></a>
-			<nav class="header-nav__container" id="headerNav">
-				<a class="header-nav__container--link" href="#">accueil</a>
-				<a class="header-nav__container--link header-nav__container--link--actif" href="#homeAboutUs">qui sommes-nous ?</a>
-				<a class="header-nav__container--link" href="./pages/localisation.html">nos caves</a>
-				<a class="header-nav__container--link" href="./pages/actualities.html">nos actualités</a>
-				<a class="header-nav__container--link" href="./pages/services.html">nos services</a>
-				<a class="header-nav__container--link" href="./pages/human-resources.html">on recrute</a>
+			<a href="#"><img id="logoHeaderNav" src="./public/assets/pictos-logos/logos/lrdb-white.svg" alt="logo" /></a>
+			<nav class="nav-container" id="headerNav">
+				<a class="link" href="#">accueil</a>
+				<a class="link link__actif" href="#aboutUs">qui sommes-nous ?</a>
+				<a class="link" href="./pages/nos-caves.html">nos caves</a>
+				<a class="link" href="./pages/nos-actualites.html">nos actualités</a>
+				<a class="link" href="./pages/nos-services.html">nos services</a>
+				<a class="link" href="./pages/on-recrute.html">on recrute</a>
 			</nav>
-			<button type="button" id="headerHamburger" class="header-nav-responsive-inactive"><img src="./public/assets/img/pictos/header/open.svg" alt="Ouvre et ferme le menu" /></button>
+			<button type="button" id="headerHamburger" class="button__header--inactive"><img src="./public/assets/pictos-logos/pictos/open.svg" alt="Ouvre et ferme le menu" /></button>
 		</header>
 
 		<div id="responsiveHeaderDom"></div>
 
 		<main>
-			<section id="homeCarouselFullPage">
-				<div class="home-carousel">
-					<img class="home-carousel__images-full" src="./public/assets/img/photos/home-carousel-1.jpg" alt="Devanture de boutique" />
-					<img class="home-carousel__images-full" src="./public/assets/img/photos/home-carousel-2.jpg" alt="Caviste en exercice" />
-					<img class="home-carousel__images-full" src="./public/assets/img/photos/home-carousel-3.jpg" alt="Accord met vin" />
+			<!-- home page -->
+			<section id="fullPageHome">
+				<div class="carousel">
+					<img class="full-screen" src="./public/assets/img/home/home-carousel-1.jpg" alt="Devanture de boutique" />
+					<img class="full-screen" src="./public/assets/img/home/home-carousel-2.jpg" alt="Caviste en exercice" />
+					<img class="full-screen" src="./public/assets/img/home/home-carousel-3.jpg" alt="Accord met vin" />
 				</div>
-				<div id="homeCarouselLogoCta" class="home-carousel__container">
-					<img class="home-carousel__container--logo" src="./public/assets/img/logos/logo-img&text-color-primary-rounded.svg" />
-					<a href="#homeAboutUs"><button type="button" class="button__square--transparent">Poursuivre la visite</button></a>
-					<a href="#homeAboutUs"><img class="home-carousel__container--arrow" src="./public/assets/img/pictos/home/home-arrow.svg" alt="Continuer la visite" /></a>
+
+				<div id="homeLogo" class="logo-CTA">
+					<img class="logo" src="./public/assets/pictos-logos/logos/lrdb-primary.svg" />
+					<a href="#aboutUs"><button type="button" class="button transparent">Poursuivre la visite</button></a>
+					<a href="#aboutUs"><img class="arrow" src="./public/assets/pictos-logos/pictos/arrow.svg" alt="Continuer la visite" /></a>
 				</div>
 			</section>
 
-			<section id="homeAboutUs">
-				<div class="home-about-us__article-container">
-					<img class="home-about-us__article-container--img-xl" src="./public/assets/img/photos/about-us-xl.jpg" alt="Devanture d'une boutique le Repaire de Bacchus" />
+			<!-- about us -->
+			<section id="aboutUs">
+				<div class="article-container">
+					<img class="img-xl" src="./public/assets/img/home/about-us-xl.jpg" alt="Devanture d'une boutique le Repaire de Bacchus" />
 
-					<article class="home-about-us__article-container--article">
+					<article class="article">
 						<h1>qui sommes-nous ?</h1>
 						<h3>votre caviste depuis 1983</h3>
-						<div class="separator-black"></div>
+						<div class="separator black"></div>
 						<h4>Près de 40 ans de savoir-faire caviste :</h4>
-						<p class="home-about-us__article-container--article--paragraph"><span>41 caves</span> implantées dans les rues piétonnes et/ou commerçantes <span>à Paris et en Ile de France.</span></p>
-						<p class="home-about-us__article-container--article--paragraph"><span>2 500 produits</span> dénichés par notre équipe commerciale en partenariat avec nos viticulteurs pour <span>le meilleur au meilleur prix.</span></p>
-						<p class="home-about-us__article-container--article--paragraph"><span>75 cavistes qualifiés</span> dont les connaissances produits sont maintenues au travers d’une cinquantaine de masterclass chaque année.</p>
+						<p class="content"><span>41 caves</span> implantées dans les rues piétonnes et/ou commerçantes <span>à Paris et en Ile de France.</span></p>
+						<p class="content"><span>2 500 produits</span> dénichés par notre équipe commerciale en partenariat avec nos viticulteurs pour <span>le meilleur au meilleur prix.</span></p>
+						<p class="content"><span>75 cavistes qualifiés</span> dont les connaissances produits sont maintenues au travers d’une cinquantaine de masterclass chaque année.</p>
 
-						<div class="pictos-container">
-							<div class="three">
-								<div class="pictos-container__element">
-									<img src="./public/assets/img/pictos/about-us/shops.png" alt="40 boutiques" />
+						<div class="pictos">
+							<div class="row">
+								<div class="picto">
+									<img src="./public/assets/pictos-logos/pictos/shops.png" alt="40 boutiques" />
 									<p>40 Boutiques</p>
 								</div>
-
-								<div class="pictos-container__element">
-									<img src="./public/assets/img/pictos/about-us/eiffel.png" alt="Paris et Ile de France" />
+								<div class="picto">
+									<img src="./public/assets/pictos-logos/pictos/eiffel.png" alt="Paris et Ile de France" />
 									<p>Paris <br />Île de France</p>
 								</div>
-
-								<div class="pictos-container__element">
-									<img src="./public/assets/img/pictos/about-us/advice.png" alt="Conseil" />
+								<div class="picto">
+									<img src="./public/assets/pictos-logos/pictos/advice.png" alt="Conseil" />
 									<p>Conseil <br />sur-mesure</p>
 								</div>
 							</div>
-
-							<div class="three">
-								<div class="pictos-container__element">
-									<img src="./public/assets/img/pictos/about-us/selection.png" alt="Selection XXL" />
+							<div class="row">
+								<div class="picto">
+									<img src="./public/assets/pictos-logos/pictos/selection.png" alt="Selection XXL" />
 									<p>Sélection XXL</p>
 								</div>
-
-								<div class="pictos-container__element">
-									<img src="./public/assets/img/pictos/about-us/eco.png" alt="Engagement éco-responsable" />
+								<div class="picto">
+									<img src="./public/assets/pictos-logos/pictos/eco.png" alt="Engagement éco-responsable" />
 									<p>Engagement éco-responsable</p>
 								</div>
-
-								<div class="pictos-container__element">
-									<img src="./public/assets/img/pictos/about-us/bar.png" alt="2 bars à vins" />
+								<div class="picto">
+									<img src="./public/assets/pictos-logos/pictos/bar.png" alt="2 bars à vins" />
 									<p>2 bars à vins</p>
 								</div>
 							</div>
@@ -119,19 +120,20 @@
 					</article>
 				</div>
 
-				<div class="home-about-us__images-container">
-					<img src="./public/assets/img/photos/about-us-3.jpg" alt="Verres de vins" />
-					<img src="./public/assets/img/photos/about-us-1.jpg" alt="Caviste avec du vin" />
-					<img src="./public/assets/img/photos/about-us-2.jpg" alt="Devanture d'une boutique" />
-					<img src="./public/assets/img/photos/about-us-4.jpg" alt="Caviste en exercice" />
-					<img src="./public/assets/img/photos/about-us-5.jpg" alt="Accord met vin" />
+				<div class="images-container">
+					<img src="./public/assets/img/home/about-us-1.jpg" alt="Verres de vins" />
+					<img src="./public/assets/img/home/about-us-2.jpg" alt="Caviste avec du vin" />
+					<img src="./public/assets/img/home/about-us-3.jpg" alt="Devanture d'une boutique" />
+					<img src="./public/assets/img/home/about-us-4.jpg" alt="Caviste en exercice" />
+					<img src="./public/assets/img/home/about-us-5.jpg" alt="Accord met vin" />
 				</div>
 			</section>
 		</main>
 
+		<!-- footer -->
 		<footer id="footer">
-			<div class="footer-links">
-				<div class="footer-links__social">
+			<div class="links">
+				<div class="social">
 					<p>Recevez nos informations :</p>
 					<div>
 						<form method="POST" action="https://lerepairedebacchus.activehosted.com/proc.php" id="_form_2_" class="_form _form_2 _inline-form _dark" novalidate>
@@ -150,28 +152,30 @@
 									</div>
 								</div>
 								<div class="_button-wrapper">
-									<button id="_form_2_submit" class="small-button__square--green" type="submit">OK</button>
+									<button id="_form_2_submit" class="newsletter-btn" type="submit">OK</button>
 								</div>
 								<div class="_clear-element"></div>
 							</div>
 							<div class="_form-thank-you" style="display: none"></div>
 						</form>
 					</div>
-					<div class="footer-links__social--network-icons">
-						<a href="https://www.facebook.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="./public/assets/fonts/fontawesome/facebook-square-brands.svg" alt="facebook" /></a>
-						<a href="https://www.instagram.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="./public/assets/fonts/fontawesome/instagram-square-brands.svg" alt="instagram" /></a>
-						<a href="https://fr.linkedin.com/company/le-repaire-de-bacchus" target="_blank" rel="noopener noreferrer"><img src="./public/assets/fonts/fontawesome/linkedin-brands.svg" alt="linkedin" /></a>
+					<div class="icons">
+						<a href="https://www.facebook.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="./public/assets/pictos-logos/pictos/facebook-square-brands.svg" alt="facebook" /></a>
+						<a href="https://www.instagram.com/lerepairedebacchus" target="_blank" rel="noopener noreferrer"><img src="./public/assets/pictos-logos/pictos/instagram-square-brands.svg" alt="instagram" /></a>
+						<a href="https://fr.linkedin.com/company/le-repaire-de-bacchus" target="_blank" rel="noopener noreferrer"><img src="./public/assets/pictos-logos/pictos/linkedin-brands.svg" alt="linkedin" /></a>
 					</div>
 				</div>
 				<p class="disclaimer">l'abus d'alcool est dangereux pour la santé. à consommer avec modération.</p>
-				<div class="footer-links__legal-press">
-					<a href="mailto:contact@sick-rp.com"><p class="press">Presse</p></a>
+				<div class="legal-press">
+					<a href="mailto:contact@sick-rp.com" target="_blank" rel="noopener noreferrer"><p class="press">Presse</p></a>
 					<a href="./pages/cgu.html">Mentions légales</a>
 				</div>
 			</div>
 		</footer>
 
+		<!-- scripts -->
+		<script src="./public/js/index.js"></script>
 		<script src="./public/js/legal-disclaimer.js"></script>
-		<script src="./public/js/home.js"></script>
+		<script src="./public/js/newsletter.js"></script>
 	</body>
 </html>

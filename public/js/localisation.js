@@ -1,5 +1,4 @@
-// Get json store list then display them on map's left
-
+// get json store list then display them on map's left
 const storesList = fetch("../public/js/maps/stores.json")
 	.then((response) => {
 		return response.json();
@@ -34,8 +33,8 @@ async function getTheStores() {
 		<article class="localisation-list__stores--store" id="${store.properties.storeid}">
 			<h6>${store.properties.name}</h6>
 			<p class="store-adresse" >${store.properties.address}</p>
-			<a href="tel:${store.properties.phone}"><p class="store-phone"><img class="filter-white" src="../public/assets/fonts/fontawesome/mobile-alt-solid.svg" alt="tel" />${store.properties.phone}</p></a>
-			<a href="mailto:${store.properties.email}"><p class="store-mail"><img class="filter-white" src="../public/assets/fonts/fontawesome/envelope-solid.svg" alt="email" />${store.properties.email}</p></a>
+			<a href="tel:${store.properties.phone}"><p class="store-phone"><img class="filter-white" src="../public/assets/pictos-logos/pictos/mobile-alt-solid.svg" alt="tel" />${store.properties.phone}</p></a>
+			<a href="mailto:${store.properties.email}"><p class="store-mail"><img class="filter-white" src="../public/assets/pictos-logos/pictos/envelope-solid.svg" alt="email" />${store.properties.email}</p></a>
 		</article>
 		`;
 		renderHTML += storeInfo;
