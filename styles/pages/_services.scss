@@ -392,6 +392,7 @@
 // partners
 .partners-container {
 	@extend .services-container;
+	margin-bottom: 0;
 	h3 {
 		@extend .services-h3;
 		color: $cama-blue;
