@@ -26,13 +26,13 @@
 	width: 30px;
 	height: 30px;
 	border: none;
-	background-color: yellow;
+	background-color: green;
 	cursor: pointer;
 	&:active {
 		transform: scale(0.98);
 	}
 	@include tablet-breakpoint {
-		display: flex;
+		display: block;
 	}
 	z-index: 9;
 }
