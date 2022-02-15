@@ -14,7 +14,7 @@
 		font-size: 1.5em;
 	}
 	.philosophy {
-		width: 30%;
+		width: 35%;
 		padding-right: 2em;
 		margin-right: 1em;
 		@include tablet-breakpoint {
@@ -30,7 +30,7 @@
 		width: 50%;
 		padding: 2em;
 		margin-left: 1em;
-		background-color: $color-primary;
+		background-color: blue;
 		color: $white;
 		@include tablet-breakpoint {
 			width: 45%;
@@ -49,8 +49,8 @@
 			min-width: 530px;
 		}
 		@include mobile-breakpoint {
+			min-width: 100%;
 			width: 100%;
-			min-width: inherit;
 			height: 100%;
 			min-height: 330px;
 		}
@@ -59,7 +59,7 @@
 		text-align: justify;
 	}
 	img {
-		width: 70%;
+		width: 65%;
 		max-height: 350px;
 		object-fit: cover;
 		@include tablet-breakpoint {
