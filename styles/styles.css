@@ -491,6 +491,7 @@ header .link {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  overflow: visible;
   z-index: 9;
 }
 
@@ -503,6 +504,12 @@ header .link {
   #headerHamburger {
     display: block;
   }
+}
+
+#headerHamburger img {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
 }
 
 #responsiveHeaderDom {
@@ -1112,7 +1119,7 @@ footer .links .legal-press .press:hover::before {
      object-fit: contain;
 }
 
-@media (orientation: landscape) {
+@media screen and (max-height: 420px) {
   #fullPageHome .logo-CTA .logo {
     top: 36%;
   }

@@ -27,7 +27,7 @@
 			width: 90%;
 			max-height: 50%;
 			object-fit: contain;
-			@media (orientation: landscape) {
+			@media screen and (max-height: 420px) {
 				top: 36%;
 			}
 		}
