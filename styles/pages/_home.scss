@@ -27,6 +27,9 @@
 			width: 90%;
 			max-height: 50%;
 			object-fit: contain;
+			@media (orientation: landscape) {
+				top: 36%;
+			}
 		}
 		button {
 			margin-top: 3em;
@@ -36,6 +39,9 @@
 			width: 60px;
 			animation: arrow-up-and-down infinite 7s;
 			cursor: pointer;
+			@media (orientation: landscape) {
+				margin: 1em 0;
+			}
 		}
 	}
 }

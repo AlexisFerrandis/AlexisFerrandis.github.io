@@ -1111,6 +1111,12 @@ footer .links .legal-press .press:hover::before {
      object-fit: contain;
 }
 
+@media (orientation: landscape) {
+  #fullPageHome .logo-CTA .logo {
+    top: 36%;
+  }
+}
+
 #fullPageHome .logo-CTA button {
   margin-top: 3em;
 }
@@ -1121,6 +1127,12 @@ footer .links .legal-press .press:hover::before {
   -webkit-animation: arrow-up-and-down infinite 7s;
           animation: arrow-up-and-down infinite 7s;
   cursor: pointer;
+}
+
+@media (orientation: landscape) {
+  #fullPageHome .logo-CTA .arrow {
+    margin: 1em 0;
+  }
 }
 
 @-webkit-keyframes fading {
