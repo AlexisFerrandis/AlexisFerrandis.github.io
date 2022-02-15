@@ -489,6 +489,7 @@ header .link {
   width: 30px;
   height: 30px;
   border: none;
+  background-color: transparent;
   cursor: pointer;
   z-index: 9;
 }
