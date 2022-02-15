@@ -19,14 +19,14 @@
 
 // header responsive btn
 #headerHamburger {
-	position: absolute;
+	position: fixed;
 	display: none;
 	right: 1em;
 	top: 1.5em;
 	width: 30px;
 	height: 30px;
 	border: none;
-	background-color: transparent;
+	background-color: yellow;
 	cursor: pointer;
 	&:active {
 		transform: scale(0.98);
