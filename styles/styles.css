@@ -509,7 +509,6 @@ header .link {
 #headerHamburger img {
   width: 30px;
   height: 30px;
-  background-color: aqua;
 }
 
 #responsiveHeaderDom {
@@ -520,6 +519,7 @@ header .link {
 #responsiveHeaderDom .responsive-header-primary {
   padding-top: 80px;
   background-color: #214b41;
+  overflow: auto;
 }
 
 #responsiveHeaderDom .responsive-header-primary a {

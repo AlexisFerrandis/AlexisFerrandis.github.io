@@ -39,7 +39,6 @@
 	img {
 		width: 30px;
 		height: 30px;
-		background-color: aqua;
 	}
 }
 
@@ -51,6 +50,7 @@
 		@extend .responsive-base;
 		padding-top: 80px;
 		background-color: $color-primary;
+		overflow: auto;
 		a {
 			@extend .link-display;
 			color: $white;
