@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG6SQFHLTJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GG6SQFHLTJ');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MPMPSSE61V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MPMPSSE61V');
+    </script>
+
+    <meta name="google-site-verification" content="OnNIveKqzRa-bq2ubTL7UDbh9clPVHX0Z0NeQejJV_0" />
+
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="url" content="https://syrahgence.fr" />
+    <link rel="canonical" href="https://syrahgence.fr" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#7a000e" />
+    <meta name="description"
+        content="Syrahgence c'est des professionnels du vin pour vous accompagner dans une stratégie et des conseils à 360° : commercial, marketing, communication et digital !" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Syrahgence - l’agence spécialisée dans la stratégie du vin" />
+    <meta name="twitter:description"
+        content="Syrahgence c'est des professionnels du vin pour vous accompagner dans une stratégie et des conseils à 360° : commercial, marketing, communication et digital !" />
+    <meta name="twitter:image" content="/social.png" />
+
+    <!-- facebook -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="siteweb" />
+    <meta property="og:site_name" content="https://syrahgence.fr" />
+    <meta property="og:title" content="Syrahgence - l’agence spécialisée dans la stratégie du vin" />
+    <meta property="og:description"
+        content="Syrahgence c'est des professionnels du vin pour vous accompagner dans une stratégie et des conseils à 360° : commercial, marketing, communication et digital !" />
+    <meta property="og:image" content="/social.png" />
+
+    <title>Syrahgence - l’agence spécialisée dans la stratégie du vin</title>
+
+    <style>
+        @font-face {
+    font-family: introRustLine;
+    src: url(./fonts/IntroRust-Line.otf);
+}
+        .loader-container {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 300%;
+            height: 100%;
+            background-color: #7a000e;
+            z-index: 99;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 3px;
+            font-size: 30px;
+            padding: 1em;
+            position: relative;
+            margin-bottom: .25em;
+            vertical-align: top;
+            transition: .3s color, .3s border, .3s transform, .3s 
+        }
+        .loader {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            color: inherit;
+            vertical-align: middle;
+            pointer-events: none;
+            position: relative;
+            background-color: #F2F4F3;
+            border-radius: 50%;
+        }
+
+        .loader:after,
+        .loader:before {
+            content: "";
+            position: absolute;
+            width: .25em;
+            height: .25em;
+            border-radius: 50%;
+            opacity: .8;
+        }
+
+        .loader:after {
+            left: -.5em;
+            top: -.25em;
+            background-color: #F2F4F3;
+            transform-origin: .75em 1em;
+            animation: loader 1s linear infinite;
+            opacity: .6;
+        }
+
+        .loader:before {
+            left: -1.25em;
+            top: -.75em;
+            background-color: #F2F4F3;
+            transform-origin: 1.5em 1em;
+            animation: loader 2s linear infinite;
+        }
+        .loader-title {
+            font-family: introRustLine;
+            color: #F2F4F3;
+        }
+
+
+        @keyframes loader {
+            0% {
+                transform: rotateZ(0deg) translate3d(0, 0, 0);
+            }
+            100% {
+                transform: rotateZ(360deg) translate3d(0, 0, 0);
+            }
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-25edaf06.js"></script>
+  <link rel="stylesheet" href="/assets/index-eb1d8d1e.css">
+</head>
+
+<body>
+
+    <div class="loader-container" id="load">
+        <div class="box">
+            <div class="loader"></div>
+        </div>
+        <h1 class="loader-title">Chargement...</h1>
+    </div>
+
+    <div id="root"></div>
+    
+    <script>
+        const load = document.getElementById("load");
+
+        window.onload = () => {
+            setTimeout(() => {
+                load.remove();
+            }, 300)
+        };
+    </script>
+</body>
+
+</html>
